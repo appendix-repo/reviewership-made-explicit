@@ -1,0 +1,36 @@
+# pnl:chk:1  ran 2026-10-23T21:20:55Z  exit 0
+## stdout
+           score  robust  fails_for_all                 survivors
+pnl:ctb:1  0.500    True          False  R-TCE,R-INST,R-BEH,R-DID
+pnl:ctb:2  0.500    True          False  R-TCE,R-INST,R-BEH,R-DID
+pnl:ctb:3  0.250   False          False              R-TCE,R-INST
+pnl:ctb:4  0.000   False           True                          
+pnl:ctb:5  0.125   False          False                     R-BEH
+pnl:ctb:6  0.625    True          False  R-TCE,R-INST,R-BEH,R-DID
+pnl:ctb:7  0.250   False          False              R-INST,R-DID
+pnl:ctb:8  0.375   False          False        R-TCE,R-INST,R-BEH
+
+[as stated]
+        pair  distance  same_verdict  mean_abs_diff
+ R-TCE/R-DID      0.36             5         0.1875
+R-INST/R-BEH      0.42             4         0.2500
+ R-BEH/R-DID      0.43             5         0.1875
+ R-TCE/R-BEH      0.45             6         0.1250
+R-INST/R-DID      0.65             5         0.1875
+R-TCE/R-INST      0.68             6         0.1250
+Pearson r = -0.423 (p = 0.40); Spearman rho = -0.648 (p = 0.16); n = 6 pairs
+
+[sensitivity: pnl:ctb:3 scored by stated remnants]
+        pair  distance  same_verdict  mean_abs_diff
+ R-TCE/R-DID      0.36             6         0.1250
+R-INST/R-BEH      0.42             5         0.1875
+ R-BEH/R-DID      0.43             5         0.1875
+ R-TCE/R-BEH      0.45             7         0.0625
+R-INST/R-DID      0.65             6         0.1250
+R-TCE/R-INST      0.68             6         0.1250
+Pearson r = -0.197 (p = 0.71); Spearman rho = -0.370 (p = 0.47); n = 6 pairs
+threshold 0.4: lens-dependent -> none
+threshold 0.45: lens-dependent -> none
+
+## stderr
+
