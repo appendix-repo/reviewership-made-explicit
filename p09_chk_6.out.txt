@@ -1,0 +1,19 @@
+# p09:chk:6  ran 2026-10-23T20:42:12Z  exit 0
+## stdout
+Table 2 for reference: M1 peer 0.137 (0.031)***; M2 peer 0.042 (0.038); M2 modularity 0.112 (0.024)***
+[i] economizing only (no mimicry) (true mimetic effect of field prevalence: none)
+    M1 peer mean 0.056, share p<.05 0.37 | M2 peer mean -0.012, share p<.05 0.05 | M2 modularity mean 0.111, share p<.05 1.00 | pattern reproduced in 0.28 of replications
+[ii] mimicry through modularity, kappa=1 (true mimetic effect of field prevalence: indirect 0.11)
+    M1 peer mean 0.095, share p<.05 0.66 | M2 peer mean -0.016, share p<.05 0.06 | M2 modularity mean 0.108, share p<.05 1.00 | pattern reproduced in 0.64 of replications
+[ii] mimicry through modularity, kappa=2 (true mimetic effect of field prevalence: indirect 0.22)
+    M1 peer mean 0.143, share p<.05 0.94 | M2 peer mean -0.018, share p<.05 0.07 | M2 modularity mean 0.109, share p<.05 1.00 | pattern reproduced in 0.91 of replications
+[iii] direct mimicry, theta=0.10 (true mimetic effect of field prevalence: direct 0.10)
+    M1 peer mean 0.104, share p<.05 0.74 | M2 peer mean 0.030, share p<.05 0.17 | M2 modularity mean 0.111, share p<.05 1.00 | pattern reproduced in 0.31 of replications
+[iii] direct mimicry, theta=0.20 (true mimetic effect of field prevalence: direct 0.20)
+    M1 peer mean 0.137, share p<.05 0.92 | M2 peer mean 0.065, share p<.05 0.40 | M2 modularity mean 0.113, share p<.05 1.00 | pattern reproduced in 0.16 of replications
+[iii] direct mimicry, theta=0.30 (true mimetic effect of field prevalence: direct 0.30)
+    M1 peer mean 0.186, share p<.05 0.99 | M2 peer mean 0.110, share p<.05 0.86 | M2 modularity mean 0.116, share p<.05 1.00 | pattern reproduced in 0.02 of replications
+VERDICT: INCONCLUSIVE - the economizing-only DGP reproduces the Table 2 pattern in only 0.28 of replications with these parameters, so the comparison is not informative (p09:fnd:6, p09:fnd:7).
+
+## stderr
+

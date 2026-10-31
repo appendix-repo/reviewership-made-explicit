@@ -1,0 +1,14 @@
+# p09:chk:7  ran 2026-10-23T20:42:15Z  exit 0
+## stdout
+Scenario A: beta=0, feedback pi=0.5 (true beta = 0.0)
+  FE OLS on m_t:      mean b = 0.1069; share b>0 & p<.05 = 1.00
+  FE OLS on m_(t-1):  mean b = 0.0357; share b>0 & p<.05 = 0.99
+  FE 2SLS (state requirement as instrument): mean b = 0.0016; mean SE = 0.0193; mean first-stage t = 35.6
+Scenario B: beta=0.11, no feedback (true beta = 0.11)
+  FE OLS on m_t:      mean b = 0.1112; share b>0 & p<.05 = 1.00
+  FE OLS on m_(t-1):  mean b = 0.0079; share b>0 & p<.05 = 0.20
+  FE 2SLS (state requirement as instrument): mean b = 0.1112; mean SE = 0.0195; mean first-stage t = 38.3
+VERDICT: DEMONSTRATED - with no effect of modularity and same-year feedback from outsourcing to reported modularity, the within-hospital FE estimate is positive and significant in 100% of replications (mean 0.107); lagging m still gives 100%; 2SLS on state requirements gives mean 0.002 (a valid repair only if requirements satisfy exclusion, which ms does not argue).
+
+## stderr
+

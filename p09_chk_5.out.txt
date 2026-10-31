@@ -1,0 +1,14 @@
+# p09:chk:5  ran 2026-10-23T20:42:10Z  exit 0
+## stdout
+Scenario A: beta=0, capability confounding
+  Model 3 analogue: mean b = 0.0989 (MC SE 0.0006); share b>0 & p<.05 = 1.00
+  Model 4 analogue: mean b = 0.1458 (MC SE 0.0007); share b>0 & p<.05 = 1.00; true beta = 0.0
+Scenario B: beta=0.11, no confounding
+  Model 3 analogue: mean b = 0.1101 (MC SE 0.0007); share b>0 & p<.05 = 1.00
+  Model 4 analogue: mean b = 0.0902 (MC SE 0.0006); share b>0 & p<.05 = 1.00; true beta = 0.11
+A: share of replications in which the modularity effect 'survives' Model 4 with zero true effect = 1.00
+B: Model 4 bias = -0.0198 (-18.0% of true beta), MC SE 0.0006
+VERDICT: DEMONSTRATED - under the manuscript's own relations, a modularity coefficient with no causal content survives the staffing control (positive, p<.05) in 100% of replications; survival cannot rule out capability confounding. The control also biases a true effect by -18%.
+
+## stderr
+

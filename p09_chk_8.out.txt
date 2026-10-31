@@ -1,0 +1,35 @@
+# p09:chk:8  ran 2026-10-23T20:42:17Z  exit 0
+## stdout
+Specification: saturated
+    rel  TWFE mean   MC SE   truth     bias  rej5%
+     -7     0.0240  0.0011  0.0000   0.0240   0.67  <--
+     -6     0.0217  0.0008  0.0000   0.0217   0.75  <--
+     -5     0.0186  0.0007  0.0000   0.0186   0.81  <--
+     -4     0.0141  0.0006  0.0000   0.0141   0.68  <--
+     -3     0.0080  0.0005  0.0000   0.0080   0.37  <--
+     -2     0.0030  0.0005  0.0000   0.0030   0.10
+      0     0.0088  0.0005  0.0108  -0.0020   0.47  <--
+      1     0.0188  0.0005  0.0216  -0.0028   0.98  <--
+      2     0.0302  0.0005  0.0324  -0.0022   0.99
+      3     0.0448  0.0006  0.0432   0.0016   1.00
+      4     0.0613  0.0006  0.0609   0.0004   1.00
+      5     0.0812  0.0007  0.0810   0.0002   1.00
+      6     0.1053  0.0007  0.1050   0.0003   1.00
+      7     0.1309  0.0009  0.1320  -0.0011   1.00
+      8     0.1607  0.0011  0.1620  -0.0013   1.00
+Specification: binned
+    rel  TWFE mean   MC SE   truth     bias  rej5%
+   <=-5     0.0249  0.0006  0.0000   0.0249   0.98  <--
+     -4     0.0175  0.0005  0.0000   0.0175   0.86  <--
+     -3     0.0113  0.0006  0.0000   0.0113   0.54  <--
+     -2     0.0043  0.0004  0.0000   0.0043   0.12  <--
+      0     0.0081  0.0005  0.0108  -0.0027   0.43  <--
+      1     0.0173  0.0005  0.0216  -0.0043   0.96  <--
+      2     0.0280  0.0005  0.0324  -0.0044   1.00  <--
+      3     0.0403  0.0005  0.0432  -0.0029   1.00
+      4     0.0566  0.0006  0.0609  -0.0043   1.00
+    >=5     0.0947  0.0006  0.1065  -0.0119   1.00  <--
+VERDICT: DEMONSTRATED - part (a) of p09:fnd:9: with zero pre-trends and cohort-heterogeneous dynamic effects, TWFE event-study coefficients do not recover the true effects (or show non-zero leads): saturated rel -7: mean 0.0240 vs truth 0.0000; saturated rel -6: mean 0.0217 vs truth 0.0000; saturated rel -5: mean 0.0186 vs truth 0.0000; saturated rel -4: mean 0.0141 vs truth 0.0000; saturated rel -3: mean 0.0080 vs truth 0.0000; saturated rel 0: mean 0.0088 vs truth 0.0108; saturated rel 1: mean 0.0188 vs truth 0.0216; binned rel <=-5: mean 0.0249 vs truth 0.0000; binned rel -4: mean 0.0175 vs truth 0.0000; binned rel -3: mean 0.0113 vs truth 0.0000; binned rel -2: mean 0.0043 vs truth 0.0000; binned rel 0: mean 0.0081 vs truth 0.0108; binned rel 1: mean 0.0173 vs truth 0.0216; binned rel 2: mean 0.0280 vs truth 0.0324; binned rel >=5: mean 0.0947 vs truth 0.1065
+
+## stderr
+

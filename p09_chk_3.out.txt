@@ -1,0 +1,14 @@
+# p09:chk:3  ran 2026-10-23T20:42:09Z  exit 0
+## stdout
+Model 2 peer: 95% CI = [-0.0327, 0.1167]; upper bound = 0.85 x Model 1 estimate
+smallest symmetric margin at which TOST declares equivalence (alpha=.05): 0.1046 = 0.76 x Model 1 estimate
+TOST, margin = 0.5 x Model 1 estimate = 0.0685: p = 0.243
+change M1 - M2 = 0.095; the covariance of the two estimates is not reported, so the test is bounded:
+  assumed rho=0.0: se=0.0490, z=1.94, p=0.0527
+  assumed rho=0.5: se=0.0350, z=2.71, p=0.0067
+  assumed rho=0.8: se=0.0228, z=4.17, p=0.0000
+  assumed rho=0.9: se=0.0169, z=5.63, p=0.0000
+VERDICT: DEMONSTRATED - the Model 2 peer estimate is not shown equivalent to zero (TOST p=0.243 at margin 0.069); its 95% CI reaches 0.117. Non-significance does not license 'rule out'.
+
+## stderr
+

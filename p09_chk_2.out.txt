@@ -1,0 +1,24 @@
+# p09:chk:2  ran 2026-10-23T20:42:09Z  exit 0
+## stdout
+row                          mod    coef     se    |t|   p(t411) printed  attainable
+Peer outsourcing (t-1)       M1    0.137  0.031   4.42   0.00001       3         [3]
+Peer outsourcing (t-1)       M2    0.042  0.038   1.11   0.26969       0         [0]
+Peer outsourcing (t-1)       M3    0.039  0.037   1.05   0.29248       0         [0]
+Peer outsourcing (t-1)       M4    0.036  0.036   1.00   0.31790       0         [0]
+Modularity                   M2    0.112  0.024   4.67   0.00000       3         [3]
+Modularity                   M3    0.118  0.025   4.72   0.00000       3         [3]
+Modularity                   M4    0.097  0.023   4.22   0.00003       3         [3]
+Environmental uncertainty    M3    0.084  0.051   1.65   0.10031       3         [0]  <-- MISMATCH
+Environmental uncertainty    M4    0.079  0.050   1.58   0.11488       0         [0]
+Modularity x uncertainty     M3   -0.061  0.019   3.21   0.00143       2      [2, 3]
+Modularity x uncertainty     M4   -0.058  0.019   3.05   0.00242       2         [2]
+Asset specificity            M1   -0.094  0.027   3.48   0.00055       3         [3]
+Asset specificity            M2   -0.091  0.027   3.37   0.00082       3      [2, 3]
+Asset specificity            M3   -0.090  0.026   3.46   0.00059       3         [3]
+Asset specificity            M4   -0.088  0.026   3.38   0.00078       3      [2, 3]
+In-house IT staffing (log)   M4   -0.143  0.029   4.93   0.00000       3         [3]
+cells checked: 16; mismatches: 1
+VERDICT: DEMONSTRATED - stars inconsistent with coefficient/SE (robust to rounding) in: Environmental uncertainty M3: 0.084 (0.051) printed ***, |t|=1.65, p=0.1003
+
+## stderr
+

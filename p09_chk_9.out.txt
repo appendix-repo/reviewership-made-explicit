@@ -1,0 +1,10 @@
+# p09:chk:9  ran 2026-10-23T20:42:19Z  exit 0
+## stdout
+(a) iid state-year shocks, true peer effect 0: mean b = -0.0632; 5% rejection rate: hospital-clustered 0.560, state-clustered 0.317
+(b) persistent state shocks (rho=0.7), true peer effect 0: mean b = 0.2699; share b>0 & p<.05 (state-clustered) = 1.00; hospital-clustered = 1.00
+reference: ms:T2.M1 peer = 0.137 (0.031)
+VERDICT: DEMONSTRATED - p09:fnd:10: hospital-clustered SEs reject a true null for Peer at 56.0% (nominal 5%; state-clustered 31.7%).
+VERDICT: DEMONSTRATED - p09:fnd:11: with persistent state shocks and no imitation, lagged Peer predicts own outsourcing (mean b = 0.270; significant in 100% with state clustering).
+
+## stderr
+

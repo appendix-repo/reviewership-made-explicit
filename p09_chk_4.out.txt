@@ -1,0 +1,12 @@
+# p09:chk:4  ran 2026-10-23T20:42:10Z  exit 0
+## stdout
+one-SD effect = 0.112 x 0.24 = 0.0269 (2.69 pp); reported 2.7 pp
+as share of SD(Phi): 0.158; one-sixth = 0.167
+fall in peer coefficient: 0.693; two-thirds = 0.667
+Model 3: marginal effect of m is zero at u = 1.93 SD; share of hospital-years above it if u ~ N(0,1) [ASSUMPTION]: 0.027
+Model 4: marginal effect of m is zero at u = 1.67 SD; share of hospital-years above it if u ~ N(0,1) [ASSUMPTION]: 0.047
+note: SDs are pooled (ms:§3.2); within-hospital SDs, which govern the FE estimand, are not reported.
+VERDICT: REFUTED-BY-CHECK - the reported magnitudes (2.7 pp, about one-sixth SD, fall > two-thirds) are arithmetically correct.
+
+## stderr
+

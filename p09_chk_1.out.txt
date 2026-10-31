@@ -1,0 +1,11 @@
+# p09:chk:1  ran 2026-10-23T20:42:09Z  exit 0
+## stdout
+years in window (inclusive): 11
+balanced panel N = 412 x 11 = 4532
+N with Peer(t-1) from in-window data = 412 x 10 = 4120
+reported N = 4712; reported N / 412 = 11.437 years per hospital
+reported - balanced = 180
+VERDICT: DEMONSTRATED - 4,712 is not a multiple of 412, so it cannot be a balanced 412-hospital panel; expected 4532 (all years) or at most 4120 for models with Peer(t-1).
+
+## stderr
+
