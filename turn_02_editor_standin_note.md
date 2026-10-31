@@ -1,0 +1,5 @@
+*Out-of-role note returned by the editor stand-in to the orchestrating session, alongside turn 2. It was not shown to the elicitor or the reviewer. Recorded verbatim because it bears on how the demonstration should be read (appendix §4.0).*
+
+Notes on how I played the role:
+- **Kept to what the editor knows.** The role says the editor read the manuscript once, quickly, and leaves the deeper checks to the reviewer, so the answer only voices those concerns. Checking it myself, I found that the proof of Proposition 2 leaves out the H'(u) term. Done correctly, Assumption A3 makes the cross-partial negative, which would match the negative interaction in Table 2. The editor's answer does not say this, so the reviewer still has to find it, though it does ask for the model to be re-derived.
+- **Left unknowns unfilled.** The role file says nothing about the journal's code and data policy, its recommendation categories or the deadline. The editor says "nothing to add" on these rather than making them up.
