@@ -1,0 +1,13 @@
+# r-beh:chk:1  ran 2026-10-23T20:32:18Z  exit 0
+## stdout
+(a) Prop1 expression matches: True
+(b) Appendix Prop2 expression matches: False
+    numerator of k_mu: -g0*h1 + g1*h0 - h1*s
+    k_mu numerator == g1*h0 - h1*(s+g0): True
+    k_u  numerator == g1*h0 - h1*(s+g0): True
+(b') A3 draws: 142159 | share k_mu<0: 1.0 | share k_u<0: 1.0
+     non-A3 draws: share k_mu>0: 1.0
+(c) Phi_mu == F''(k*) k_m k_u + F'(k*) k_mu: True
+
+## stderr
+

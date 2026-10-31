@@ -1,0 +1,27 @@
+# r-beh:chk:2  ran 2026-10-23T20:32:19Z  exit 0
+## stdout
+M1 peer   t=  4.42 p=0.0000 implied=*** reported=*** OK
+M2 peer   t=  1.11 p=0.2697 implied=    reported=    OK
+M3 peer   t=  1.05 p=0.2925 implied=    reported=    OK
+M4 peer   t=  1.00 p=0.3179 implied=    reported=    OK
+M2 mod    t=  4.67 p=0.0000 implied=*** reported=*** OK
+M3 mod    t=  4.72 p=0.0000 implied=*** reported=*** OK
+M4 mod    t=  4.22 p=0.0000 implied=*** reported=*** OK
+M3 unc    t=  1.65 p=0.1003 implied=    reported=*** MISMATCH
+M4 unc    t=  1.58 p=0.1149 implied=    reported=    OK
+M3 mxu    t= -3.21 p=0.0014 implied=**  reported=**  OK
+M4 mxu    t= -3.05 p=0.0024 implied=**  reported=**  OK
+M1 spec   t= -3.48 p=0.0006 implied=*** reported=*** OK
+M2 spec   t= -3.37 p=0.0008 implied=*** reported=*** OK
+M3 spec   t= -3.46 p=0.0006 implied=*** reported=*** OK
+M4 spec   t= -3.38 p=0.0008 implied=*** reported=*** OK
+M4 staff  t= -4.93 p=0.0000 implied=*** reported=*** OK
+Balanced N 412 x 11 = 4532 | reported 4712 | 4712/412 = 11.437
+Effect 0.112*0.24 = 0.02688 | in SD of Phi: 0.158
+Peer fall M1->M2: 0.693 (claim: > 2/3 = 0.667 )
+M2 peer 95% CI: (np.float64(-0.033), np.float64(0.117)) | upper / M1 coef: 0.852
+Implied u effect at mean m (M3): 0.056
+Max within-hospital shift from m (M2, m 0->1): 0.112
+
+## stderr
+
