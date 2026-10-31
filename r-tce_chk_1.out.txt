@@ -1,0 +1,14 @@
+# r-tce:chk:1  ran 2026-10-23T20:32:12Z  exit 0
+## stdout
+P1 equals manuscript expression: True
+P2 equals manuscript expression: False
+k*_mu * H^2 (1-m)^2 = -g0*h1 + g1*h0 - h1*s
+Scaled numerator equals g1*h0 - h1*(s+g0): True
+Identity k*_mu == k*_u/(1-m): True
+A3 holds at illustration point: True
+true k*_mu: -1.5  manuscript k*_mu: 1.0
+A3 draws: 70964  share with k*_mu < 0: 1.0
+non-A3 draws: share with k*_mu > 0: 1.0
+
+## stderr
+

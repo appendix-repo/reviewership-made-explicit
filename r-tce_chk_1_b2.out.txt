@@ -1,0 +1,11 @@
+# r-tce:chk:1  ran 2026-10-23T20:32:12Z  exit 0
+## stdout
+A3 holds     uniform    k*_mu: ['-', '-', '-', '-', '-', '-', '-', '-', '-']  Phi_mu: ['-', '-', '-', '-', '-', '-', '-', '-', '-']  sign differences: 0
+A3 holds     Beta(2,5)  k*_mu: ['-', '-', '-', '-', '-', '-', '-', '-', '-']  Phi_mu: ['+', '+', '+', '+', '+', '+', '+', '+', '+']  sign differences: 9
+A3 holds     Beta(5,2)  k*_mu: ['-', '-', '-', '-', '-', '-', '-', '-', '-']  Phi_mu: ['-', '-', '-', '-', '-', '-', '-', '-', '-']  sign differences: 0
+A3 violated  uniform    k*_mu: ['+', '+', '+', '+', '+', '+', '+', '+', '+']  Phi_mu: ['+', '+', '+', '+', '+', '+', '+', 'sat', 'sat']  sign differences: 0
+A3 violated  Beta(2,5)  k*_mu: ['+', '+', '+', '+', '+', '+', '+', '+', '+']  Phi_mu: ['-', '-', '-', '-', '-', '-', '-', 'sat', 'sat']  sign differences: 7
+A3 violated  Beta(5,2)  k*_mu: ['+', '+', '+', '+', '+', '+', '+', '+', '+']  Phi_mu: ['+', '+', '+', '+', '+', '-', '-', 'sat', 'sat']  sign differences: 2
+
+## stderr
+

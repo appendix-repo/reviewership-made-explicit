@@ -1,0 +1,30 @@
+# r-tce:chk:3  ran 2026-10-23T20:32:13Z  exit 0
+## stdout
+M1 Peer          t=  4.42 p=0.0000 implied='***' reported='***' OK
+M2 Peer          t=  1.11 p=0.2697 implied='' reported='' OK
+M3 Peer          t=  1.05 p=0.2925 implied='' reported='' OK
+M4 Peer          t=  1.00 p=0.3179 implied='' reported='' OK
+M2 Modularity    t=  4.67 p=0.0000 implied='***' reported='***' OK
+M3 Modularity    t=  4.72 p=0.0000 implied='***' reported='***' OK
+M4 Modularity    t=  4.22 p=0.0000 implied='***' reported='***' OK
+M3 Uncertainty   t=  1.65 p=0.1003 implied='' reported='***' MISMATCH
+M4 Uncertainty   t=  1.58 p=0.1149 implied='' reported='' OK
+M3 MxU           t= -3.21 p=0.0014 implied='**' reported='**' OK
+M4 MxU           t= -3.05 p=0.0024 implied='**' reported='**' OK
+M1 Specificity   t= -3.48 p=0.0006 implied='***' reported='***' OK
+M2 Specificity   t= -3.37 p=0.0008 implied='***' reported='***' OK
+M3 Specificity   t= -3.46 p=0.0006 implied='***' reported='***' OK
+M4 Specificity   t= -3.38 p=0.0008 implied='***' reported='***' OK
+M4 Staffing      t= -4.93 p=0.0000 implied='***' reported='***' OK
+N, balanced 2009-2019 (11 waves): 4532 | reported 4712 | implied waves: 11.437
+N if 2009 is lost to the t-1 peer lag: 4120
+1-SD effect of m (Model 2): 0.02688 | in SDs of Phi: 0.15811764705882353
+Peer decline M1->M2: 0.6934306569343065 | > 2/3: True
+M2 Peer 95% CI: (np.float64(-0.032478631412522045), np.float64(0.11647863141252204))
+TOST vs +/-0.0500: p = 0.4166 (equivalence at 5% iff p < 0.05)
+TOST vs +/-0.0685: p = 0.2428 (equivalence at 5% iff p < 0.05)
+TOST vs +/-0.1370: p = 0.0062 (equivalence at 5% iff p < 0.05)
+Naive z for change 0.137 -> 0.042 (ignores covariance): 1.9371625519296911
+
+## stderr
+
