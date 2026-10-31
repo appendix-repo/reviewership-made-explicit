@@ -1,0 +1,14 @@
+# p08:chk:1  ran 2026-10-23T20:31:57Z  exit 0
+## stdout
+C_M - C_B - H(1-m)(k*-k) simplifies to: 0
+H(u)(1-m) > 0 on domain: True
+dk*/dm = (g0 + g1*u + s)/((h0 + h1*u)*(m - 1)**2) | matches Appendix: True | positive on domain: True
+numeric: finite differences match Appendix dk*/dm and all > 0: True
+H(z) = 0 at z = -h0/h1 | example h0=1, h1=1/2, z=-3: H = -1/2 -> C_M - C_B = H(1-m)(k*-k) means buy iff k > k* (rule reverses): True
+k* at m = 1: zoo
+VERDICT: p08:S1 threshold derivation CONFIRMED
+VERDICT: p08:S2 Proposition 1 (expression and sign) CONFIRMED
+VERDICT: p08:fnd:8 DEMONSTRATED: with u measured as a z-score, H(u) <= 0 is possible (u <= -h0/h1) and the buy rule reverses; k* undefined at m = 1
+
+## stderr
+

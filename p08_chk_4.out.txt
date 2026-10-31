@@ -1,0 +1,28 @@
+# p08:chk:4  ran 2026-10-23T20:32:00Z  exit 0
+## stdout
+T2.M1.peer           b=+0.137 se=0.031 |t|= 4.42 p(t,411)=1.268e-05 implied='***' reported='***' ok
+T2.M2.peer           b=+0.042 se=0.038 |t|= 1.11 p(t,411)=0.2697 implied='' reported='' ok
+T2.M3.peer           b=+0.039 se=0.037 |t|= 1.05 p(t,411)=0.2925 implied='' reported='' ok
+T2.M4.peer           b=+0.036 se=0.036 |t|= 1.00 p(t,411)=0.3179 implied='' reported='' ok
+T2.M2.modularity     b=+0.112 se=0.024 |t|= 4.67 p(t,411)=4.149e-06 implied='***' reported='***' ok
+T2.M3.modularity     b=+0.118 se=0.025 |t|= 4.72 p(t,411)=3.239e-06 implied='***' reported='***' ok
+T2.M4.modularity     b=+0.097 se=0.023 |t|= 4.22 p(t,411)=3.042e-05 implied='***' reported='***' ok
+T2.M3.uncertainty    b=+0.084 se=0.051 |t|= 1.65 p(t,411)=0.1003 implied='' reported='***' INCONSISTENT
+T2.M4.uncertainty    b=+0.079 se=0.050 |t|= 1.58 p(t,411)=0.1149 implied='' reported='' ok
+T2.M3.interaction    b=-0.061 se=0.019 |t|= 3.21 p(t,411)=0.001429 implied='**' reported='**' ok
+T2.M4.interaction    b=-0.058 se=0.019 |t|= 3.05 p(t,411)=0.002416 implied='**' reported='**' ok
+T2.M1.specificity    b=-0.094 se=0.027 |t|= 3.48 p(t,411)=0.0005521 implied='***' reported='***' ok
+T2.M2.specificity    b=-0.091 se=0.027 |t|= 3.37 p(t,411)=0.0008217 implied='***' reported='***' ok
+T2.M3.specificity    b=-0.090 se=0.026 |t|= 3.46 p(t,411)=0.0005934 implied='***' reported='***' ok
+T2.M4.specificity    b=-0.088 se=0.026 |t|= 3.38 p(t,411)=0.0007813 implied='***' reported='***' ok
+T2.M4.staffing       b=-0.143 se=0.029 |t|= 4.93 p(t,411)=1.189e-06 implied='***' reported='***' ok
+1 SD effect = 0.02688 (2.69 pp); share of outcome SD = 0.158 (1/6 = 0.167)
+peer coefficient drop = 0.693 (least favourable rounding 0.689); 2/3 = 0.667
+INFO: Model 2 peer 95% CI = [-0.033, 0.117]; upper bound = 85% of the Model 1 estimate
+412 x 11 = 4532; with t-1 lag dropping 2009: 4120; reported 4712; 4712/412 = 11.437; remainder 180
+VERDICT: p08:fnd:6 DEMONSTRATED: stars inconsistent with coefficient/SE for T2.M3.uncertainty
+VERDICT: p08:fnd:7 DEMONSTRATED: N = 4,712 is incompatible with a balanced panel of 412 hospitals over 2009-2019 (4,532; 4,120 with lag)
+VERDICT: p08:S3 CONFIRMED: 2.7 pp, ~1/6 SD, >2/3 drop correct; all other stars consistent
+
+## stderr
+

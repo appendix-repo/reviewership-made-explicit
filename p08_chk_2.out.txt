@@ -1,0 +1,41 @@
+# p08:chk:2  ran 2026-10-23T20:31:58Z  exit 0
+## stdout
+full cross-partial      = -(g0*h1 - g1*h0 + h1*s)/((h0 + h1*u)**2*(m - 1)**2)
+closed form Delta/(H^2(1-m)^2), Delta = g1*h0 - h1*(s+g0); matches: True
+Appendix expression matches full cross-partial: False
+term omitted by Appendix = -h1*(g0 + g1*u + s)/((h0 + h1*u)**2*(m - 1)**2) | equals -(s+G)h1/(H^2(1-m)^2): True
+Appendix expression correct when h1 = 0 (excluded by ms:§2.2): True
+A3 <=> Delta < 0: True | denominator H^2(1-m)^2 > 0: True
+dk*/du = Delta/(H^2(1-m)): True
+example A3 holds (h1/h0 = 2 > g1/(s+g0) = 0.5): True
+  u=0.00 m=0.00  finite-diff=-3.00000  closed=-3.00000  Appendix=+1.00000
+  u=0.00 m=0.25  finite-diff=-5.33333  closed=-5.33333  Appendix=+1.77778
+  u=0.00 m=0.50  finite-diff=-12.00000  closed=-12.00000  Appendix=+4.00000
+  u=0.00 m=0.75  finite-diff=-48.00001  closed=-48.00000  Appendix=+16.00000
+  u=0.50 m=0.00  finite-diff=-0.75000  closed=-0.75000  Appendix=+0.50000
+  u=0.50 m=0.25  finite-diff=-1.33333  closed=-1.33333  Appendix=+0.88889
+  u=0.50 m=0.50  finite-diff=-3.00000  closed=-3.00000  Appendix=+2.00000
+  u=0.50 m=0.75  finite-diff=-12.00000  closed=-12.00000  Appendix=+8.00000
+  u=1.00 m=0.00  finite-diff=-0.33333  closed=-0.33333  Appendix=+0.33333
+  u=1.00 m=0.25  finite-diff=-0.59259  closed=-0.59259  Appendix=+0.59259
+  u=1.00 m=0.50  finite-diff=-1.33333  closed=-1.33333  Appendix=+1.33333
+  u=1.00 m=0.75  finite-diff=-5.33333  closed=-5.33333  Appendix=+5.33333
+  u=2.00 m=0.00  finite-diff=-0.12000  closed=-0.12000  Appendix=+0.20000
+  u=2.00 m=0.25  finite-diff=-0.21333  closed=-0.21333  Appendix=+0.35556
+  u=2.00 m=0.50  finite-diff=-0.48000  closed=-0.48000  Appendix=+0.80000
+  u=2.00 m=0.75  finite-diff=-1.92000  closed=-1.92000  Appendix=+3.20000
+  u=5.00 m=0.00  finite-diff=-0.02479  closed=-0.02479  Appendix=+0.09091
+  u=5.00 m=0.25  finite-diff=-0.04408  closed=-0.04408  Appendix=+0.16162
+  u=5.00 m=0.50  finite-diff=-0.09917  closed=-0.09917  Appendix=+0.36364
+  u=5.00 m=0.75  finite-diff=-0.39669  closed=-0.39669  Appendix=+1.45455
+draws with A3: 74343, of which cross-partial > 0: 0
+draws without A3: 25657, of which cross-partial > 0: 25657
+finite differences agree with closed form on 5000 draws: True
+d2(C_M - C_B)/dm du = h1*k > 0: True | dk*/dm = k*/(1-m): True
+VERDICT: p08:fnd:1 DEMONSTRATED: Appendix omits -(s+G)h1/(H^2(1-m)^2); true cross-partial = (g1*h0 - h1*(s+g0))/(H^2(1-m)^2); A3 <=> numerator < 0, so Prop. 2 is false at every admissible (m,u) under A3
+VERDICT: p08:inc:2 DEMONSTRATED: Prop. 2 holds iff A3 fails iff dk*/du > 0 (uncertainty favours the market)
+VERDICT: p08:fnd:2 DEMONSTRATED (k* scale): the correctly derived model under A3 predicts a NEGATIVE m x u interaction (same sign as ms:T2.M3, -0.061) and dk*/du < 0
+VERDICT: p08:fnd:3 DEMONSTRATED: modularity's per-function cost saving rises with u (h1*k > 0), but its threshold effect is k*/(1-m), which falls with u under A3
+
+## stderr
+

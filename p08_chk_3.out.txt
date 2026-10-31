@@ -1,0 +1,15 @@
+# p08:chk:3  ran 2026-10-23T20:31:59Z  exit 0
+## stdout
+d2Phi/dm du = Delta/(H^2(1-m)^2) * (f(k*) + k* f'(k*)): True
+dPhi/dm = f(k*) k*/(1-m) >= 0 for any F: True
+dPhi/du = f(k*) Delta/(H^2(1-m)) (<= 0 under A3, any F): True
+A3 holds: True; k* = 0.4000; d2k*/dm du: finite-diff -0.19200, closed -0.19200
+  uniform(0,1)  Phi=0.400  f+k f'=+1.0000  d2Phi/dm du: finite-diff -0.19200, formula -0.19200
+  beta(2,2)     Phi=0.352  f+k f'=+1.9200  d2Phi/dm du: finite-diff -0.36864, formula -0.36864
+  beta(1,5)     Phi=0.922  f+k f'=-1.0800  d2Phi/dm du: finite-diff +0.20736, formula +0.20736
+beta(1,5): Phi-scale sign flips for hospitals with Phi > 0.672 (2.13 SD above the ms:§3.2 mean of 0.31)
+VERDICT: p08:fnd:4 DEMONSTRATED: under A3 the k*-scale interaction is negative, but the Phi-scale interaction has sign sign(Delta)*sign(f + k f'), positive for beta(1,5) at k* = 0.4; the step from Prop. 2 to H2 needs an assumption on F
+VERDICT: p08:S2 (H1 part) CONFIRMED: dPhi/dm = f(k*) k*/(1-m) >= 0 for every spending-weighted F; H1 follows from Prop. 1 without further assumption
+
+## stderr
+
