@@ -1,0 +1,89 @@
+{
+ "@context": {
+  "@version": 1.1,
+  "@vocab": "https://reviewership.lakatos.example/vocab/v0#",
+  "rvw": "https://reviewership.lakatos.example/vocab/v0#",
+  "prov": "http://www.w3.org/ns/prov#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "perspective": {
+   "@id": "rvw:perspective",
+   "@type": "@id"
+  },
+  "scorekeeper": {
+   "@id": "rvw:scorekeeper",
+   "@type": "@id"
+  },
+  "manuscript": {
+   "@id": "rvw:manuscript",
+   "@type": "@id"
+  },
+  "between": {
+   "@id": "rvw:between",
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "target": {
+   "@id": "rvw:target",
+   "@type": "@id"
+  },
+  "contribution": {
+   "@id": "rvw:contribution",
+   "@type": "@id"
+  },
+  "reviews": {
+   "@id": "rvw:reviews",
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "finding": {
+   "@id": "rvw:finding",
+   "@type": "@id"
+  },
+  "check": {
+   "@id": "rvw:check",
+   "@type": "@id"
+  },
+  "specification": {
+   "@id": "rvw:specification",
+   "@type": "@id"
+  },
+  "review": {
+   "@id": "rvw:review",
+   "@type": "@id"
+  },
+  "standard": {
+   "@id": "rvw:standard",
+   "@type": "@id"
+  },
+  "silentSkips": {
+   "@id": "rvw:silentSkip",
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "inputs": {
+   "@id": "prov:used",
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "outputs": {
+   "@id": "prov:generated",
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "respondsTo": {
+   "@id": "prov:wasInformedBy",
+   "@type": "@id"
+  },
+  "timestamp": {
+   "@id": "prov:atTime",
+   "@type": "xsd:dateTime"
+  },
+  "ranAt": {
+   "@id": "prov:atTime",
+   "@type": "xsd:dateTime"
+  },
+  "actor": {
+   "@id": "prov:wasAssociatedWith"
+  }
+ }
+}
