@@ -1,0 +1,17 @@
+# r-inst:chk:3  ran 2026-10-23T20:32:17Z  exit 0
+## stdout
+Uniform(0,1) m=0.1 u=5.0 k*=0.455 d2Phi/dmdu=-0.0357
+Uniform(0,1) m=0.1 u=3.0 k*=0.556 d2Phi/dmdu=-0.0882
+Uniform(0,1) m=0.2 u=2.0 k*=0.750 d2Phi/dmdu=-0.2188
+Uniform(0,1) m=0.3 u=3.0 k*=0.714 d2Phi/dmdu=-0.1458
+Beta(2,5)    m=0.1 u=5.0 k*=0.455 d2Phi/dmdu=+0.0575
+Beta(2,5)    m=0.1 u=3.0 k*=0.556 d2Phi/dmdu=+0.1720
+Beta(2,5)    m=0.2 u=2.0 k*=0.750 d2Phi/dmdu=+0.1923
+Beta(2,5)    m=0.3 u=3.0 k*=0.714 d2Phi/dmdu=+0.1665
+Beta(5,2)    m=0.1 u=5.0 k*=0.455 d2Phi/dmdu=-0.1039
+Beta(5,2)    m=0.1 u=3.0 k*=0.556 d2Phi/dmdu=-0.4200
+Beta(5,2)    m=0.2 u=2.0 k*=0.750 d2Phi/dmdu=-1.0382
+Beta(5,2)    m=0.3 u=3.0 k*=0.714 d2Phi/dmdu=-0.8131
+
+## stderr
+

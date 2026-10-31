@@ -1,0 +1,31 @@
+# r-inst:chk:2  ran 2026-10-23T20:32:17Z  exit 0
+## stdout
+M1.Peer   z=+4.42 p_norm=0.0000 p_t=0.0000 reported='***' implied='***'
+M2.Peer   z=+1.11 p_norm=0.2690 p_t=0.2697 reported='' implied=''
+M3.Peer   z=+1.05 p_norm=0.2919 p_t=0.2925 reported='' implied=''
+M4.Peer   z=+1.00 p_norm=0.3173 p_t=0.3179 reported='' implied=''
+M2.Mod    z=+4.67 p_norm=0.0000 p_t=0.0000 reported='***' implied='***'
+M3.Mod    z=+4.72 p_norm=0.0000 p_t=0.0000 reported='***' implied='***'
+M4.Mod    z=+4.22 p_norm=0.0000 p_t=0.0000 reported='***' implied='***'
+M3.U      z=+1.65 p_norm=0.0995 p_t=0.1003 reported='***' implied=''   <-- MISMATCH
+M4.U      z=+1.58 p_norm=0.1141 p_t=0.1149 reported='' implied=''
+M3.MxU    z=-3.21 p_norm=0.0013 p_t=0.0014 reported='**' implied='**'
+M4.MxU    z=-3.05 p_norm=0.0023 p_t=0.0024 reported='**' implied='**'
+M1.Spec   z=-3.48 p_norm=0.0005 p_t=0.0006 reported='***' implied='***'
+M2.Spec   z=-3.37 p_norm=0.0008 p_t=0.0008 reported='***' implied='***'
+M3.Spec   z=-3.46 p_norm=0.0005 p_t=0.0006 reported='***' implied='***'
+M4.Spec   z=-3.38 p_norm=0.0007 p_t=0.0008 reported='***' implied='***'
+M4.Staff  z=-4.93 p_norm=0.0000 p_t=0.0000 reported='***' implied='***'
+M1.Peer 95% CI: 0.076 0.198
+M2.Peer 95% CI: -0.033 0.117
+M2 upper bound / M1 point estimate: 0.85
+Obs: 412x11 = 4532 | 412x10 = 4120 | reported 4712 | 4712/412 = 11.437
+1-SD modularity effect: 0.0269 | in SDs of Phi: 0.158
+Peer decline M1->M2: 0.693
+u=-1: dPhi/dm = +0.179
+u=+0: dPhi/dm = +0.118
+u=+1: dPhi/dm = +0.057
+u=+2: dPhi/dm = -0.004
+
+## stderr
+

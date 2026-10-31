@@ -1,0 +1,10 @@
+# r-inst:chk:1  ran 2026-10-23T20:32:16Z  exit 0
+## stdout
+P1: dk*/dm = (g0 + g1*u + s)/((h0 + h1*u)*(m - 1)**2) (positive for m<1)
+P2: true cross-partial = -(g0*h1 - g1*h0 + h1*s)/((h0 + h1*u)**2*(m - 1)**2)
+P2: true minus manuscript formula = -h1*(g0 + g1*u + s)/((h0 + h1*u)**2*(m - 1)**2)
+Numerator g1*h0 - h1*(s+g0) < 0  <=>  h1/h0 > g1/(s+g0)  (= A3)
+true value: -1.2400793650793653  manuscript formula: 0.4251700680272109
+
+## stderr
+
