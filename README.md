@@ -2,6 +2,8 @@
 
 This repository accompanies the Stage 1 proposal "Reviewership Made Explicit" and its technical appendix, submitted to the *Organization Science* special issue on AI-enabled frontiers in organizational science. The appendix refers to the files here by path. Section numbers below are the appendix's.
 
+> **Status, 31 October 2026. Delete this block before the repository is posted.** This tree was compiled from the technical appendix (version of 31 October 2026) and its Annex C transcripts file. The run files in `runs/` and the two case files were copied from those documents, and each matches the size and SHA-256 hash the appendix records for it. The schema, the Lakatos tables and the consent instruments were copied from Annexes A, D and E, which record no hashes. Each file still to come from the original runs has a placeholder: `instruction-sets/PLACEHOLDER.md` for the instruction sets and the v0.2 errata, `tools/PLACEHOLDER.md` for the seven tools, `runs/13_pilot/PLACEHOLDER.md` for the pilot, `runs/configs/PLACEHOLDER.md` for the two perspective files, and `runs/MISSING_FILES.md` for the provenance trace, the machine-origin output and the eight `results.json` files. `MISSING.md` lists them, with the other points to check. Once the originals are in, delete the placeholders and `MISSING.md`, add the instruction sets and tools to `MANIFEST.txt`, run `python verify.py` from a clean copy and confirm it reports 126 verified, 0 mismatched and 0 missing, and confirm that the tools reproduce the results the appendix reports: the perspective distances in §1.4, the machine-origin share in §4.9, the pilot's style metrics in §7.9 and the sample sizes in §8.4.
+
 ## Contents and status
 
 | Folder | Contents | Status |
