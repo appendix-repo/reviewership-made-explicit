@@ -1,0 +1,26 @@
+# r-did:chk:2  ran 2026-10-23T20:32:36Z  exit 0
+## stdout
+model         var      b    se     t      p_t          p_z reported implied implied_range  consistent
+   M1        Peer  0.137 0.031 4.419 0.000013 9.899599e-06      ***     ***    (***, ***)        True
+   M2        Peer  0.042 0.038 1.105 0.269692 2.690456e-01                           (, )        True
+   M3        Peer  0.039 0.037 1.054 0.292477 2.918582e-01                           (, )        True
+   M4        Peer  0.036 0.036 1.000 0.317899 3.173105e-01                           (, )        True
+   M2  Modularity  0.112 0.024 4.667 0.000004 3.061253e-06      ***     ***    (***, ***)        True
+   M3  Modularity  0.118 0.025 4.720 0.000003 2.358446e-06      ***     ***    (***, ***)        True
+   M4  Modularity  0.097 0.023 4.217 0.000030 2.471449e-05      ***     ***    (***, ***)        True
+   M3 Uncertainty  0.084 0.051 1.647 0.100310 9.954596e-02      ***                  (, )       False
+   M4 Uncertainty  0.079 0.050 1.580 0.114876 1.141069e-01                           (, )        True
+   M3   Mod x Unc -0.061 0.019 3.211 0.001429 1.324921e-03       **      **     (**, ***)        True
+   M4   Mod x Unc -0.058 0.019 3.053 0.002416 2.268443e-03       **      **      (**, **)        True
+   M1 Specificity -0.094 0.027 3.481 0.000552 4.986483e-04      ***     ***    (***, ***)        True
+   M2 Specificity -0.091 0.027 3.370 0.000822 7.506722e-04      ***     ***     (**, ***)        True
+   M3 Specificity -0.090 0.026 3.462 0.000593 5.370974e-04      ***     ***    (***, ***)        True
+   M4 Specificity -0.088 0.026 3.385 0.000781 7.127805e-04      ***     ***     (**, ***)        True
+   M4    Staffing -0.143 0.029 4.931 0.000001 8.179529e-07      ***     ***    (***, ***)        True
+
+Inconsistent cells:
+   model          var      b     se      t      p_t reported implied
+7    M3  Uncertainty  0.084  0.051  1.647  0.10031      ***        
+
+## stderr
+

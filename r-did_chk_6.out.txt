@@ -1,0 +1,12 @@
+# r-did:chk:6  ran 2026-10-23T20:32:38Z  exit 0
+## stdout
+Scenario A (true beta_m = 0)
+  beta_m without staffing: mean 0.090, sd 0.016
+  beta_m with staffing   : mean 0.065, sd 0.007
+Scenario B (all diffusion of m is imitation; no direct peer effect on Phi)
+  peer coef without m: mean 0.090, sd 0.043
+  peer coef with m   : mean -0.002, sd 0.039
+  m coef with peer   : mean 0.099 (true beta = 0.1)
+
+## stderr
+

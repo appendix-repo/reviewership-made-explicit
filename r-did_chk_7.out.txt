@@ -1,0 +1,8 @@
+# r-did:chk:7  ran 2026-10-23T20:32:39Z  exit 0
+## stdout
+true ATT over treated cells: 0.1650
+static TWFE estimate       : 0.0310 (sd 0.0026)
+TWFE / ATT                 : 0.19
+
+## stderr
+

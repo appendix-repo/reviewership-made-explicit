@@ -1,0 +1,10 @@
+# r-did:chk:3  ran 2026-10-23T20:32:37Z  exit 0
+## stdout
+years: 11
+balanced N: 4532 | reported: 4712 | equal: False
+reported N / hospitals: 11.436893203883495 | integer: False
+balanced N if 2009 lost to the t-1 peer lag: 4120
+excess of reported over balanced N: 180
+
+## stderr
+

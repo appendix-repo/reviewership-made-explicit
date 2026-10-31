@@ -1,0 +1,15 @@
+# r-did:chk:4  ran 2026-10-23T20:32:37Z  exit 0
+## stdout
+1-SD modularity effect (pp): 2.69 | in outcome SDs: 0.158
+relative fall in peer coefficient M1 -> M2: 0.693
+M2 peer 95% CI: (np.float64(-0.0325), np.float64(0.1165))
+M2 peer 90% CI: (np.float64(-0.0205), np.float64(0.1045))
+TOST p at bound +/-0.02: 0.7187
+TOST p at bound +/-0.05: 0.4166
+TOST p at bound +/-0.0685: 0.2428
+TOST p at bound +/-0.1: 0.0635
+TOST p at bound +/-0.137: 0.0062
+smallest bound passable at alpha=0.05: 0.1045 | as share of M1 estimate: 0.763
+
+## stderr
+

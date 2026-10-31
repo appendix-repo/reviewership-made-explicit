@@ -1,0 +1,14 @@
+# r-did:chk:1  ran 2026-10-23T20:32:35Z  exit 0
+## stdout
+Prop1 matches appendix: True
+Prop2 appendix expression equals full derivative: False
+numerator of k_mu: -g0*h1 + g1*h0 - h1*s
+numerator of k_u : -g0*h1 + g1*h0 - h1*s
+k_mu numerator == g1*h0 - h1*(s+g0): True
+k_u  numerator == g1*h0 - h1*(s+g0): True
+numerator under A3: -delta*g1*h0 | is_negative: True
+share of A3 draws with k_mu < 0: 1.0
+share of A3 draws with k_mu > 0: 0.0
+
+## stderr
+

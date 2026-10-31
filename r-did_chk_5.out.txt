@@ -1,0 +1,26 @@
+# r-did:chk:5  ran 2026-10-23T20:32:37Z  exit 0
+## stdout
+
+m=0.3, u=0.0: k*=0.714 (interior: True), k*_mu=-0.3061
+  uniform    Phi_mu = -0.30612
+  beta(2,2)  Phi_mu = +0.18742
+  beta(5,2)  Phi_mu = -1.70756
+  beta(1,3)  Phi_mu = +0.29988
+  beta(2,5)  Phi_mu = +0.34971
+
+m=0.2, u=0.5: k*=0.550 (interior: True), k*_mu=-0.1500
+  uniform    Phi_mu = -0.15000
+  beta(2,2)  Phi_mu = -0.17325
+  beta(5,2)  Phi_mu = -0.70002
+  beta(1,3)  Phi_mu = +0.13163
+  beta(2,5)  Phi_mu = +0.29319
+
+m=0.1, u=1.0: k*=0.444 (interior: True), k*_mu=-0.0823
+  uniform    Phi_mu = -0.08230
+  beta(2,2)  Phi_mu = -0.14632
+  beta(5,2)  Phi_mu = -0.22480
+  beta(1,3)  Phi_mu = +0.04572
+  beta(2,5)  Phi_mu = +0.12545
+
+## stderr
+
