@@ -1,0 +1,9 @@
+# p10:chk:3  ran 2026-10-23T20:34:28Z  exit 0
+## stdout
+C->m +0.5, C->Phi +0.5: Model-2-like mean b_m = 0.668 (reject 0 in 100%); Model-4-like mean b_m = 0.489 (reject 0 in 100%); true b_m = 0
+C->m +0.5, C->Phi -0.5: Model-2-like mean b_m = -0.669 (reject 0 in 100%); Model-4-like mean b_m = 0.004 (reject 0 in 0%); true b_m = 0
+C->m +1.0, C->Phi +0.3: Model-2-like mean b_m = 0.267 (reject 0 in 100%); Model-4-like mean b_m = 0.379 (reject 0 in 100%); true b_m = 0
+VERDICT: §3.3 ¶2 claim REFUTED for DGP(s) [(0.5, 0.5), (1.0, 0.3)]: with true beta_m = 0 and capability confounding, beta_m 'survives' the staffing control, so survival cannot exclude capability differences
+
+## stderr
+

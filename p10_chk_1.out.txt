@@ -1,0 +1,18 @@
+# p10:chk:1  ran 2026-10-23T20:34:26Z  exit 0
+## stdout
+Prop 1: Appendix derivative equals re-derivation: True
+Prop 2: re-derived cross-partial: -(g0*h1 - g1*h0 + h1*s)/((h0 + h1*u)**2*(m - 1)**2)
+Prop 2: Appendix expression equals re-derivation: False
+Prop 2: numerator equals g1*h0 - h1*(s+g0): True | under A3 it is -e*g1*h0 | symbolically negative: True
+Sweep: dk*/dm > 0 in 1.0000 of A3 draws; d2k*/dmdu < 0 in 1.0000 of A3 draws; d2k*/dmdu > 0 in 1.0000 of draws violating A3
+VERDICT: Prop. 1 — UPHELD (Appendix derivative correct; positive on the whole domain)
+VERDICT: Prop. 2 — REFUTED under the manuscript's own A3: the Appendix omits H'(u)=h1; the cross-partial has the sign of g1*h0 - h1*(s+g0), which A3 makes negative for all u>=0, m in [0,1).
+Part B Beta(0.5,0.5): sign disagreement in 0.00 of 100 interior points
+Part B Beta(1.0,1.0): sign disagreement in 0.00 of 100 interior points
+Part B Beta(2.0,2.0): sign disagreement in 0.19 of 100 interior points
+Part B Beta(2.0,5.0): sign disagreement in 1.00 of 100 interior points
+Part B Beta(5.0,2.0): sign disagreement in 0.04 of 100 interior points
+VERDICT: H2 scale — sign of the Phi-scale interaction differs from sign of d2k*/dmdu at 25% of interior points; Prop. 2 alone does not fix the sign on the tested scale
+
+## stderr
+

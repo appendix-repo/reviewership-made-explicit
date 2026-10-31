@@ -1,0 +1,8 @@
+# p10:chk:4  ran 2026-10-23T20:34:30Z  exit 0
+## stdout
+DGP T (standards diffuse by state, no imitation): M1 peer mean 0.117, significant in 85%; M2 peer mean -0.004, significant in 0%; M2 b_m mean 0.109
+DGP I (standards diffuse by imitation): M1 peer mean 0.235, significant in 100%; M2 peer mean 0.015, significant in 10%; M2 b_m mean 0.111
+VERDICT: the M1-M2 pattern (peer significant without m, not with m) arises BOTH without imitation and under imitative diffusion of standards; the §2.4 prediction does NOT discriminate economizing from mimicry routed through modularity.
+
+## stderr
+

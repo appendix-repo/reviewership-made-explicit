@@ -1,0 +1,36 @@
+# p10:chk:2  ran 2026-10-23T20:34:27Z  exit 0
+## stdout
+(a) 412 x 11 = 4532; reported 4712; 4712/412 = 11.437; if 2009 is lost to Peer(t-1): 4120
+VERDICT: (a) N INCONSISTENT with a balanced 412-hospital annual 2009-2019 panel
+(b) M1 Peer: |t|=4.42, p=0.0000, reported '***' -> ok
+(b) M2 Peer: |t|=1.11, p=0.2697, reported '' -> ok
+(b) M3 Peer: |t|=1.05, p=0.2925, reported '' -> ok
+(b) M4 Peer: |t|=1.00, p=0.3179, reported '' -> ok
+(b) M2 Modularity: |t|=4.67, p=0.0000, reported '***' -> ok
+(b) M3 Modularity: |t|=4.72, p=0.0000, reported '***' -> ok
+(b) M4 Modularity: |t|=4.22, p=0.0000, reported '***' -> ok
+(b) M3 Uncertainty: |t|=1.65, p=0.1003, reported '***' -> MISMATCH
+(b) M4 Uncertainty: |t|=1.58, p=0.1149, reported '' -> ok
+(b) M3 Mod x Unc: |t|=3.21, p=0.0014, reported '**' -> ok
+(b) M4 Mod x Unc: |t|=3.05, p=0.0024, reported '**' -> ok
+(b) M1 Specificity: |t|=3.48, p=0.0006, reported '***' -> ok
+(b) M2 Specificity: |t|=3.37, p=0.0008, reported '***' -> ok
+(b) M3 Specificity: |t|=3.46, p=0.0006, reported '***' -> ok
+(b) M4 Specificity: |t|=3.38, p=0.0008, reported '***' -> ok
+(b) M4 Staffing: |t|=4.93, p=0.0000, reported '***' -> ok
+VERDICT: (b) stars INCONSISTENT in: M3 Uncertainty
+(c) effect = 2.69 pp; = 0.158 SD of Phi (1/6 = 0.167); within R2 gain M1->M2 = 0.05
+VERDICT: (c) H1 magnitudes CONSISTENT with text; size is 0.16 SD per SD of m (bears on 'strongly', p10:fnd:9)
+(d) fall = 0.693 (min under rounding 0.689)
+VERDICT: (d) 'more than two-thirds' CONSISTENT
+(e) M2 peer 95% CI = [-0.032, 0.116]; TOST equivalence needs bounds >= ±0.105 (= 76% of the M1 estimate)
+(e) M1-M2 difference, assumed corr 0.0: z = 1.94, p = 0.0527
+(e) M1-M2 difference, assumed corr 0.5: z = 2.71, p = 0.0067
+(e) M1-M2 difference, assumed corr 0.8: z = 4.17, p = 0.0000
+(e) M1-M2 difference, assumed corr 0.9: z = 5.63, p = 0.0000
+VERDICT: (e) a null peer effect is NOT ESTABLISHED by M2: the 95% CI reaches 0.116, i.e. 85% of the M1 peer estimate
+(f) implied pi = -0.0268 (rounding range -0.0359 to -0.0178); full-range change in specificity <-> -0.11 SD of m; |implied corr| <= 0.075 on raw-SD basis
+VERDICT: (f) INDICATIVE — conditional on controls and FE, modularity is nearly unrelated to measured specificity (pi in [-0.036, -0.018]); if the rating measures effective specificity k(1-m), this does not fit the §2.2 mechanism (p10:fnd:5). Within-hospital SDs are unreported, so the bound is indicative only.
+
+## stderr
+
