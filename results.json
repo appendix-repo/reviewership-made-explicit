@@ -1,0 +1,34 @@
+[
+ {
+  "check": "r-tce:chk:1",
+  "file": "r-tce_chk_1.py",
+  "ranAt": "2026-10-23T20:32:12Z",
+  "exit": 0,
+  "verdicts": [],
+  "codeSha256": "9291cd48945fe1639851a564c48c61d4221071ca34528bde8affea8c53165f10"
+ },
+ {
+  "check": "r-tce:chk:1",
+  "file": "r-tce_chk_1_b2.py",
+  "ranAt": "2026-10-23T20:32:12Z",
+  "exit": 0,
+  "verdicts": [],
+  "codeSha256": "ba87d046731502aa985b3603173ed294f402437dc79701a3562573691e6563d5"
+ },
+ {
+  "check": "r-tce:chk:3",
+  "file": "r-tce_chk_3.py",
+  "ranAt": "2026-10-23T20:32:13Z",
+  "exit": 0,
+  "verdicts": [],
+  "codeSha256": "b6feeaf7b5fff9b812cf67657d757114e4f1da7d9ee562485e8e5e9f604bd4bf"
+ },
+ {
+  "check": "r-tce:chk:4",
+  "file": "r-tce_chk_4.py",
+  "ranAt": "2026-10-23T20:32:14Z",
+  "exit": 0,
+  "verdicts": [],
+  "codeSha256": "e53d58ed06229029534ff1d663a714bdcca169aca3abd2fd32c95776ba464a47"
+ }
+]
