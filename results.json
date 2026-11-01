@@ -1,0 +1,49 @@
+[
+ {
+  "check": "p10:chk:1",
+  "file": "p10_chk_1.py",
+  "ranAt": "2026-10-23T20:34:26Z",
+  "exit": 0,
+  "verdicts": [
+   "VERDICT: Prop. 1 \u2014 UPHELD (Appendix derivative correct; positive on the whole domain)",
+   "VERDICT: Prop. 2 \u2014 REFUTED under the manuscript's own A3: the Appendix omits H'(u)=h1; the cross-partial has the sign of g1*h0 - h1*(s+g0), which A3 makes negative for all u>=0, m in [0,1).",
+   "VERDICT: H2 scale \u2014 sign of the Phi-scale interaction differs from sign of d2k*/dmdu at 25% of interior points; Prop. 2 alone does not fix the sign on the tested scale"
+  ],
+  "codeSha256": "31566af031342a147b07d85f7c9636e590bd286f61d4f09ed5ab6387ce2b58ed"
+ },
+ {
+  "check": "p10:chk:2",
+  "file": "p10_chk_2.py",
+  "ranAt": "2026-10-23T20:34:27Z",
+  "exit": 0,
+  "verdicts": [
+   "VERDICT: (a) N INCONSISTENT with a balanced 412-hospital annual 2009-2019 panel",
+   "VERDICT: (b) stars INCONSISTENT in: M3 Uncertainty",
+   "VERDICT: (c) H1 magnitudes CONSISTENT with text; size is 0.16 SD per SD of m (bears on 'strongly', p10:fnd:9)",
+   "VERDICT: (d) 'more than two-thirds' CONSISTENT",
+   "VERDICT: (e) a null peer effect is NOT ESTABLISHED by M2: the 95% CI reaches 0.116, i.e. 85% of the M1 peer estimate",
+   "VERDICT: (f) INDICATIVE \u2014 conditional on controls and FE, modularity is nearly unrelated to measured specificity (pi in [-0.036, -0.018]); if the rating measures effective specificity k(1-m), this does not fit the \u00a72.2 mechanism (p10:fnd:5). Within-hospital SDs are unreported, so the bound is indicative only."
+  ],
+  "codeSha256": "55e21886adc186ef68fb17bea85fa2d36219a767603a75390f6c0eb8901f5d22"
+ },
+ {
+  "check": "p10:chk:3",
+  "file": "p10_chk_3.py",
+  "ranAt": "2026-10-23T20:34:28Z",
+  "exit": 0,
+  "verdicts": [
+   "VERDICT: \u00a73.3 \u00b62 claim REFUTED for DGP(s) [(0.5, 0.5), (1.0, 0.3)]: with true beta_m = 0 and capability confounding, beta_m 'survives' the staffing control, so survival cannot exclude capability differences"
+  ],
+  "codeSha256": "18b8fa7eb232bc77bf32322893d4939e0c297221c75ce300142f955f65bfa5cc"
+ },
+ {
+  "check": "p10:chk:4",
+  "file": "p10_chk_4.py",
+  "ranAt": "2026-10-23T20:34:30Z",
+  "exit": 0,
+  "verdicts": [
+   "VERDICT: the M1-M2 pattern (peer significant without m, not with m) arises BOTH without imitation and under imitative diffusion of standards; the \u00a72.4 prediction does NOT discriminate economizing from mimicry routed through modularity."
+  ],
+  "codeSha256": "788db90f94226c4bbdd20122ece7a41c56c8a73e7edbf9e2eb44ba947ae6ae7d"
+ }
+]
