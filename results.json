@@ -1,0 +1,2782 @@
+{
+ "environment": {
+  "python": "3.13.18",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "sympy": "1.14.0",
+  "statsmodels": "0.15.0",
+  "pandas": "3.1.0",
+  "jsonschema": "4.26.0"
+ },
+ "totals": {
+  "PASS": 164,
+  "FAIL": 0,
+  "NOTE": 9
+ },
+ "seconds": {
+  "r01_integrity": 0.0,
+  "r02_checks": 88.5,
+  "r03_perspectives_panel": 0.7,
+  "r04_provenance_review": 0.7,
+  "r05_style_pilot": 0.2,
+  "r06_recovery": 0.0,
+  "r07_power": 0.8,
+  "r08_counts": 0.0
+ },
+ "results": [
+  {
+   "group": "Integrity",
+   "claim": "Annex C manifest rows parsed (every file row of the table)",
+   "section": "Annex C",
+   "expected": 124,
+   "observed": 124,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r01_integrity.py"
+  },
+  {
+   "group": "Integrity",
+   "claim": "Annex C files whose size and SHA-256 prefix match",
+   "section": "Annex C",
+   "expected": 124,
+   "observed": 124,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r01_integrity.py"
+  },
+  {
+   "group": "Integrity",
+   "claim": "SHA-256 of case/TEST_MANUSCRIPT.md equals case/HASHES.txt",
+   "section": "4.1",
+   "expected": "a8ab4709ef157d6e5467077a6e54eb4f0ee9f35bac2b241be91fe80a950852d0",
+   "observed": "a8ab4709ef157d6e5467077a6e54eb4f0ee9f35bac2b241be91fe80a950852d0",
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r01_integrity.py"
+  },
+  {
+   "group": "Integrity",
+   "claim": "Hash of case/TEST_MANUSCRIPT.md as printed in the appendix (a8ab4709…52d0)",
+   "section": "4.1",
+   "expected": "a8ab4709…52d0",
+   "observed": "a8ab4709…52d0",
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r01_integrity.py"
+  },
+  {
+   "group": "Integrity",
+   "claim": "SHA-256 of case/SEALED_DEFECT_KEY.md equals case/HASHES.txt",
+   "section": "4.1",
+   "expected": "970e0574092c8e9dd0c97200980c804f0431153f256b0e9f34260b405034809d",
+   "observed": "970e0574092c8e9dd0c97200980c804f0431153f256b0e9f34260b405034809d",
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r01_integrity.py"
+  },
+  {
+   "group": "Integrity",
+   "claim": "Hash of case/SEALED_DEFECT_KEY.md as printed in the appendix (970e0574…809d)",
+   "section": "4.1",
+   "expected": "970e0574…809d",
+   "observed": "970e0574…809d",
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r01_integrity.py"
+  },
+  {
+   "group": "Integrity",
+   "claim": "ev:1 registers the manuscript by its hash",
+   "section": "4.1",
+   "expected": "a8ab4709ef157d6e5467077a6e54eb4f0ee9f35bac2b241be91fe80a950852d0",
+   "observed": "a8ab4709ef157d6e5467077a6e54eb4f0ee9f35bac2b241be91fe80a950852d0",
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r01_integrity.py"
+  },
+  {
+   "group": "Integrity",
+   "claim": "ev:2 seals the defect key by its hash",
+   "section": "4.1",
+   "expected": "970e0574092c8e9dd0c97200980c804f0431153f256b0e9f34260b405034809d",
+   "observed": "970e0574092c8e9dd0c97200980c804f0431153f256b0e9f34260b405034809d",
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r01_integrity.py"
+  },
+  {
+   "group": "Integrity",
+   "claim": "The key was sealed before any role ran (ev:2 precedes ev:3)",
+   "section": "4.0, 4.1",
+   "expected": true,
+   "observed": true,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r01_integrity.py"
+  },
+  {
+   "group": "Integrity",
+   "claim": "Provenance events whose contentHash matches a file (or a probe's Part 1) in the repository",
+   "section": "4.9",
+   "expected": 37,
+   "observed": 37,
+   "status": "PASS",
+   "detail": "unmatched: ",
+   "script": "replication/r01_integrity.py"
+  },
+  {
+   "group": "Integrity",
+   "claim": "ev:16: hash of Part 1 of 08_probe_derivation.md as written before the harness ran",
+   "section": "4.6, 4.9",
+   "expected": "3bc6b4391197a3817b9750b8cce52cdfa25be9b6ebd4faf428da11a93957b347",
+   "observed": "3bc6b4391197a3817b9750b8cce52cdfa25be9b6ebd4faf428da11a93957b347",
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r01_integrity.py"
+  },
+  {
+   "group": "Integrity",
+   "claim": "ev:26: hash of Part 1 of 09_probe_identification_numerical.md as written before the harness ran",
+   "section": "4.6, 4.9",
+   "expected": "91a4682a45f0389d0e2497be10abd5d062f941eced62d27203a9004671c25f99",
+   "observed": "91a4682a45f0389d0e2497be10abd5d062f941eced62d27203a9004671c25f99",
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r01_integrity.py"
+  },
+  {
+   "group": "Integrity",
+   "claim": "ev:20: hash of Part 1 of 10_probe_inferential_audit.md as written before the harness ran",
+   "section": "4.6, 4.9",
+   "expected": "80452b7e858ee902373b1210a8337f72ddcad63c12575c328752342f69aeac9c",
+   "observed": "80452b7e858ee902373b1210a8337f72ddcad63c12575c328752342f69aeac9c",
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r01_integrity.py"
+  },
+  {
+   "group": "Integrity",
+   "claim": "Unblinding map hash logged at ev:9 (prefix b5ad0406)",
+   "section": "7.9",
+   "expected": "b5ad0406",
+   "observed": "b5ad0406",
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r01_integrity.py"
+  },
+  {
+   "group": "Integrity",
+   "claim": "Unblinding map matched at ev:25",
+   "section": "7.9",
+   "expected": "b5ad0406379fdcbaff3af01760d10d54cbc05be95dc1c1ec4c9fb4ff5763ef2b",
+   "observed": "b5ad0406379fdcbaff3af01760d10d54cbc05be95dc1c1ec4c9fb4ff5763ef2b",
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r01_integrity.py"
+  },
+  {
+   "group": "Integrity",
+   "claim": "Unblinding map hashed before scoring began (ev:9 not after ev:10)",
+   "section": "7.9",
+   "expected": true,
+   "observed": true,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r01_integrity.py"
+  },
+  {
+   "group": "Executable checks",
+   "claim": "Checks run in Section 4",
+   "section": "9.3",
+   "expected": 37,
+   "observed": 37,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r02_checks.py"
+  },
+  {
+   "group": "Executable checks",
+   "claim": "… written by the simulated reviewers",
+   "section": "9.3",
+   "expected": 18,
+   "observed": 18,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r02_checks.py"
+  },
+  {
+   "group": "Executable checks",
+   "claim": "… written by the probes",
+   "section": "9.3",
+   "expected": 18,
+   "observed": 18,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r02_checks.py"
+  },
+  {
+   "group": "Executable checks",
+   "claim": "… written by the panel synthesis",
+   "section": "9.3",
+   "expected": 1,
+   "observed": 1,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r02_checks.py"
+  },
+  {
+   "group": "Executable checks",
+   "claim": "Checks written by P-DER / P-ID and P-NUM / P-INF, P-MEAS and P-LIT",
+   "section": "4.6",
+   "expected": [
+    5,
+    9,
+    4
+   ],
+   "observed": [
+    5,
+    9,
+    4
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r02_checks.py"
+  },
+  {
+   "group": "Executable checks",
+   "claim": "Checks whose re-run stdout and exit code equal the recorded harness output",
+   "section": "4.4–4.6",
+   "expected": 37,
+   "observed": 37,
+   "status": "PASS",
+   "detail": "differ: ",
+   "script": "replication/r02_checks.py"
+  },
+  {
+   "group": "Executable checks",
+   "claim": "Check files whose SHA-256 equals the codeSha256 the harness recorded",
+   "section": "4.6",
+   "expected": 0,
+   "observed": 0,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r02_checks.py"
+  },
+  {
+   "group": "Executable checks",
+   "claim": "Harness re-run on the transcripts: check files extracted with the same names, code and output",
+   "section": "4.0, 4.5",
+   "expected": 37,
+   "observed": 37,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r02_checks.py"
+  },
+  {
+   "group": "Executable checks",
+   "claim": "Harness labeling fault reproduced: r-tce_chk_1_b2 is labeled r-tce:chk:1",
+   "section": "4.5, 4.12 item 14",
+   "expected": "r-tce:chk:1",
+   "observed": "r-tce:chk:1",
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r02_checks.py"
+  },
+  {
+   "group": "Executable checks",
+   "claim": "Harness output strings quoted in the appendix found in the outputs",
+   "section": "4.5, 4.6",
+   "expected": 12,
+   "observed": 12,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r02_checks.py"
+  },
+  {
+   "group": "Executable checks",
+   "claim": "r-beh:chk:3 and r-beh:chk:4 print nothing (define functions only)",
+   "section": "4.5",
+   "expected": 2,
+   "observed": 2,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r02_checks.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "Distance FOCAL – R-TCE (ONT, EPI, INF, TEC, PRA, overall, opposed)",
+   "section": "1.4",
+   "expected": [
+    "0.27",
+    "0.39",
+    "0.31",
+    "0.50",
+    "0.17",
+    "0.35",
+    "none"
+   ],
+   "observed": [
+    "0.27",
+    "0.39",
+    "0.31",
+    "0.50",
+    "0.17",
+    "0.35",
+    "none"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "Distance FOCAL – R-INST (ONT, EPI, INF, TEC, PRA, overall, opposed)",
+   "section": "1.4",
+   "expected": [
+    "0.61",
+    "0.65",
+    "0.50",
+    "0.33",
+    "0.50",
+    "0.53",
+    "none"
+   ],
+   "observed": [
+    "0.61",
+    "0.65",
+    "0.50",
+    "0.33",
+    "0.50",
+    "0.53",
+    "none"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "Distance FOCAL – R-BEH (ONT, EPI, INF, TEC, PRA, overall, opposed)",
+   "section": "1.4",
+   "expected": [
+    "0.39",
+    "0.42",
+    "0.38",
+    "0.43",
+    "0.50",
+    "0.42",
+    "none"
+   ],
+   "observed": [
+    "0.39",
+    "0.42",
+    "0.38",
+    "0.43",
+    "0.50",
+    "0.42",
+    "none"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "Distance FOCAL – R-DID (ONT, EPI, INF, TEC, PRA, overall, opposed)",
+   "section": "1.4",
+   "expected": [
+    "0.57",
+    "0.79",
+    "0.25",
+    "0.30",
+    "0.17",
+    "0.45",
+    "MI6"
+   ],
+   "observed": [
+    "0.57",
+    "0.79",
+    "0.25",
+    "0.30",
+    "0.17",
+    "0.45",
+    "MI6"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "Distance R-TCE – R-INST (ONT, EPI, INF, TEC, PRA, overall, opposed)",
+   "section": "1.4",
+   "expected": [
+    "0.70",
+    "0.79",
+    "0.70",
+    "0.47",
+    "0.67",
+    "0.68",
+    "MI3, MI9, MI10"
+   ],
+   "observed": [
+    "0.70",
+    "0.79",
+    "0.70",
+    "0.47",
+    "0.67",
+    "0.68",
+    "MI3, MI9, MI10"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "Distance R-TCE – R-BEH (ONT, EPI, INF, TEC, PRA, overall, opposed)",
+   "section": "1.4",
+   "expected": [
+    "0.33",
+    "0.69",
+    "0.31",
+    "0.40",
+    "0.50",
+    "0.45",
+    "MI9"
+   ],
+   "observed": [
+    "0.33",
+    "0.69",
+    "0.31",
+    "0.40",
+    "0.50",
+    "0.45",
+    "MI9"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "Distance R-TCE – R-DID (ONT, EPI, INF, TEC, PRA, overall, opposed)",
+   "section": "1.4",
+   "expected": [
+    "0.34",
+    "0.50",
+    "0.11",
+    "0.60",
+    "0.00",
+    "0.36",
+    "MI6"
+   ],
+   "observed": [
+    "0.34",
+    "0.50",
+    "0.11",
+    "0.60",
+    "0.00",
+    "0.36",
+    "MI6"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "Distance R-INST – R-BEH (ONT, EPI, INF, TEC, PRA, overall, opposed)",
+   "section": "1.4",
+   "expected": [
+    "0.56",
+    "0.31",
+    "0.41",
+    "0.20",
+    "0.50",
+    "0.42",
+    "none"
+   ],
+   "observed": [
+    "0.56",
+    "0.31",
+    "0.41",
+    "0.20",
+    "0.50",
+    "0.42",
+    "none"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "Distance R-INST – R-DID (ONT, EPI, INF, TEC, PRA, overall, opposed)",
+   "section": "1.4",
+   "expected": [
+    "0.80",
+    "0.65",
+    "0.61",
+    "0.53",
+    "0.67",
+    "0.65",
+    "none"
+   ],
+   "observed": [
+    "0.80",
+    "0.65",
+    "0.61",
+    "0.53",
+    "0.67",
+    "0.65",
+    "none"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "Distance R-BEH – R-DID (ONT, EPI, INF, TEC, PRA, overall, opposed)",
+   "section": "1.4",
+   "expected": [
+    "0.39",
+    "0.58",
+    "0.32",
+    "0.33",
+    "0.50",
+    "0.43",
+    "none"
+   ],
+   "observed": [
+    "0.39",
+    "0.58",
+    "0.32",
+    "0.33",
+    "0.50",
+    "0.43",
+    "none"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "R-TCE – R-DID INF distance, as configured → MI6 reversed",
+   "section": "4.5",
+   "expected": [
+    0.114,
+    0.097
+   ],
+   "observed": [
+    0.114,
+    0.097
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "R-TCE – R-DID overall distance, as configured → MI6 reversed",
+   "section": "4.5",
+   "expected": [
+    0.365,
+    0.361
+   ],
+   "observed": [
+    0.365,
+    0.361
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "Reversing one stance moves the inferential distance by less than 0.02",
+   "section": "1.4",
+   "expected": true,
+   "observed": true,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "FOCAL – R-DID: close on INF, far on EPI",
+   "section": "1.4",
+   "expected": [
+    0.25,
+    0.79
+   ],
+   "observed": [
+    0.25,
+    0.79
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "Nearest and farthest lens from the elicited focal perspective",
+   "section": "1.4, 4.4",
+   "expected": [
+    "R-TCE",
+    "R-INST"
+   ],
+   "observed": [
+    "R-TCE",
+    "R-INST"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "R-TCE: endorsed and rejected material inferences",
+   "section": "4.2, 4.4",
+   "expected": [
+    [
+     "MI1",
+     "MI6",
+     "MI8",
+     "MI9"
+    ],
+    [
+     "MI10",
+     "MI3",
+     "MI7"
+    ]
+   ],
+   "observed": [
+    [
+     "MI1",
+     "MI6",
+     "MI8",
+     "MI9"
+    ],
+    [
+     "MI10",
+     "MI3",
+     "MI7"
+    ]
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "R-INST: endorsed and rejected material inferences",
+   "section": "4.2, 4.4",
+   "expected": [
+    [
+     "MI10",
+     "MI3",
+     "MI4"
+    ],
+    [
+     "MI2",
+     "MI7",
+     "MI9"
+    ]
+   ],
+   "observed": [
+    [
+     "MI10",
+     "MI3",
+     "MI4"
+    ],
+    [
+     "MI2",
+     "MI7",
+     "MI9"
+    ]
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "R-BEH: endorsed and rejected material inferences",
+   "section": "4.2, 4.4",
+   "expected": [
+    [
+     "MI4",
+     "MI5"
+    ],
+    [
+     "MI2",
+     "MI7",
+     "MI9"
+    ]
+   ],
+   "observed": [
+    [
+     "MI4",
+     "MI5"
+    ],
+    [
+     "MI2",
+     "MI7",
+     "MI9"
+    ]
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "R-DID: endorsed and rejected material inferences",
+   "section": "4.2, 4.4",
+   "expected": [
+    [],
+    [
+     "MI6",
+     "MI7"
+    ]
+   ],
+   "observed": [
+    [],
+    [
+     "MI6",
+     "MI7"
+    ]
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "FOCAL: endorsed and rejected material inferences",
+   "section": "4.2, 4.4",
+   "expected": [
+    [
+     "MI1",
+     "MI6"
+    ],
+    [
+     "MI7"
+    ]
+   ],
+   "observed": [
+    [
+     "MI1",
+     "MI6"
+    ],
+    [
+     "MI7"
+    ]
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "Focal reviewer's weights",
+   "section": "4.2",
+   "expected": {
+    "ONT": 0.6,
+    "EPI": 0.9,
+    "INF": 0.9,
+    "TEC": 0.7,
+    "PRA": 0.4
+   },
+   "observed": {
+    "ONT": 0.6,
+    "EPI": 0.9,
+    "INF": 0.9,
+    "TEC": 0.7,
+    "PRA": 0.4
+   },
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "pnl:ctb:1: survival score and classification",
+   "section": "4.5, 5.3",
+   "expected": [
+    0.5,
+    "robust"
+   ],
+   "observed": [
+    0.5,
+    "robust"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "pnl:ctb:1: score agrees with the panel's own check pnl:chk:1",
+   "section": "4.5",
+   "expected": 0.5,
+   "observed": 0.5,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "pnl:ctb:2: survival score and classification",
+   "section": "4.5, 5.3",
+   "expected": [
+    0.5,
+    "robust"
+   ],
+   "observed": [
+    0.5,
+    "robust"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "pnl:ctb:2: score agrees with the panel's own check pnl:chk:1",
+   "section": "4.5",
+   "expected": 0.5,
+   "observed": 0.5,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "pnl:ctb:3: survival score and classification",
+   "section": "4.5, 5.3",
+   "expected": [
+    0.25,
+    "neither"
+   ],
+   "observed": [
+    0.25,
+    "neither"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "pnl:ctb:3: score agrees with the panel's own check pnl:chk:1",
+   "section": "4.5",
+   "expected": 0.25,
+   "observed": 0.25,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "pnl:ctb:4: survival score and classification",
+   "section": "4.5, 5.3",
+   "expected": [
+    0.0,
+    "fails for every lens"
+   ],
+   "observed": [
+    0.0,
+    "fails for every lens"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "pnl:ctb:4: score agrees with the panel's own check pnl:chk:1",
+   "section": "4.5",
+   "expected": 0.0,
+   "observed": 0.0,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "pnl:ctb:5: survival score and classification",
+   "section": "4.5, 5.3",
+   "expected": [
+    0.125,
+    "neither"
+   ],
+   "observed": [
+    0.125,
+    "neither"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "pnl:ctb:5: score agrees with the panel's own check pnl:chk:1",
+   "section": "4.5",
+   "expected": 0.125,
+   "observed": 0.125,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "pnl:ctb:6: survival score and classification",
+   "section": "4.5, 5.3",
+   "expected": [
+    0.625,
+    "robust"
+   ],
+   "observed": [
+    0.625,
+    "robust"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "pnl:ctb:6: score agrees with the panel's own check pnl:chk:1",
+   "section": "4.5",
+   "expected": 0.625,
+   "observed": 0.625,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "pnl:ctb:7: survival score and classification",
+   "section": "4.5, 5.3",
+   "expected": [
+    0.25,
+    "neither"
+   ],
+   "observed": [
+    0.25,
+    "neither"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "pnl:ctb:7: score agrees with the panel's own check pnl:chk:1",
+   "section": "4.5",
+   "expected": 0.25,
+   "observed": 0.25,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "pnl:ctb:8: survival score and classification",
+   "section": "4.5, 5.3",
+   "expected": [
+    0.375,
+    "neither"
+   ],
+   "observed": [
+    0.375,
+    "neither"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "pnl:ctb:8: score agrees with the panel's own check pnl:chk:1",
+   "section": "4.5",
+   "expected": 0.375,
+   "observed": 0.375,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "Contributions classified lens-dependent (panel median distance as the cut-off)",
+   "section": "4.5, 5.3",
+   "expected": [],
+   "observed": [],
+   "status": "PASS",
+   "detail": "median pairwise distance 0.441",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "Verdict divergence against distance: Pearson r (p)",
+   "section": "4.5",
+   "expected": [
+    -0.42,
+    0.4
+   ],
+   "observed": [
+    -0.42,
+    0.4
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "Verdict divergence against distance: Spearman ρ (p)",
+   "section": "4.5",
+   "expected": [
+    -0.65,
+    0.16
+   ],
+   "observed": [
+    -0.65,
+    0.16
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Perspectives and panel",
+   "claim": "Closest pair of lenses",
+   "section": "4.5",
+   "expected": [
+    0.36,
+    "R-TCE/R-DID"
+   ],
+   "observed": [
+    0.36,
+    "R-TCE/R-DID"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r03_perspectives_panel.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "Events in the trace",
+   "section": "4.9",
+   "expected": 42,
+   "observed": 42,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "Hash chain verifies (SHA-256 over canonical JSON, linked to predecessor)",
+   "section": "2.5, 4.9",
+   "expected": true,
+   "observed": true,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "Events with actual / reconstructed times",
+   "section": "4.9",
+   "expected": [
+    21,
+    21
+   ],
+   "observed": [
+    21,
+    21
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "Events valid against ProvenanceEvent in the schema",
+   "section": "4.9, 9.3",
+   "expected": 42,
+   "observed": 42,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "ev:35 records a correction before publication (actor kind of ev:31)",
+   "section": "4.9",
+   "expected": true,
+   "observed": true,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "Actor kind of ev:31 after the correction",
+   "section": "4.9",
+   "expected": "stand-in",
+   "observed": "stand-in",
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "Events of Runs 01–14 up to signature (the trace the editor view uses)",
+   "section": "4.9",
+   "expected": 39,
+   "observed": 39,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "Decisions: total, accept, modify, reject",
+   "section": "4.8",
+   "expected": [
+    117,
+    74,
+    35,
+    8
+   ],
+   "observed": [
+    117,
+    74,
+    35,
+    8
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "Accept or modify decisions on workbench findings",
+   "section": "4.9",
+   "expected": 109,
+   "observed": 109,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "Dispositions from: Consistency check on the draft (Run 11) (decisions, modified, rejected)",
+   "section": "4.8",
+   "expected": [
+    24,
+    3,
+    1
+   ],
+   "observed": [
+    24,
+    3,
+    1
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "Dispositions from: Panel synthesis (Run 07), its own items (decisions, modified, rejected)",
+   "section": "4.8",
+   "expected": [
+    22,
+    6,
+    1
+   ],
+   "observed": [
+    22,
+    6,
+    1
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "Dispositions from: Findings raised by several roles, decided together (decisions, modified, rejected)",
+   "section": "4.8",
+   "expected": [
+    28,
+    12,
+    0
+   ],
+   "observed": [
+    28,
+    12,
+    0
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "Dispositions from: Probes (Runs 08–10), single-role items and decisions (decisions, modified, rejected)",
+   "section": "4.8",
+   "expected": [
+    38,
+    13,
+    3
+   ],
+   "observed": [
+    38,
+    13,
+    3
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "Dispositions from: Simulated reviewers, single-role items (decisions, modified, rejected)",
+   "section": "4.8",
+   "expected": [
+    5,
+    1,
+    3
+   ],
+   "observed": [
+    5,
+    1,
+    3
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "Rejected findings land nowhere in the review",
+   "section": "4.8",
+   "expected": 0,
+   "observed": 0,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "Composition at threshold 0.6: machine, mixed, draft, new (% of sentences)",
+   "section": "4.9",
+   "expected": [
+    1.9,
+    0.0,
+    14.2,
+    83.9
+   ],
+   "observed": [
+    1.9,
+    0.0,
+    14.2,
+    83.9
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "Sentences scored",
+   "section": "4.9",
+   "expected": 267,
+   "observed": 267,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "Machine-origin analysis byte-identical to runs/14_machine_origin.json",
+   "section": "4.9",
+   "expected": true,
+   "observed": true,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "Sentences of machine origin at the defined threshold",
+   "section": "4.9",
+   "expected": 5,
+   "observed": 5,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "Longest machine-origin sentence",
+   "section": "4.9",
+   "expected": "The rating's coefficient barely moves when m enters (−0.094 to −0.091).",
+   "observed": "The rating's coefficient barely moves when m enters (−0.094 to −0.091).",
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "Composition at threshold 0.4: machine, mixed, draft, new (% of sentences)",
+   "section": "4.9",
+   "expected": [
+    6.0,
+    0.4,
+    17.2,
+    76.4
+   ],
+   "observed": [
+    6.0,
+    0.4,
+    17.2,
+    76.4
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "Composition at threshold 0.3: machine, mixed, draft, new (% of sentences)",
+   "section": "4.9",
+   "expected": [
+    9.4,
+    1.1,
+    22.1,
+    67.4
+   ],
+   "observed": [
+    9.4,
+    1.1,
+    22.1,
+    67.4
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "Composition at threshold 0.2: machine, mixed, draft, new (% of sentences)",
+   "section": "4.9",
+   "expected": [
+    15.7,
+    1.1,
+    26.6,
+    56.6
+   ],
+   "observed": [
+    15.7,
+    1.1,
+    26.6,
+    56.6
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "Editor view regenerated from ev:1–ev:39 is byte-identical to runs/14_editor_view.md",
+   "section": "4.9",
+   "expected": true,
+   "observed": true,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "Editor view reports the hash chain verified",
+   "section": "4.9",
+   "expected": true,
+   "observed": true,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "Parts of the signed review where most accepted/modified findings land",
+   "section": "4.9",
+   "expected": {
+    "Major 2": 26,
+    "Minor concerns": 26
+   },
+   "observed": {
+    "Minor concerns": 26,
+    "Major 2": 26
+   },
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Provenance and signed review",
+   "claim": "Decisions that concern process only and land in no text",
+   "section": "4.9",
+   "expected": 7,
+   "observed": 7,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r04_provenance_review.py"
+  },
+  {
+   "group": "Style and pilot",
+   "claim": "style_metrics.py output equals runs/13_pilot/style_metrics.txt",
+   "section": "7.9",
+   "expected": "runs/13_pilot/blind/review_A.md {'words': 3586, 'hedges_per_1000': 2.8, 'nominalizations_per_100': 7.3, 'flesch': 42.6}\nruns/13_pilot/blind/review_B.md {'words': 2359, 'hedges_per_1000': 3.4, 'nominalizations_per_100': 7.2, 'flesch': 43.6}\nruns/13_pilot/blind/review_C.md {'words': 2831, 'hedges_per_1000': 3.5, 'nominalizations_per_100': 7.3, 'flesch': 47.2}\nruns/13_pilot/blind/review_D.md {'words': 2067, 'hedges_per_1000': 3.4, 'nominalizations_per_100': 4.7, 'flesch': 56.7}\nruns/13_pilot/blind/review_E.md {'words': 4493, 'hedges_per_1000': 3.6, 'nominalizations_per_100': 7.2, 'flesch': 33.9}\nruns/13_pilot/blind/review_F.md {'words': 4927, 'hedges_per_1000': 3.5, 'nominalizations_per_100': 7.2, 'flesch': 40.8}\n",
+   "observed": "runs/13_pilot/blind/review_A.md {'words': 3586, 'hedges_per_1000': 2.8, 'nominalizations_per_100': 7.3, 'flesch': 42.6}\nruns/13_pilot/blind/review_B.md {'words': 2359, 'hedges_per_1000': 3.4, 'nominalizations_per_100': 7.2, 'flesch': 43.6}\nruns/13_pilot/blind/review_C.md {'words': 2831, 'hedges_per_1000': 3.5, 'nominalizations_per_100': 7.3, 'flesch': 47.2}\nruns/13_pilot/blind/review_D.md {'words': 2067, 'hedges_per_1000': 3.4, 'nominalizations_per_100': 4.7, 'flesch': 56.7}\nruns/13_pilot/blind/review_E.md {'words': 4493, 'hedges_per_1000': 3.6, 'nominalizations_per_100': 7.2, 'flesch': 33.9}\nruns/13_pilot/blind/review_F.md {'words': 4927, 'hedges_per_1000': 3.5, 'nominalizations_per_100': 7.2, 'flesch': 40.8}\n",
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r05_style_pilot.py"
+  },
+  {
+   "group": "Style and pilot",
+   "claim": "Report A unblinds to Haiku, S1 reviewerly",
+   "section": "7.9",
+   "expected": [
+    "Haiku",
+    "S1 reviewerly"
+   ],
+   "observed": [
+    "Haiku",
+    "S1 reviewerly"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r05_style_pilot.py"
+  },
+  {
+   "group": "Style and pilot",
+   "claim": "Report A: words, hedges/1,000, nominalizations/100, Flesch",
+   "section": "7.9",
+   "expected": [
+    3586,
+    2.8,
+    7.3,
+    42.6
+   ],
+   "observed": [
+    3586,
+    2.8,
+    7.3,
+    42.6
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r05_style_pilot.py"
+  },
+  {
+   "group": "Style and pilot",
+   "claim": "Report A: located, touched, missed, new substantive, mistaken (blind scorer)",
+   "section": "7.9",
+   "expected": [
+    8,
+    1,
+    0,
+    10,
+    1
+   ],
+   "observed": [
+    8,
+    1,
+    0,
+    10,
+    1
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r05_style_pilot.py"
+  },
+  {
+   "group": "Style and pilot",
+   "claim": "Report D unblinds to Haiku, S2 terse",
+   "section": "7.9",
+   "expected": [
+    "Haiku",
+    "S2 terse"
+   ],
+   "observed": [
+    "Haiku",
+    "S2 terse"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r05_style_pilot.py"
+  },
+  {
+   "group": "Style and pilot",
+   "claim": "Report D: words, hedges/1,000, nominalizations/100, Flesch",
+   "section": "7.9",
+   "expected": [
+    2067,
+    3.4,
+    4.7,
+    56.7
+   ],
+   "observed": [
+    2067,
+    3.4,
+    4.7,
+    56.7
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r05_style_pilot.py"
+  },
+  {
+   "group": "Style and pilot",
+   "claim": "Report D: located, touched, missed, new substantive, mistaken (blind scorer)",
+   "section": "7.9",
+   "expected": [
+    5,
+    3,
+    1,
+    8,
+    0
+   ],
+   "observed": [
+    5,
+    3,
+    1,
+    8,
+    0
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r05_style_pilot.py"
+  },
+  {
+   "group": "Style and pilot",
+   "claim": "Report E unblinds to Sonnet, S1 reviewerly",
+   "section": "7.9",
+   "expected": [
+    "Sonnet",
+    "S1 reviewerly"
+   ],
+   "observed": [
+    "Sonnet",
+    "S1 reviewerly"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r05_style_pilot.py"
+  },
+  {
+   "group": "Style and pilot",
+   "claim": "Report E: words, hedges/1,000, nominalizations/100, Flesch",
+   "section": "7.9",
+   "expected": [
+    4493,
+    3.6,
+    7.2,
+    33.9
+   ],
+   "observed": [
+    4493,
+    3.6,
+    7.2,
+    33.9
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r05_style_pilot.py"
+  },
+  {
+   "group": "Style and pilot",
+   "claim": "Report E: located, touched, missed, new substantive, mistaken (blind scorer)",
+   "section": "7.9",
+   "expected": [
+    9,
+    0,
+    0,
+    13,
+    0
+   ],
+   "observed": [
+    9,
+    0,
+    0,
+    13,
+    0
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r05_style_pilot.py"
+  },
+  {
+   "group": "Style and pilot",
+   "claim": "Report B unblinds to Sonnet, S2 terse",
+   "section": "7.9",
+   "expected": [
+    "Sonnet",
+    "S2 terse"
+   ],
+   "observed": [
+    "Sonnet",
+    "S2 terse"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r05_style_pilot.py"
+  },
+  {
+   "group": "Style and pilot",
+   "claim": "Report B: words, hedges/1,000, nominalizations/100, Flesch",
+   "section": "7.9",
+   "expected": [
+    2359,
+    3.4,
+    7.2,
+    43.6
+   ],
+   "observed": [
+    2359,
+    3.4,
+    7.2,
+    43.6
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r05_style_pilot.py"
+  },
+  {
+   "group": "Style and pilot",
+   "claim": "Report B: located, touched, missed, new substantive, mistaken (blind scorer)",
+   "section": "7.9",
+   "expected": [
+    9,
+    0,
+    0,
+    12,
+    0
+   ],
+   "observed": [
+    9,
+    0,
+    0,
+    12,
+    0
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r05_style_pilot.py"
+  },
+  {
+   "group": "Style and pilot",
+   "claim": "Report F unblinds to Opus, S1 reviewerly",
+   "section": "7.9",
+   "expected": [
+    "Opus",
+    "S1 reviewerly"
+   ],
+   "observed": [
+    "Opus",
+    "S1 reviewerly"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r05_style_pilot.py"
+  },
+  {
+   "group": "Style and pilot",
+   "claim": "Report F: words, hedges/1,000, nominalizations/100, Flesch",
+   "section": "7.9",
+   "expected": [
+    4927,
+    3.5,
+    7.2,
+    40.8
+   ],
+   "observed": [
+    4927,
+    3.5,
+    7.2,
+    40.8
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r05_style_pilot.py"
+  },
+  {
+   "group": "Style and pilot",
+   "claim": "Report F: located, touched, missed, new substantive, mistaken (blind scorer)",
+   "section": "7.9",
+   "expected": [
+    9,
+    0,
+    0,
+    13,
+    0
+   ],
+   "observed": [
+    9,
+    0,
+    0,
+    13,
+    0
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r05_style_pilot.py"
+  },
+  {
+   "group": "Style and pilot",
+   "claim": "Report C unblinds to Opus, S2 terse",
+   "section": "7.9",
+   "expected": [
+    "Opus",
+    "S2 terse"
+   ],
+   "observed": [
+    "Opus",
+    "S2 terse"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r05_style_pilot.py"
+  },
+  {
+   "group": "Style and pilot",
+   "claim": "Report C: words, hedges/1,000, nominalizations/100, Flesch",
+   "section": "7.9",
+   "expected": [
+    2831,
+    3.5,
+    7.3,
+    47.2
+   ],
+   "observed": [
+    2831,
+    3.5,
+    7.3,
+    47.2
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r05_style_pilot.py"
+  },
+  {
+   "group": "Style and pilot",
+   "claim": "Report C: located, touched, missed, new substantive, mistaken (blind scorer)",
+   "section": "7.9",
+   "expected": [
+    9,
+    0,
+    0,
+    11,
+    0
+   ],
+   "observed": [
+    9,
+    0,
+    0,
+    11,
+    0
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r05_style_pilot.py"
+  },
+  {
+   "group": "Style and pilot",
+   "claim": "Terse style shortened reviews by '42 to 47 percent'",
+   "section": "7.9 item 3",
+   "expected": "42 to 47",
+   "observed": [
+    42.4,
+    42.5,
+    47.5
+   ],
+   "status": "NOTE",
+   "detail": "Haiku 42.4%, Opus 42.5%, Sonnet 47.5%. The upper end rounds to 47 or 48 depending on convention.",
+   "script": "replication/r05_style_pilot.py"
+  },
+  {
+   "group": "Style and pilot",
+   "claim": "Terse reports stay between 2,000 and 2,800 words",
+   "section": "7.9 item 3",
+   "expected": true,
+   "observed": true,
+   "status": "PASS",
+   "detail": "S2 lengths: 2067, 2359, 2831",
+   "script": "replication/r05_style_pilot.py"
+  },
+  {
+   "group": "Style and pilot",
+   "claim": "Unassisted draft: words (with headings and the checks list)",
+   "section": "4.3",
+   "expected": 1567,
+   "observed": 1567,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r05_style_pilot.py"
+  },
+  {
+   "group": "Style and pilot",
+   "claim": "Signed review: words, by the same measure",
+   "section": "4.8",
+   "expected": 3758,
+   "observed": 3758,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r05_style_pilot.py"
+  },
+  {
+   "group": "Style and pilot",
+   "claim": "Signed review: words in the body (before the checks list and the note to the editor)",
+   "section": "4.8",
+   "expected": 3334,
+   "observed": 3334,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r05_style_pilot.py"
+  },
+  {
+   "group": "Style and pilot",
+   "claim": "Flesch reading ease, signed review against draft",
+   "section": "4.8",
+   "expected": [
+    48.6,
+    47.1
+   ],
+   "observed": [
+    48.6,
+    47.1
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r05_style_pilot.py"
+  },
+  {
+   "group": "Style and pilot",
+   "claim": "Hedges per 1,000 words, signed review against draft",
+   "section": "4.8",
+   "expected": [
+    7.2,
+    6.4
+   ],
+   "observed": [
+    7.2,
+    6.4
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r05_style_pilot.py"
+  },
+  {
+   "group": "Recovery",
+   "claim": "02 Reviewer's draft (no workbench): SD codes, located, known-unseeded, new-substantive, mistaken",
+   "section": "4.10",
+   "expected": [
+    [
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L"
+    ],
+    9,
+    4,
+    13,
+    0
+   ],
+   "observed": [
+    [
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L"
+    ],
+    9,
+    4,
+    13,
+    0
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r06_recovery.py"
+  },
+  {
+   "group": "Recovery",
+   "claim": "03 Simulated, transaction-cost: SD codes, located, known-unseeded, new-substantive, mistaken",
+   "section": "4.10",
+   "expected": [
+    [
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L"
+    ],
+    9,
+    5,
+    16,
+    0
+   ],
+   "observed": [
+    [
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L"
+    ],
+    9,
+    5,
+    16,
+    0
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r06_recovery.py"
+  },
+  {
+   "group": "Recovery",
+   "claim": "04 Simulated, institutional: SD codes, located, known-unseeded, new-substantive, mistaken",
+   "section": "4.10",
+   "expected": [
+    [
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L"
+    ],
+    9,
+    5,
+    13,
+    0
+   ],
+   "observed": [
+    [
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L"
+    ],
+    9,
+    5,
+    13,
+    0
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r06_recovery.py"
+  },
+  {
+   "group": "Recovery",
+   "claim": "05 Simulated, behavioral: SD codes, located, known-unseeded, new-substantive, mistaken",
+   "section": "4.10",
+   "expected": [
+    [
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L"
+    ],
+    9,
+    5,
+    19,
+    0
+   ],
+   "observed": [
+    [
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L"
+    ],
+    9,
+    5,
+    19,
+    0
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r06_recovery.py"
+  },
+  {
+   "group": "Recovery",
+   "claim": "06 Simulated, design-based: SD codes, located, known-unseeded, new-substantive, mistaken",
+   "section": "4.10",
+   "expected": [
+    [
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L"
+    ],
+    9,
+    5,
+    13,
+    0
+   ],
+   "observed": [
+    [
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L"
+    ],
+    9,
+    5,
+    13,
+    0
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r06_recovery.py"
+  },
+  {
+   "group": "Recovery",
+   "claim": "08 Probe, P-DER (P-NUM): SD codes, located, known-unseeded, new-substantive, mistaken",
+   "section": "4.10",
+   "expected": [
+    [
+     "L",
+     "L†",
+     "T†",
+     "M",
+     "T",
+     "L",
+     "T†",
+     "L",
+     "L†"
+    ],
+    5,
+    2,
+    5,
+    0
+   ],
+   "observed": [
+    [
+     "L",
+     "L†",
+     "T†",
+     "M",
+     "T",
+     "L",
+     "T†",
+     "L",
+     "L†"
+    ],
+    5,
+    2,
+    5,
+    0
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r06_recovery.py"
+  },
+  {
+   "group": "Recovery",
+   "claim": "09 Probe, P-ID and P-NUM: SD codes, located, known-unseeded, new-substantive, mistaken",
+   "section": "4.10",
+   "expected": [
+    [
+     "L†",
+     "L",
+     "L",
+     "L†",
+     "T†",
+     "L",
+     "T†",
+     "L†",
+     "M"
+    ],
+    6,
+    3,
+    11,
+    0
+   ],
+   "observed": [
+    [
+     "L†",
+     "L",
+     "L",
+     "L†",
+     "T†",
+     "L",
+     "T†",
+     "L†",
+     "M"
+    ],
+    6,
+    3,
+    11,
+    0
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r06_recovery.py"
+  },
+  {
+   "group": "Recovery",
+   "claim": "10 Probe, P-INF, P-MEAS, P-LIT: SD codes, located, known-unseeded, new-substantive, mistaken",
+   "section": "4.10",
+   "expected": [
+    [
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L"
+    ],
+    9,
+    4,
+    16,
+    0
+   ],
+   "observed": [
+    [
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L"
+    ],
+    9,
+    4,
+    16,
+    0
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r06_recovery.py"
+  },
+  {
+   "group": "Recovery",
+   "claim": "12 Reviewer's final review (after the workbench): SD codes, located, known-unseeded, new-substantive, mistaken",
+   "section": "4.10",
+   "expected": [
+    [
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L"
+    ],
+    9,
+    4,
+    24,
+    0
+   ],
+   "observed": [
+    [
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L",
+     "L"
+    ],
+    9,
+    4,
+    24,
+    0
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r06_recovery.py"
+  },
+  {
+   "group": "Recovery",
+   "claim": "Categories of substantive weakness identified by the scorers",
+   "section": "4.10",
+   "expected": 32,
+   "observed": 32,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r06_recovery.py"
+  },
+  {
+   "group": "Recovery",
+   "claim": "Categories raised by the unassisted draft",
+   "section": "4.10",
+   "expected": 17,
+   "observed": 17,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r06_recovery.py"
+  },
+  {
+   "group": "Recovery",
+   "claim": "Categories raised by the workbench roles together",
+   "section": "4.10",
+   "expected": 31,
+   "observed": 31,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r06_recovery.py"
+  },
+  {
+   "group": "Recovery",
+   "claim": "Categories the roles raised and the draft did not (incremental recall)",
+   "section": "4.10",
+   "expected": [
+    15,
+    48
+   ],
+   "observed": [
+    15,
+    48
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r06_recovery.py"
+  },
+  {
+   "group": "Recovery",
+   "claim": "Category raised by the draft and by no role",
+   "section": "4.10",
+   "expected": [
+    "NS-q H2 omitted from summary"
+   ],
+   "observed": [
+    "NS-q H2 omitted from summary"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r06_recovery.py"
+  },
+  {
+   "group": "Recovery",
+   "claim": "Categories raised by the signed review (the 32, plus the new A3 category NS-ab)",
+   "section": "4.10",
+   "expected": 28,
+   "observed": 28,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r06_recovery.py"
+  },
+  {
+   "group": "Recovery",
+   "claim": "… all 17 of the draft's categories among them",
+   "section": "4.10",
+   "expected": true,
+   "observed": true,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r06_recovery.py"
+  },
+  {
+   "group": "Recovery",
+   "claim": "… of the 15 workbench-only categories, raised in the signed review",
+   "section": "4.10",
+   "expected": 10,
+   "observed": 10,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r06_recovery.py"
+  },
+  {
+   "group": "Recovery",
+   "claim": "Gain of the signed review over the draft, in categories",
+   "section": "4.10",
+   "expected": 11,
+   "observed": 11,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r06_recovery.py"
+  },
+  {
+   "group": "Recovery",
+   "claim": "Workbench-only categories the signed review does not raise",
+   "section": "4.10",
+   "expected": [
+    "KU5 corner k* ≥ 1",
+    "NS-aa Nickell-type peer bias",
+    "NS-o other post-outcome controls",
+    "NS-p classification drift",
+    "NS-y behavioural rival"
+   ],
+   "observed": [
+    "KU5 corner k* ≥ 1",
+    "NS-aa Nickell-type peer bias",
+    "NS-o other post-outcome controls",
+    "NS-p classification drift",
+    "NS-y behavioural rival"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r06_recovery.py"
+  },
+  {
+   "group": "Recovery",
+   "claim": "Demonstrable seeded defects demonstrated by the harness in at least one probe (SD1, SD2, SD3, SD6; and SD8)",
+   "section": "4.10",
+   "expected": [
+    "SD1",
+    "SD2",
+    "SD3",
+    "SD6",
+    "SD8"
+   ],
+   "observed": [
+    "SD1",
+    "SD2",
+    "SD3",
+    "SD6",
+    "SD8"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r06_recovery.py"
+  },
+  {
+   "group": "Critical-test power",
+   "claim": "H2 non-inferiority, power 0.80: paired manuscripts",
+   "section": "8.4",
+   "expected": "126",
+   "observed": "126",
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r07_power.py"
+  },
+  {
+   "group": "Critical-test power",
+   "claim": "H2 non-inferiority, power 0.90: paired manuscripts",
+   "section": "8.4",
+   "expected": "169",
+   "observed": "169",
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r07_power.py"
+  },
+  {
+   "group": "Critical-test power",
+   "claim": "H3 sub-task superiority with Holm's smallest threshold",
+   "section": "8.4",
+   "expected": "66",
+   "observed": "66",
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r07_power.py"
+  },
+  {
+   "group": "Critical-test power",
+   "claim": "H4: SE(AUC) at 0.60 with 150 reviews per source, and z",
+   "section": "8.4",
+   "expected": [
+    "0.033",
+    "3.07"
+   ],
+   "observed": [
+    "0.033",
+    "3.07"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r07_power.py"
+  },
+  {
+   "group": "Critical-test power",
+   "claim": "Fallback, 30 pairs: minimum detectable difference (points, SD)",
+   "section": "8.6",
+   "expected": [
+    "0.61",
+    "0.51"
+   ],
+   "observed": [
+    "0.61",
+    "0.51"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r07_power.py"
+  },
+  {
+   "group": "Critical-test power",
+   "claim": "Fallback, 40 pairs: minimum detectable difference (points, SD)",
+   "section": "8.6",
+   "expected": [
+    "0.53",
+    "0.44"
+   ],
+   "observed": [
+    "0.53",
+    "0.44"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r07_power.py"
+  },
+  {
+   "group": "Counts",
+   "claim": "Words in case/TEST_MANUSCRIPT.md",
+   "section": "4.1",
+   "expected": 2744,
+   "observed": 2745,
+   "status": "NOTE",
+   "detail": "whitespace count differs by +1 (+0.0%).",
+   "script": "replication/r08_counts.py"
+  },
+  {
+   "group": "Counts",
+   "claim": "Words in runs/01_dialogue/turn_01_elicitor_E0.md",
+   "section": "4.2",
+   "expected": 863,
+   "observed": 863,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r08_counts.py"
+  },
+  {
+   "group": "Counts",
+   "claim": "Words in runs/01_dialogue/turn_02_editor.md",
+   "section": "4.2",
+   "expected": 816,
+   "observed": 817,
+   "status": "NOTE",
+   "detail": "whitespace count differs by +1 (+0.1%).",
+   "script": "replication/r08_counts.py"
+  },
+  {
+   "group": "Counts",
+   "claim": "Words in runs/01_dialogue/turn_03_elicitor_EB_S1.md",
+   "section": "4.2",
+   "expected": 1751,
+   "observed": 1751,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r08_counts.py"
+  },
+  {
+   "group": "Counts",
+   "claim": "Words in runs/01_dialogue/turn_04_reviewer_S1.md",
+   "section": "4.2",
+   "expected": 2322,
+   "observed": 1751,
+   "status": "NOTE",
+   "detail": "whitespace count differs by -571 (-24.6%). The 23 October version of the appendix gave 1,751, which equals the whitespace count of this file; the 31 October version gives 2322, which this script cannot reproduce by any common word-count convention. Worth checking before submission.",
+   "script": "replication/r08_counts.py"
+  },
+  {
+   "group": "Counts",
+   "claim": "Words in runs/01_dialogue/turn_05_elicitor_S2.md",
+   "section": "4.2",
+   "expected": 3978,
+   "observed": 3999,
+   "status": "NOTE",
+   "detail": "whitespace count differs by +21 (+0.5%).",
+   "script": "replication/r08_counts.py"
+  },
+  {
+   "group": "Counts",
+   "claim": "Words in runs/01_dialogue/turn_06_reviewer_S2.md",
+   "section": "4.2",
+   "expected": 2246,
+   "observed": 2246,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r08_counts.py"
+  },
+  {
+   "group": "Counts",
+   "claim": "Words in runs/01_dialogue/turn_07_elicitor_S3.md",
+   "section": "4.2",
+   "expected": 4886,
+   "observed": 4932,
+   "status": "NOTE",
+   "detail": "whitespace count differs by +46 (+0.9%).",
+   "script": "replication/r08_counts.py"
+  },
+  {
+   "group": "Counts",
+   "claim": "Words in runs/01_dialogue/turn_08_reviewer_S3.md",
+   "section": "4.2",
+   "expected": 2399,
+   "observed": 2399,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r08_counts.py"
+  },
+  {
+   "group": "Counts",
+   "claim": "Words in runs/01_dialogue/turn_09_elicitor_SPEC.md",
+   "section": "4.2",
+   "expected": 9509,
+   "observed": 9513,
+   "status": "NOTE",
+   "detail": "whitespace count differs by +4 (+0.0%).",
+   "script": "replication/r08_counts.py"
+  },
+  {
+   "group": "Counts",
+   "claim": "Words in runs/03_simulated_reviewer_TCE.md",
+   "section": "4.4",
+   "expected": 8266,
+   "observed": 8309,
+   "status": "NOTE",
+   "detail": "whitespace count differs by +43 (+0.5%).",
+   "script": "replication/r08_counts.py"
+  },
+  {
+   "group": "Counts",
+   "claim": "Words in runs/04_simulated_reviewer_INST.md",
+   "section": "4.4",
+   "expected": 8939,
+   "observed": 8959,
+   "status": "NOTE",
+   "detail": "whitespace count differs by +20 (+0.2%).",
+   "script": "replication/r08_counts.py"
+  },
+  {
+   "group": "Counts",
+   "claim": "Words in runs/05_simulated_reviewer_BEH.md",
+   "section": "4.4",
+   "expected": 8855,
+   "observed": 8855,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r08_counts.py"
+  },
+  {
+   "group": "Counts",
+   "claim": "Words in runs/06_simulated_reviewer_DID.md",
+   "section": "4.4",
+   "expected": 9585,
+   "observed": 9585,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r08_counts.py"
+  },
+  {
+   "group": "Counts",
+   "claim": "Bytes of runs/11_consistency_check.md",
+   "section": "4.7",
+   "expected": 35792,
+   "observed": 35792,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r08_counts.py"
+  },
+  {
+   "group": "Counts",
+   "claim": "Standards in the specification (std:1 to std:16)",
+   "section": "4.2",
+   "expected": 16,
+   "observed": 16,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r08_counts.py"
+  },
+  {
+   "group": "Counts",
+   "claim": "Tensions in the specification (bs:T1 to bs:T7)",
+   "section": "4.2",
+   "expected": 7,
+   "observed": 7,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r08_counts.py"
+  },
+  {
+   "group": "Counts",
+   "claim": "The normalized focal perspective sets all five dimensions",
+   "section": "4.0, 5.1",
+   "expected": [
+    "EPI",
+    "INF",
+    "ONT",
+    "PRA",
+    "TEC"
+   ],
+   "observed": [
+    "EPI",
+    "INF",
+    "ONT",
+    "PRA",
+    "TEC"
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r08_counts.py"
+  },
+  {
+   "group": "Counts",
+   "claim": "Mode C: silent skips, undeclared standards, internal-consistency items",
+   "section": "4.7",
+   "expected": [
+    7,
+    4,
+    6
+   ],
+   "observed": [
+    7,
+    4,
+    6
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r08_counts.py"
+  },
+  {
+   "group": "Counts",
+   "claim": "Panel: agreement ids (27 findings and 6 agreed strengths, repairs and probes)",
+   "section": "4.5",
+   "expected": 33,
+   "observed": 33,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r08_counts.py"
+  },
+  {
+   "group": "Counts",
+   "claim": "Panel: entries in the disagreement map",
+   "section": "4.5",
+   "expected": 18,
+   "observed": 18,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r08_counts.py"
+  },
+  {
+   "group": "Counts",
+   "claim": "Panel: contributions aligned",
+   "section": "4.5",
+   "expected": 8,
+   "observed": 8,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r08_counts.py"
+  },
+  {
+   "group": "Counts",
+   "claim": "Probe findings: Run 08, Run 09 (with the new p09:fnd:12), Run 10",
+   "section": "4.6",
+   "expected": [
+    8,
+    12,
+    21
+   ],
+   "observed": [
+    8,
+    12,
+    21
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r08_counts.py"
+  },
+  {
+   "group": "Counts",
+   "claim": "Works checked in the citation table; partly supported",
+   "section": "4.11",
+   "expected": [
+    54,
+    3
+   ],
+   "observed": [
+    54,
+    3
+   ],
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r08_counts.py"
+  },
+  {
+   "group": "Counts",
+   "claim": "Works marked † (checked against an online record)",
+   "section": "4.11",
+   "expected": 6,
+   "observed": 6,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r08_counts.py"
+  },
+  {
+   "group": "Counts",
+   "claim": "Numbered items in Section 4.12",
+   "section": "4.12",
+   "expected": 16,
+   "observed": 16,
+   "status": "PASS",
+   "detail": "",
+   "script": "replication/r08_counts.py"
+  }
+ ]
+}
