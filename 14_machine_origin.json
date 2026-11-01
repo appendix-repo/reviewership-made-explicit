@@ -1,0 +1,2148 @@
+{
+ "summary": {
+  "sentences_scored": 267,
+  "threshold": 0.6,
+  "machine_origin_share": 0.019,
+  "mixed_share": 0.0,
+  "carried_from_draft_share": 0.142,
+  "new_share": 0.839
+ },
+ "sentences": [
+  {
+   "sentence": "Review: \"Modularity, Not Mimicry: Interoperability Standards and the Diffusion of IT Outsourcing in U.S.",
+   "n5": 1,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "The paper argues that certified interoperability standards made hospital IT modular, which lowered effective asset specificity and widened outsourcing.",
+   "n5": 15,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "A threshold model yields two propositions.",
+   "n5": 2,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "P1: modularity raises the outsourcing threshold.",
+   "n5": 2,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "P2: uncertainty amplifies that effect.",
+   "n5": 1,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "A fixed-effects panel of 412 hospitals (2009–2019) finds three things:",
+   "n5": 8,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "a positive within-hospital association between modularity and the outsourced share of IT spending (H1);",
+   "n5": 11,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "a negative modularity × uncertainty interaction, which the authors report as contrary to H2;",
+   "n5": 9,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "a peer-outsourcing coefficient that falls and loses significance once modularity enters (H3).",
+   "n5": 9,
+   "draft": 0.33,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "The paper concludes that mimicry is \"ruled out\" and that outsourcing is \"economizing\".",
+   "n5": 9,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "The question matters, the mechanism deserves attention, and the panel is valuable.",
+   "n5": 8,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "the test of the rival does not discriminate;",
+   "n5": 4,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "the causal reading of the modularity effect is not identified;",
+   "n5": 6,
+   "draft": 0.0,
+   "agent": 0.33,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "neither the mechanism nor the efficiency conclusion is shown.",
+   "n5": 5,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "The first and the last can be repaired within the paper's own framework.",
+   "n5": 9,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "The second needs a headline claim withdrawn or a new test.",
+   "n5": 7,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "The third needs a design.",
+   "n5": 1,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "P2 does not follow; under the paper's own A3 its sign is reversed (damaging)",
+   "n5": 10,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "I re-derived both propositions by hand (§2.2–2.3 and the Appendix), and a symbolic check agrees.",
+   "n5": 13,
+   "draft": 0.62,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "- **P1 follows:** ∂k*/∂m = k*/(1−m) > 0.",
+   "n5": 4,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "- **P2 does not.** The proof treats H as constant in u.",
+   "n5": 7,
+   "draft": 0.57,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "∂²k*/∂m∂u = [g1h0 − h1(s+g0)] / [H²(1−m)²]",
+   "n5": 6,
+   "draft": 0.0,
+   "agent": 0.5,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "A3 makes the numerator negative, so the cross-partial is negative at every admissible (m, u).",
+   "n5": 11,
+   "draft": 0.0,
+   "agent": 0.55,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "P2 holds exactly when A3 fails.",
+   "n5": 2,
+   "draft": 0.0,
+   "agent": 0.5,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "A3, the only numbered assumption, is used in no proof.",
+   "n5": 6,
+   "draft": 0.0,
+   "agent": 0.17,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- **A change of functional form will not rescue P2.** For any positive H and G, the numerator is G′H − (s+G)H′.",
+   "n5": 19,
+   "draft": 0.0,
+   "agent": 0.05,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "That is negative whenever hold-up hazards respond proportionally more to uncertainty than in-house costs do, which is the premise A3 takes from Williamson (1991).",
+   "n5": 21,
+   "draft": 0.0,
+   "agent": 0.05,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**A3 needs a defence (std:1(b)).** It rests on a citation, not on an argument that it holds for hospital IT.",
+   "n5": 18,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Every corrected sign below depends on it.",
+   "n5": 3,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- **The step from k* to Φ (std:1(c)).** With Φ = F(k*), where F is the spending-weighted distribution of k:",
+   "n5": 16,
+   "draft": 0.0,
+   "agent": 0.56,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "for H1 the step holds: ∂Φ/∂m = f(k*)·∂k*/∂m ≥ 0 for any F.",
+   "n5": 10,
+   "draft": 0.0,
+   "agent": 0.1,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- for H2 it does not: the interaction on Φ has the sign of [g1h0 − h1(s+g0)] × [f(k*) + k*f′(k*)], so it depends on F.",
+   "n5": 22,
+   "draft": 0.0,
+   "agent": 0.05,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "In the uniform and Beta families it reverses only where outsourcing shares exceed roughly 0.6, against a sample mean of 0.31.",
+   "n5": 17,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Still, the paper must state its assumption on F, derive on Φ, or test at the function level.",
+   "n5": 13,
+   "draft": 0.0,
+   "agent": 0.15,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- **H2 failed as stated (std:2(e)).** The estimate has the opposite sign and its interval excludes zero (95% CI about −0.10 to −0.02).",
+   "n5": 20,
+   "draft": 0.65,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "- That counts against the model as the paper states it.",
+   "n5": 6,
+   "draft": 0.0,
+   "agent": 0.83,
+   "closest_agent_output": "runs/11_consistency_check.md",
+   "origin": "agent"
+  },
+  {
+   "sentence": "It does not count against transaction-cost theory more broadly, which does not entail H2.",
+   "n5": 11,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- The paper does not say which assumption or step the failure puts in doubt (std:2(b)).",
+   "n5": 13,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- The abstract and the conclusion do not report the failure (std:2(a)).",
+   "n5": 9,
+   "draft": 0.11,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- **The corrected sign is not a confirmation.** A derivation that is repaired after the result is known, and that flips the predicted sign, is a rescue.",
+   "n5": 22,
+   "draft": 0.0,
+   "agent": 0.05,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "It can earn credit only through a further implication that the data could reject, and one exists:",
+   "n5": 13,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Under A3, ∂k*/∂u < 0, so ∂Φ/∂u ≤ 0 at every m, whatever F is.",
+   "n5": 10,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- Table 2 does not yet bear this out.",
+   "n5": 4,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "The point estimate of the uncertainty effect is positive across the observed range of m (about +0.056 at mean m), but imprecise.",
+   "n5": 18,
+   "draft": 0.0,
+   "agent": 0.06,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Its Model 3 main effect is not significant, and its *** is wrong (Minor concerns).",
+   "n5": 10,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- Please report ∂Φ/∂u across m with intervals, on a non-negative measure of u.",
+   "n5": 10,
+   "draft": 0.0,
+   "agent": 0.5,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "This needs the covariance of the two coefficients, or a centred m.",
+   "n5": 8,
+   "draft": 0.0,
+   "agent": 0.38,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- **The legitimacy account (§5 ¶2).** It is introduced after the result, uses a mechanism outside the model, and is called \"consistent with our theory\".",
+   "n5": 20,
+   "draft": 0.0,
+   "agent": 0.25,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "So it counts against the model (std:2(c)–(d)).",
+   "n5": 6,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "unnecessary, once P2 is corrected;",
+   "n5": 1,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "an institutional mechanism, in a paper that claims to have ruled such mechanisms out and concludes \"Its substance is economizing\".",
+   "n5": 16,
+   "draft": 0.25,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Delete it, or label it a conjecture and give it a test that separates it from the corrected model.",
+   "n5": 15,
+   "draft": 0.0,
+   "agent": 0.2,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**Where I may be wrong:** H may be meant not to vary with u.",
+   "n5": 10,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "But then A3 is empty, and P2 needs a new motivation.",
+   "n5": 7,
+   "draft": 0.14,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**A test whose result I can't predict:** model function-level outsourcing on k, m and u, using the survey's function-level ratings.",
+   "n5": 18,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "**What would persuade me:** in that model, a smaller modularity effect at high u, together with a negative effect of u.",
+   "n5": 17,
+   "draft": 0.35,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Correct P2 and H2, and say that the corrected sign was derived after the results were seen.",
+   "n5": 13,
+   "draft": 0.0,
+   "agent": 0.31,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- State F, or test at the function level.",
+   "n5": 4,
+   "draft": 0.0,
+   "agent": 0.5,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "The test of the rival does not discriminate (fatal to \"Not Mimicry\" and \"rule out\" as worded)",
+   "n5": 13,
+   "draft": 0.31,
+   "agent": 0.08,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "These claims, in the title, the abstract and §5–6, are the paper's headline.",
+   "n5": 10,
+   "draft": 0.3,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "They do not stand on this design.",
+   "n5": 3,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "The paper itself survives, because H1 does not depend on them.",
+   "n5": 7,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "The concern is closed if the claims are narrowed or a discriminating test is added.",
+   "n5": 11,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "§2.4 treats the disappearance of the peer coefficient as a discriminating test (std:3(b)).",
+   "n5": 11,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "It is not, for these reasons.",
+   "n5": 2,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**Absence is not shown (std:4, std:13).**",
+   "n5": 4,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "The Model 2 peer coefficient, 0.042 (0.038), has a 95% CI of about −0.03 to 0.12, which reaches 85% of the Model 1 estimate.",
+   "n5": 20,
+   "draft": 0.6,
+   "agent": 0.1,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "- Before computing the interval, I set the smallest effect that matters at half the Model 1 estimate, 0.07.",
+   "n5": 14,
+   "draft": 0.71,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "That is my choice, and the authors may justify another.",
+   "n5": 6,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "- Equivalence fails at 0.07 (TOST p ≈ 0.24).",
+   "n5": 3,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "The smallest bound the estimate could pass is about 0.105, three-quarters of the Model 1 estimate.",
+   "n5": 13,
+   "draft": 0.0,
+   "agent": 0.08,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- The fall from 0.137 is probably real if the two estimates are positively correlated.",
+   "n5": 10,
+   "draft": 0.0,
+   "agent": 0.3,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "So \"falls\" may be supported, but \"disappears\" is not.",
+   "n5": 5,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Please report a test of the change.",
+   "n5": 3,
+   "draft": 0.0,
+   "agent": 0.33,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**Mediation (std:4(c)).** If hospitals imitate their peers by adopting certified interfaces, modularity lies on the imitation path.",
+   "n5": 15,
+   "draft": 0.33,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Conditioning on it then removes the peer coefficient even when imitation drives outsourcing, so the Model 1–2 pattern arises under both accounts.",
+   "n5": 19,
+   "draft": 0.0,
+   "agent": 0.21,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Diffusion of standards by imitation is the rival's strongest form in this setting.",
+   "n5": 9,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**Shared conditions (std:14(a), (c)).**",
+   "n5": 2,
+   "draft": 0.5,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "A lagged state mean confounds imitation with state-level conditions, including the interface requirements of §4.",
+   "n5": 12,
+   "draft": 0.83,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "- A lag does not remove conditions that persist.",
+   "n5": 4,
+   "draft": 0.25,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Persistent state shocks alone yield a positive peer coefficient with no imitation (see also the reflection problem; Manski 1993, to verify).",
+   "n5": 17,
+   "draft": 0.0,
+   "agent": 0.29,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- The authors' own reading of Model 2 (\"the common diffusion of standards across hospitals in the same state\") concedes that state conditions drive the peer measure.",
+   "n5": 15,
+   "draft": 0.53,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- Modularity responds to the same conditions.",
+   "n5": 2,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**Collinearity and noise (std:4(a)–(b)).** No peer–modularity correlation is reported.",
+   "n5": 9,
+   "draft": 0.33,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "A mean over about eight sample hospitals per state is noisy, which weakens the peer measure against modularity: it attenuates modest direct effects.",
+   "n5": 19,
+   "draft": 0.11,
+   "agent": 0.05,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**The rival's construct (std:3(c)).** §1 names peers that hospitals \"regard as successful or legitimate\".",
+   "n5": 11,
+   "draft": 0.18,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "The measure is all other sample hospitals in the state, which are neither referents nor the state's hospital population.",
+   "n5": 13,
+   "draft": 0.0,
+   "agent": 0.08,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "My judgement here is provisional: I use the paper's own definition (citing DiMaggio & Powell 1983), and I flag the point for the second reviewer.",
+   "n5": 20,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "But the mismatch is with the paper's own statement of its rival.",
+   "n5": 8,
+   "draft": 0.12,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**The rival in its strongest form (std:3(a)).** The paper's own sources predict patterns that it does not test:",
+   "n5": 16,
+   "draft": 0.0,
+   "agent": 0.12,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "imitation under uncertainty, which implies a peer × uncertainty interaction;",
+   "n5": 5,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "two-stage diffusion, in which later adopters are more imitative (Tolbert & Zucker 1983).",
+   "n5": 9,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "In the typology the paper cites, state requirements for certified interfaces are coercive isomorphism.",
+   "n5": 9,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "At most, the design speaks to mimetic isomorphism, not to \"institutional explanations\" in general (abstract, last sentence).",
+   "n5": 13,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**H3 as stated and as tested.** H3 is stated as an unconditional association, which Model 1 supports.",
+   "n5": 13,
+   "draft": 0.0,
+   "agent": 0.31,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "What §4 finds \"not supported\" is the conditional version in §2.4.",
+   "n5": 7,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Please restate H3 as the proposition tested.",
+   "n5": 3,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**Inference (std:9).** The peer measure varies by state and year, but the standard errors are clustered by hospital.",
+   "n5": 15,
+   "draft": 0.13,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "That probably makes every peer interval above too narrow.",
+   "n5": 5,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Every model includes the peer measure, so please cluster by state, or two ways, with a small-cluster correction.",
+   "n5": 15,
+   "draft": 0.0,
+   "agent": 0.13,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Please also report the number of states and of sample hospitals per state.",
+   "n5": 9,
+   "draft": 0.11,
+   "agent": 0.22,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "So \"rule out\" and \"Not Mimicry\" are not supported.",
+   "n5": 5,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Neither is the reading of \"fashion\" as \"economizing\" (std:3(e)–(f)).",
+   "n5": 8,
+   "draft": 0.5,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "H1 fits both accounts (std:3(d)).",
+   "n5": 3,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "The same bar applies to the paper's own account: state requirements could raise outsourcing directly, not only through modularity (Major 3).",
+   "n5": 17,
+   "draft": 0.35,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**Where I may be wrong:** the second reviewer may accept the state peer set as the rival's construct.",
+   "n5": 14,
+   "draft": 0.71,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "**A test whose result I can't predict:**",
+   "n5": 3,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "(i) whether peers' adoption of certified interfaces predicts a hospital's own change in modularity;",
+   "n5": 10,
+   "draft": 0.0,
+   "agent": 0.1,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "(ii) a peer group that crosses state lines (system, referral or shared-vendor ties), estimated with state-by-year fixed effects.",
+   "n5": 17,
+   "draft": 0.18,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**What would persuade me:** no effect of peers on a hospital's own modularity, and an interval on the cross-state peer coefficient that excludes 0.07.",
+   "n5": 21,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "That would justify \"no evidence of direct imitation through this channel\".",
+   "n5": 7,
+   "draft": 0.29,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**Repair:** retitle, and say in the abstract and §5–6 only that the evidence does not require mimicry, unless the tests above are added.",
+   "n5": 20,
+   "draft": 0.2,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "The causal reading of the modularity effect is not identified (damaging)",
+   "n5": 7,
+   "draft": 0.0,
+   "agent": 0.29,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**Direction (std:11).** Nothing argues that modularity was not chosen with outsourcing in view.",
+   "n5": 10,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- Hospitals planning to outsource may install certified interfaces first, and vendors taking over a function may install them.",
+   "n5": 14,
+   "draft": 0.07,
+   "agent": 0.14,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- If they do, same-year feedback alone could produce a positive estimate with no true effect, and lagging m would not solve it.",
+   "n5": 19,
+   "draft": 0.0,
+   "agent": 0.05,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- Please test whether past outsourcing predicts modularity, and whether, at function level, m rises before or after a function is outsourced.",
+   "n5": 17,
+   "draft": 0.0,
+   "agent": 0.18,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**Time-varying confounders (std:11(c)).** Year effects absorb the federal EHR incentive programme only if its effects were common across hospitals.",
+   "n5": 18,
+   "draft": 0.22,
+   "agent": 0.06,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Attestation timing varied, and it plausibly moved both certified interfaces and vendor contracts.",
+   "n5": 9,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**The staffing control (std:7(b), std:10).**",
+   "n5": 4,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "In-house staffing is partly the outcome, since §3.2 says outsourcing transfers or eliminates the positions.",
+   "n5": 12,
+   "draft": 0.25,
+   "agent": 0.08,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- When capability drives both modularity and outsourcing, conditioning on staffing can raise or lower the modularity coefficient.",
+   "n5": 13,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Its survival in Model 4 therefore says nothing about capability, and \"cannot be attributed to capability differences\" (§3.3, §4) does not follow.",
+   "n5": 16,
+   "draft": 0.0,
+   "agent": 0.06,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- Use capability measured before treatment, such as 2009 staffing or IT budget, interacted with year.",
+   "n5": 11,
+   "draft": 0.0,
+   "agent": 0.36,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**Controls (std:7).** Please report the key coefficients without the controls, so that readers can see which controls carry identifying weight.",
+   "n5": 17,
+   "draft": 0.0,
+   "agent": 0.06,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "The specificity rating is treated under Major 4.",
+   "n5": 4,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**Variation and comparison (std:10(a), (b), (d), (f)).** Identification comes from within-hospital changes in m.",
+   "n5": 11,
+   "draft": 0.0,
+   "agent": 0.18,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- Please report how much variation in m remains after the fixed effects, and which hospitals supply it.",
+   "n5": 13,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- Are hospitals with small changes a credible comparison for hospitals with large ones?",
+   "n5": 9,
+   "draft": 0.0,
+   "agent": 0.22,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Please show whether the two groups differed in outsourcing trends before the changes.",
+   "n5": 9,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**The event study (std:10(e), std:13).** It is a reduced form of state requirements on outsourcing, with no first stage on m, and none of it is reported.",
+   "n5": 26,
+   "draft": 0.19,
+   "agent": 0.35,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "report the event-time coefficients with intervals, from an estimator robust to effects that differ by adoption cohort, against not-yet-treated states (Callaway & Sant'Anna 2021; Sun & Abraham 2021; both to verify);",
+   "n5": 28,
+   "draft": 0.25,
+   "agent": 0.04,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "cluster by state, with a wild bootstrap;",
+   "n5": 3,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "show leads that are flat and precise, meaning their intervals exclude pre-trends of half the post-adoption effect, or else report a sensitivity analysis (Rambachan & Roth 2023, to verify).",
+   "n5": 26,
+   "draft": 0.31,
+   "agent": 0.04,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**The requirements as an instrument (std:11(b)).** This is the paper's best route to identification, but only if two conditions hold:",
+   "n5": 18,
+   "draft": 0.28,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**Relevance:** report the first stage.",
+   "n5": 1,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- **Exclusion:** the requirements must affect outsourcing only through modularity, and the paper must argue this.",
+   "n5": 11,
+   "draft": 0.0,
+   "agent": 0.27,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "I see three threats to it:",
+   "n5": 2,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "requirements may change vendor supply, and so the production-cost advantage s, directly;",
+   "n5": 9,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "compliance burdens may push hospitals to outsource directly;",
+   "n5": 4,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "the requirements are coercive pressure in the institutional sense (Major 2).",
+   "n5": 7,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Without exclusion, the event study estimates the effect of mandates, not of modularity.",
+   "n5": 9,
+   "draft": 0.0,
+   "agent": 0.44,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**Specification (std:10(g)).** Please say how the main specification was chosen, and report the specifications that did not work.",
+   "n5": 16,
+   "draft": 0.12,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**Where I may be wrong:** some of this may have been done but not reported, and vendors may not install interfaces on takeover in this setting.",
+   "n5": 22,
+   "draft": 0.5,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "A reader who admits only design-based evidence would rate this concern fatal.",
+   "n5": 9,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "I do not, because the association is sound and the requirements may supply a design.",
+   "n5": 11,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**A test whose result I can't predict:** 2SLS of outsourcing on modularity, instrumented by the state requirements.",
+   "n5": 13,
+   "draft": 0.23,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**What would persuade me:** a strong first stage, an argued exclusion restriction, an IV estimate of the same sign, and flat, precise leads.",
+   "n5": 19,
+   "draft": 0.05,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**Repair:** a design, either an instrument with exclusion argued or timing evidence, plus capability controls measured before treatment.",
+   "n5": 14,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Until then, please use associational language throughout, including in §5.1's advice to practice.",
+   "n5": 9,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "The mechanism and the efficiency conclusion are not shown (damaging)",
+   "n5": 6,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**The hold-up channel is not visible in Table 2 (std:3(g)).**",
+   "n5": 9,
+   "draft": 0.0,
+   "agent": 0.22,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "In the theory, modularity works by lowering effective specificity, k(1−m).",
+   "n5": 8,
+   "draft": 0.0,
+   "agent": 0.12,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- The specificity rating asks how costly it would be to transfer the hospital's IT functions to a different provider.",
+   "n5": 4,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "That reads as effective, switching-cost specificity.",
+   "n5": 3,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- If it is, m should lower it within hospitals, and β1 conditional on it should be near zero.",
+   "n5": 14,
+   "draft": 0.0,
+   "agent": 0.21,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "β1 stays sizeable with the rating controlled.",
+   "n5": 3,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- The rating's coefficient barely moves when m enters (−0.094 to −0.091).",
+   "n5": 7,
+   "draft": 0.0,
+   "agent": 0.71,
+   "closest_agent_output": "runs/03_simulated_reviewer_TCE.md",
+   "origin": "agent"
+  },
+  {
+   "sentence": "By the omitted-variable formula, that means m moves by only about 0.03 across the rating's full range, conditional on the controls (recomputed by hand; indicative only, since within-hospital spreads are not reported).",
+   "n5": 30,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- So either the rating measures something else, or modularity works through a channel the model lacks.",
+   "n5": 12,
+   "draft": 0.0,
+   "agent": 0.42,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "One candidate is economizing but not transaction-cost economizing: certified interfaces may widen vendors' scale advantage s.",
+   "n5": 13,
+   "draft": 0.0,
+   "agent": 0.23,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**The rating (std:7(a)–(c)).**",
+   "n5": 2,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Its referent is undefined: nominal or effective specificity, and in-house or outsourced functions.",
+   "n5": 10,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- For outsourced functions it includes lock-in created by outsourcing itself, so it is partly an outcome (std:7(b)).",
+   "n5": 16,
+   "draft": 0.0,
+   "agent": 0.12,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- It is a perceptual, single-informant rating without validation (std:7(c)).",
+   "n5": 8,
+   "draft": 0.38,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Controlled throughout, it is either a mediator or a bad control.",
+   "n5": 7,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Please define it, report the within-hospital regression of the rating on m, and report H1 with and without it.",
+   "n5": 16,
+   "draft": 0.0,
+   "agent": 0.19,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**Scope of m.** m covers clinical systems only, while Φ covers all functions, including hosting and help desk, which clinical interface standards should not touch.",
+   "n5": 20,
+   "draft": 0.0,
+   "agent": 0.5,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- A function-level test should focus on the functions the mechanism reaches, and use the others as a placebo for the hold-up channel.",
+   "n5": 20,
+   "draft": 0.0,
+   "agent": 0.15,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- A modularity effect in commodity functions would fit both the production-cost channel and an institutional bundle of standards and outsourcing.",
+   "n5": 17,
+   "draft": 0.0,
+   "agent": 0.12,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "So the function-level test separates hold-up from both of them, but not the two from each other.",
+   "n5": 15,
+   "draft": 0.0,
+   "agent": 0.13,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- Cost consequences by adoption timing, or whether m rises only in the functions that were outsourced, could separate them.",
+   "n5": 15,
+   "draft": 0.0,
+   "agent": 0.53,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**\"Economizing\" (std:8).** Three phrases are efficiency claims: \"economizing\" (abstract, §6), \"efficiency-enhancing\" (§5.1) and \"the conditions that make it efficient\" (§6).",
+   "n5": 16,
+   "draft": 0.81,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "- They are stated as what the results show, so they need either a selection argument or direct evidence on costs.",
+   "n5": 16,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- Selection is weak among non-profit and public hospitals, and the paper shows no cost, quality or hold-up outcome.",
+   "n5": 16,
+   "draft": 0.31,
+   "agent": 0.06,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- A fit between choices and transaction attributes supports an alignment claim (choices track specificity), not the claim that the practice economizes.",
+   "n5": 17,
+   "draft": 0.0,
+   "agent": 0.06,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Show the cost consequences, or restate the claims as alignment.",
+   "n5": 6,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "**Wording cuts both ways (std:12(d)).** \"Fashion\" mixes motive with outcome.",
+   "n5": 8,
+   "draft": 0.12,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Mimetic isomorphism, as cited, is about motive.",
+   "n5": 3,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "**Where I may be wrong:** the rating may measure nominal specificity.",
+   "n5": 7,
+   "draft": 0.29,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Its stability would then be expected, and the mechanism test would need another measure.",
+   "n5": 10,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**A test whose result I can't predict:** the within-hospital regression of switching-cost specificity on modularity.",
+   "n5": 13,
+   "draft": 0.23,
+   "agent": 0.08,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**What would persuade me:** a clear negative effect of m on effective specificity, and an H1 coefficient that shrinks when specificity enters.",
+   "n5": 18,
+   "draft": 0.06,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**Repair:** the mechanism test, and \"economizing\" restated as alignment unless cost evidence is added.",
+   "n5": 10,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**N (std:6(c)).** 412 × 11 = 4,532, not 4,712.",
+   "n5": 7,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "If the lagged peer measure also drops 2009, N should be 4,120.",
+   "n5": 9,
+   "draft": 0.0,
+   "agent": 0.11,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Please reconcile N with the sample and the lag, and confirm the estimation sample.",
+   "n5": 10,
+   "draft": 0.0,
+   "agent": 0.2,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- **Stars (std:6(b)).** Model 3 uncertainty, 0.084 (0.051), is starred *** at p ≈ 0.10.",
+   "n5": 10,
+   "draft": 0.0,
+   "agent": 0.2,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "The other 15 cells are consistent.",
+   "n5": 2,
+   "draft": 0.0,
+   "agent": 1.0,
+   "closest_agent_output": "runs/08_probe_derivation.md",
+   "origin": "agent"
+  },
+  {
+   "sentence": "Intervals would serve better than stars.",
+   "n5": 2,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- **Magnitude (std:6(e)).** \"Strongly predicts\" (abstract) describes 2.7 points per SD of m, about 0.16 SD of Φ.",
+   "n5": 14,
+   "draft": 0.0,
+   "agent": 0.43,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- Both figures use pooled SDs, though identification is within hospitals.",
+   "n5": 6,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Please give magnitudes with intervals.",
+   "n5": 1,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- Please also say how much of the decade's doubling (§1) is accounted for by β1 times the change in mean m.",
+   "n5": 17,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Year effects absorb the rest of the field-level diffusion that the abstract asks about.",
+   "n5": 11,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- **Marginal effect of modularity (std:6(d)).** It is 0.118 − 0.061u in Model 3, reaching zero near u = 1.9 SD (1.7 SD in Model 4).",
+   "n5": 21,
+   "draft": 0.38,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Please report the distribution of u and the covariances.",
+   "n5": 5,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "- **Uncertainty construct.** Admissions volatility is demand volatility, whereas the model's u is disturbances that require adapting the IT transaction.",
+   "n5": 15,
+   "draft": 0.0,
+   "agent": 0.2,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Please argue the link, or add an IT-specific measure.",
+   "n5": 6,
+   "draft": 0.0,
+   "agent": 0.17,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "As constructed, u is a z-score, while the model needs u ≥ 0.",
+   "n5": 9,
+   "draft": 0.0,
+   "agent": 0.33,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Below u = −h0/h1 the hazard H is negative and the buy rule reverses.",
+   "n5": 10,
+   "draft": 0.0,
+   "agent": 0.1,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- k* is undefined at m = 1, which the data may reach.",
+   "n5": 7,
+   "draft": 0.0,
+   "agent": 0.29,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- A3 is the only numbered assumption.",
+   "n5": 2,
+   "draft": 0.0,
+   "agent": 1.0,
+   "closest_agent_output": "runs/08_probe_derivation.md",
+   "origin": "agent"
+  },
+  {
+   "sentence": "- **Single informant.** One CIO reports m, the rating and, it seems, Φ.",
+   "n5": 7,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "For factual items that is acceptable, but reporting can shift when the CIO changes.",
+   "n5": 10,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Please control for CIO turnover, or validate m or Φ against another record.",
+   "n5": 8,
+   "draft": 0.0,
+   "agent": 0.12,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "To its credit, the modularity item records use (systems that \"exchange data\" through certified interfaces), not just certification.",
+   "n5": 14,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- **Survival selection.** Under fixed effects it matters only if exit tracks changes in modularity or outsourcing, so please report the exclusions and their outcome trends before exit.",
+   "n5": 23,
+   "draft": 0.39,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- **Practice (§5.1).** The advice to \"attend first to the modularity of their systems\" presupposes the causal effect and a benefit from outsourcing.",
+   "n5": 14,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Please condition it, or drop it.",
+   "n5": 2,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "A3 should be stated in words, with why it signs each prediction.",
+   "n5": 8,
+   "draft": 0.25,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- The intuition after P2 describes the per-function cost saving (h1k, which rises with u), not the threshold (which falls with u under A3).",
+   "n5": 20,
+   "draft": 0.0,
+   "agent": 0.15,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "It would mislead a non-economist.",
+   "n5": 2,
+   "draft": 0.5,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- On whether the rival is recognisable to sociologists, I defer to the second reviewer.",
+   "n5": 10,
+   "draft": 0.4,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "If I recall correctly, Loh and Venkatraman (1992, *Information Systems Research*) contrasted imitative and other influences on the diffusion of IT outsourcing.",
+   "n5": 17,
+   "draft": 0.0,
+   "agent": 0.12,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Ang and Cummings (1997, *Organization Science*) examined institutional and efficiency influences on IS outsourcing.",
+   "n5": 10,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "- That specificity is partly a product of interface design is already in the paper's own sources (Langlois 2002; Sanchez & Mahoney 1996).",
+   "n5": 13,
+   "draft": 0.0,
+   "agent": 0.23,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "The contribution is the formal link and the hospital evidence, and its premise is untested (Major 4).",
+   "n5": 13,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- **Code and data.** Please supply code that reproduces Table 2 and the event study, and the data, or an access route where the licence allows.",
+   "n5": 21,
+   "draft": 0.14,
+   "agent": 0.14,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "A within-hospital association between modularity and outsourcing, stable across Models 2–4 and correctly reported, in an unusually long panel.",
+   "n5": 16,
+   "draft": 0.19,
+   "agent": 0.06,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Its causal reading is open.",
+   "n5": 1,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- P1, and the step from P1 to H1, which holds for any spending distribution.",
+   "n5": 10,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- A model that, once corrected, makes sharper predictions than the paper claims: a negative interaction on the threshold, and a negative effect of uncertainty.",
+   "n5": 20,
+   "draft": 0.05,
+   "agent": 0.05,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Both are testable at the function level.",
+   "n5": 3,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- A possible route to identification in the state requirements, if exclusion can be argued.",
+   "n5": 10,
+   "draft": 0.3,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- Good practice: a rival and a test criterion stated in advance, and a contrary result reported openly.",
+   "n5": 13,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Without this paper we would lose a clear, formal transaction-cost account of how standards shape the boundaries of the firm, in a setting where that matters.",
+   "n5": 22,
+   "draft": 0.5,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "These changes would change my view:",
+   "n5": 2,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "the adjudication claim withdrawn (title included), or supported by a discriminating test;",
+   "n5": 8,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "P2 and H2 corrected, with F stated or a function-level test, and §5 ¶2 dropped;",
+   "n5": 12,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "a design for identification, with capability controls measured before treatment;",
+   "n5": 6,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "the mechanism tested, and \"economizing\" restated as alignment or supported by cost evidence.",
+   "n5": 9,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "If the title claim is kept without a discriminating test, I would recommend rejection.",
+   "n5": 10,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**Checks run** (outside the word count)",
+   "n5": 2,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "**std:5:** P1 and P2 re-derived by hand; a symbolic check agrees.",
+   "n5": 9,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "P2's general form also re-derived by hand.",
+   "n5": 4,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- **std:6:** recomputed by hand:",
+   "n5": 1,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "t and stars for all 16 coefficients (one discrepancy);",
+   "n5": 5,
+   "draft": 0.6,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "the 2.7-point and one-sixth-SD magnitudes;",
+   "n5": 4,
+   "draft": 0.0,
+   "agent": 1.0,
+   "closest_agent_output": "runs/10_probe_inferential_audit.md",
+   "origin": "agent"
+  },
+  {
+   "sentence": "Machine checks agree with every hand result.",
+   "n5": 3,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- **std:13:** the peer interval and the equivalence bound, recomputed by hand and by machine.",
+   "n5": 11,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- **std:7:** the outcome passes (a)–(d); modularity passes (b)–(e).",
+   "n5": 7,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- **std:9:** u and m × u vary by hospital, which matches the clustering.",
+   "n5": 9,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- **std:3(a):** the rival is stated with a citation.",
+   "n5": 6,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "- **std:14(b):** selection into peer groups does not arise, since a hospital's state is fixed.",
+   "n5": 12,
+   "draft": 1.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "draft"
+  },
+  {
+   "sentence": "**Confidential note to the editor (not for the authors)**",
+   "n5": 5,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "**Severity.** I rate Major 2 fatal to the adjudication claim, because that claim is the headline and cannot stand on this design.",
+   "n5": 18,
+   "draft": 0.0,
+   "agent": 0.06,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "The paper survives on H1.",
+   "n5": 1,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "My recommendation of major revision is conditional on the claim being withdrawn, or supported by a new test.",
+   "n5": 14,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- **Identification.** A strictly design-based reader would rate Major 3 fatal.",
+   "n5": 7,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "I rate it damaging, because the association is sound and the state requirements may supply a design.",
+   "n5": 13,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "If you judge that building a design goes beyond a revision, my recommendation moves toward reject.",
+   "n5": 12,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- **N.** The observation count cannot match the stated panel.",
+   "n5": 5,
+   "draft": 0.0,
+   "agent": 0.2,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "I put it to the authors as a query, but I would want it reconciled, with code, before relying on Table 2.",
+   "n5": 18,
+   "draft": 0.0,
+   "agent": 0.17,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- **Sociologists (N4).** I state the rival in what I take to be its strongest form, from the paper's own sources.",
+   "n5": 16,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Whether the peer measure, and the treatment of standards and mandates, are fair to institutional theory is for the second reviewer.",
+   "n5": 17,
+   "draft": 0.0,
+   "agent": 0.06,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- **Citations.** Those marked \"to verify\" are from memory, and I could not check them.",
+   "n5": 10,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Please verify or strike them before forwarding.",
+   "n5": 3,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- **Method.** The formal and numerical points were checked by machine as well as by hand.",
+   "n5": 11,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "I used simulations only to see whether a pattern is possible.",
+   "n5": 7,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "I cite no simulated magnitude to the authors.",
+   "n5": 4,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "- **Length.** The body of the review grew from about 1,500 words to roughly 3,500–4,000, for three reasons:",
+   "n5": 17,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "it now includes points I had missed that bear on the main claims: the mechanism, the rival's strongest form, H3 as stated, and the uncertainty measure;",
+   "n5": 22,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "it applies parts of my own standards that I had not applied: the controls, the clustering, and the comparison group;",
+   "n5": 16,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "one inconsistency in my draft, the instrument, needed an argument rather than a sentence.",
+   "n5": 10,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "I cut where I could.",
+   "n5": 1,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  },
+  {
+   "sentence": "Survival selection, for example, is now one sentence.",
+   "n5": 4,
+   "draft": 0.0,
+   "agent": 0.0,
+   "closest_agent_output": null,
+   "origin": "new"
+  }
+ ]
+}

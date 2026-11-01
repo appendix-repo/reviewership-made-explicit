@@ -1,0 +1,1011 @@
+[
+ {
+  "@id": "ev:1",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T19:54:00Z",
+  "timestampKind": "reconstructed",
+  "actor": {
+   "kind": "orchestrator",
+   "name": "orchestrating session (Claude)"
+  },
+  "action": "ingest",
+  "inputs": [],
+  "outputs": [
+   "ms:TEST"
+  ],
+  "rationale": "Synthetic test manuscript registered by hash. Timestamp reconstructed from the file's save time (19:54:28), rounded down.",
+  "contentHash": "a8ab4709ef157d6e5467077a6e54eb4f0ee9f35bac2b241be91fe80a950852d0",
+  "prevHash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "hash": "42adc63065ecca13c125a40b5c46d85a2fe99d4a9b34892df7763467c04b1cb1"
+ },
+ {
+  "@id": "ev:2",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T19:55:00Z",
+  "timestampKind": "actual",
+  "actor": {
+   "kind": "orchestrator",
+   "name": "orchestrating session (Claude)"
+  },
+  "action": "seal",
+  "inputs": [
+   "ms:TEST"
+  ],
+  "outputs": [
+   "key:SEALED"
+  ],
+  "respondsTo": "ev:1",
+  "rationale": "Sealed defect key (9 seeded defects) hashed before any agent saw the manuscript. Key withheld from all agents.",
+  "contentHash": "970e0574092c8e9dd0c97200980c804f0431153f256b0e9f34260b405034809d",
+  "prevHash": "42adc63065ecca13c125a40b5c46d85a2fe99d4a9b34892df7763467c04b1cb1",
+  "hash": "8ff62f9536e5f19e0e50f7d3d6d2f3b6be40ff289c30d91532dac70ba30b9afe"
+ },
+ {
+  "@id": "ev:3",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:04:44Z",
+  "timestampKind": "actual",
+  "actor": {
+   "kind": "agent",
+   "name": "Best-Self Elicitor (Mode E)",
+   "model": "Claude (Anthropic)",
+   "instructionSetVersion": "Reviewership v0.1"
+  },
+  "action": "elicit",
+  "inputs": [
+   "ms:TEST"
+  ],
+  "outputs": [
+   "bs:E0"
+  ],
+  "respondsTo": "ev:2",
+  "rationale": "Run 01, turn 1: four questions to the handling editor, from the invitation only.",
+  "prevHash": "8ff62f9536e5f19e0e50f7d3d6d2f3b6be40ff289c30d91532dac70ba30b9afe",
+  "hash": "b4c9a5f614931e5c742261f384be7ba12d84e9018fdd4455389fdcd2681bd699"
+ },
+ {
+  "@id": "ev:4",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:06:55Z",
+  "timestampKind": "actual",
+  "actor": {
+   "kind": "stand-in",
+   "name": "Claude, standing in for the handling editor",
+   "model": "Claude (Anthropic)"
+  },
+  "action": "elicit",
+  "inputs": [
+   "bs:E0"
+  ],
+  "outputs": [
+   "bs:E-answers"
+  ],
+  "respondsTo": "ev:3",
+  "rationale": "Run 01, turn 2: editor stand-in answers. Stand-in had read the manuscript (persona S1).",
+  "contentHash": "44ae4b3f642f9dcfceff75cfabacc53f625bcb153981b096026b932f65bfcc1a",
+  "prevHash": "b4c9a5f614931e5c742261f384be7ba12d84e9018fdd4455389fdcd2681bd699",
+  "hash": "f346ca74c81cc38279a79355449d3a35c3d3bbfc470b5119964fdd92e7fa0abc"
+ },
+ {
+  "@id": "ev:5",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:08:57Z",
+  "timestampKind": "actual",
+  "actor": {
+   "kind": "agent",
+   "name": "Best-Self Elicitor (Mode E to S)",
+   "model": "Claude (Anthropic)",
+   "instructionSetVersion": "Reviewership v0.1"
+  },
+  "action": "specify",
+  "inputs": [
+   "bs:E-answers"
+  ],
+  "outputs": [
+   "bs:EB",
+   "bs:S1"
+  ],
+  "respondsTo": "ev:4",
+  "rationale": "Run 01, turn 3: editor brief bs:EB; Round 1 questions to the reviewer.",
+  "contentHash": "f463636cdda2e6cf669232cc0dcecd6f269397d1e842e98a12bb5f413a1ad768",
+  "prevHash": "f346ca74c81cc38279a79355449d3a35c3d3bbfc470b5119964fdd92e7fa0abc",
+  "hash": "960a1bac66bb0538f56d8bbbb6240b9ee8c2c52765f9d6ab80b930d2ce4e7cb0"
+ },
+ {
+  "@id": "ev:6",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:12:16Z",
+  "timestampKind": "actual",
+  "actor": {
+   "kind": "stand-in",
+   "name": "Claude, standing in for the focal reviewer",
+   "model": "Claude (Anthropic)"
+  },
+  "action": "elicit",
+  "inputs": [
+   "bs:S1"
+  ],
+  "outputs": [
+   "bs:S1-answers"
+  ],
+  "respondsTo": "ev:5",
+  "rationale": "Run 01, turn 4: reviewer stand-in answers Round 1 (recall). Has not seen the manuscript.",
+  "contentHash": "d1023525ef3a6e490868fa9a9366c7f0f363f66177030c1b734cf957d695abe9",
+  "prevHash": "960a1bac66bb0538f56d8bbbb6240b9ee8c2c52765f9d6ab80b930d2ce4e7cb0",
+  "hash": "e07209e063606236f0f5cd30bc49c108bd33a201ab57b7c40237a06e53e9341d"
+ },
+ {
+  "@id": "ev:7",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:19:17Z",
+  "timestampKind": "actual",
+  "actor": {
+   "kind": "agent",
+   "name": "Best-Self Elicitor (Mode S, round 2)",
+   "model": "Claude (Anthropic)",
+   "instructionSetVersion": "Reviewership v0.1"
+  },
+  "action": "elicit",
+  "inputs": [
+   "bs:S1-answers"
+  ],
+  "outputs": [
+   "bs:S2"
+  ],
+  "respondsTo": "ev:6",
+  "rationale": "Run 01, turn 5: draft dimension settings, material inferences in plain words, 16 draft standards (13 from the reviewer, 3 suggested).",
+  "contentHash": "7459a6d02bcf7573dee34171fc69d7d438063fc5d335d7f44ef9cc817fd28ca7",
+  "prevHash": "e07209e063606236f0f5cd30bc49c108bd33a201ab57b7c40237a06e53e9341d",
+  "hash": "7b0d9bf79a115132b06cd44d77fb49c68e5df587a4fe7ede57dda09879246f0d"
+ },
+ {
+  "@id": "ev:8",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:22:36Z",
+  "timestampKind": "actual",
+  "actor": {
+   "kind": "stand-in",
+   "name": "Claude, standing in for the focal reviewer",
+   "model": "Claude (Anthropic)"
+  },
+  "action": "elicit",
+  "inputs": [
+   "bs:S2"
+  ],
+  "outputs": [
+   "bs:S2-answers"
+  ],
+  "respondsTo": "ev:7",
+  "rationale": "Run 01, turn 6: reviewer accepts, rejects or rewrites standards; sets weights INF 0.9, EPI 0.9, TEC 0.7, ONT 0.6, PRA 0.4.",
+  "contentHash": "77cd49e275e6944096abf3ba70f40e2f02563e9374116d69014a0cea840a2108",
+  "prevHash": "7b0d9bf79a115132b06cd44d77fb49c68e5df587a4fe7ede57dda09879246f0d",
+  "hash": "36170fe591f6a6c86b4b7e7c875c8a5863a12bbb9637b76870ac9af0125cd449"
+ },
+ {
+  "@id": "ev:9",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:26:28Z",
+  "timestampKind": "actual",
+  "actor": {
+   "kind": "agent",
+   "name": "Base-model pilot: 6 single-pass reviews (3 tiers x 2 styles)",
+   "model": "Claude Haiku, Sonnet, Opus tiers",
+   "instructionSetVersion": "Reviewership v0.1 (task T5)"
+  },
+  "action": "simulate",
+  "inputs": [
+   "ms:TEST"
+  ],
+  "outputs": [
+   "pilot:A",
+   "pilot:B",
+   "pilot:C",
+   "pilot:D",
+   "pilot:E",
+   "pilot:F"
+  ],
+  "respondsTo": "ev:2",
+  "rationale": "Run 13. Completed 20:19-20:25 UTC. Two Sonnet cells failed with an API safeguard error on first attempt and were rerun with a reworded wrapper. Outputs blind-labelled A-F; mapping hashed (sha256 b5ad0406...) before scoring.",
+  "prevHash": "36170fe591f6a6c86b4b7e7c875c8a5863a12bbb9637b76870ac9af0125cd449",
+  "hash": "352229d4a11db1b063d677ffa520d7cf36e4e599ad9ecd6cd09f2b6714b42fcd"
+ },
+ {
+  "@id": "ev:10",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:26:28Z",
+  "timestampKind": "actual",
+  "actor": {
+   "kind": "agent",
+   "name": "Blind pilot scorer",
+   "model": "Claude (Anthropic)"
+  },
+  "action": "score",
+  "inputs": [
+   "pilot:A",
+   "pilot:B",
+   "pilot:C",
+   "pilot:D",
+   "pilot:E",
+   "pilot:F",
+   "key:SEALED"
+  ],
+  "outputs": [],
+  "respondsTo": "ev:9",
+  "rationale": "Scorer launched with the sealed key and the six blind-labelled reviews; not told model or style.",
+  "prevHash": "352229d4a11db1b063d677ffa520d7cf36e4e599ad9ecd6cd09f2b6714b42fcd",
+  "hash": "a792d2d8c25a8c38ea929b9eb5662061d34ad3b864ea4c8b20009dc18b0a7641"
+ },
+ {
+  "@id": "ev:11",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:27:12Z",
+  "timestampKind": "actual",
+  "actor": {
+   "kind": "agent",
+   "name": "Best-Self Elicitor (Mode S, round 3)",
+   "model": "Claude (Anthropic)",
+   "instructionSetVersion": "Reviewership v0.1"
+  },
+  "action": "elicit",
+  "inputs": [
+   "bs:S2-answers"
+  ],
+  "outputs": [
+   "bs:S3"
+  ],
+  "respondsTo": "ev:8",
+  "rationale": "Run 01, turn 7: 16 standards made checkable; 8 sharpening questions; 5 tensions to rank. Reviewer's request to see the editor's full answers was declined by the orchestrator: per protocol the reviewer receives the editor brief bs:EB only.",
+  "contentHash": "f4b2fd95c68e011f46271eefb2873a82f129ebe368c586a7bfffaf52e31abd07",
+  "prevHash": "a792d2d8c25a8c38ea929b9eb5662061d34ad3b864ea4c8b20009dc18b0a7641",
+  "hash": "d393d0e138ec8eb4e87a4378a5baec543df3ad7107c105d7b2fe859f87130433"
+ },
+ {
+  "@id": "ev:12",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:31:00Z",
+  "timestampKind": "reconstructed",
+  "actor": {
+   "kind": "agent",
+   "name": "Simulated Reviewer (transaction-cost lens, resembling)",
+   "model": "Claude (Anthropic)",
+   "instructionSetVersion": "Reviewership v0.1"
+  },
+  "action": "simulate",
+  "inputs": [
+   "ms:TEST",
+   "persp:R-TCE"
+  ],
+  "outputs": [
+   "sr:R-TCE"
+  ],
+  "respondsTo": "ev:2",
+  "rationale": "Run 03. Started 20:03; completion time from file save time.",
+  "contentHash": "3189b06a27efc8ba3a911073c342d6681095c0d2d799f410df6481a500f6ddf1",
+  "prevHash": "d393d0e138ec8eb4e87a4378a5baec543df3ad7107c105d7b2fe859f87130433",
+  "hash": "fb5a404a3cbdcb334a15067aed2f6c24190e6fde6ca3d68e66cd76e32c795967"
+ },
+ {
+  "@id": "ev:13",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:31:00Z",
+  "timestampKind": "reconstructed",
+  "actor": {
+   "kind": "agent",
+   "name": "Simulated Reviewer (institutional lens, differing)",
+   "model": "Claude (Anthropic)",
+   "instructionSetVersion": "Reviewership v0.1"
+  },
+  "action": "simulate",
+  "inputs": [
+   "ms:TEST",
+   "persp:R-INST"
+  ],
+  "outputs": [
+   "sr:R-INST"
+  ],
+  "respondsTo": "ev:2",
+  "rationale": "Run 04. Started 20:03; completion time from file save time.",
+  "contentHash": "0ba73ceeda35c57d154228fa9a9c1ce782f6d13f3baaa06587714373f9e06d5e",
+  "prevHash": "fb5a404a3cbdcb334a15067aed2f6c24190e6fde6ca3d68e66cd76e32c795967",
+  "hash": "f4217d6e409f0e73b0185dd3114d0307e1211f036dc18c4ef1f431dbdfa27d35"
+ },
+ {
+  "@id": "ev:14",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:31:00Z",
+  "timestampKind": "reconstructed",
+  "actor": {
+   "kind": "agent",
+   "name": "Simulated Reviewer (behavioral lens, differing)",
+   "model": "Claude (Anthropic)",
+   "instructionSetVersion": "Reviewership v0.1"
+  },
+  "action": "simulate",
+  "inputs": [
+   "ms:TEST",
+   "persp:R-BEH"
+  ],
+  "outputs": [
+   "sr:R-BEH"
+  ],
+  "respondsTo": "ev:2",
+  "rationale": "Run 05. Started 20:03; completion time from file save time.",
+  "contentHash": "9f8e91debce33d48036252cbf13a8b8e2c51812c4216238ed930e20b5c899933",
+  "prevHash": "f4217d6e409f0e73b0185dd3114d0307e1211f036dc18c4ef1f431dbdfa27d35",
+  "hash": "3cd687ebc73504ee4e88c34d883221264c3afd1236609f47d29a133da2c41279"
+ },
+ {
+  "@id": "ev:15",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:32:00Z",
+  "timestampKind": "reconstructed",
+  "actor": {
+   "kind": "agent",
+   "name": "Simulated Reviewer (design-based lens, differing)",
+   "model": "Claude (Anthropic)",
+   "instructionSetVersion": "Reviewership v0.1"
+  },
+  "action": "simulate",
+  "inputs": [
+   "ms:TEST",
+   "persp:R-DID"
+  ],
+  "outputs": [
+   "sr:R-DID"
+  ],
+  "respondsTo": "ev:2",
+  "rationale": "Run 06. Started 20:03; completion time from file save time.",
+  "contentHash": "938d9fc3010a87f367eb1e34d0548914a5823d4c5766272141097d2acae7bb80",
+  "prevHash": "3cd687ebc73504ee4e88c34d883221264c3afd1236609f47d29a133da2c41279",
+  "hash": "0a56df8772f5937ce252bdf577885d8af3561d6f29f64ebdc444e5b4aaf22294"
+ },
+ {
+  "@id": "ev:16",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:31:00Z",
+  "timestampKind": "reconstructed",
+  "actor": {
+   "kind": "agent",
+   "name": "Adversarial Probe (P-DER), Part 1",
+   "model": "Claude (Anthropic)",
+   "instructionSetVersion": "Reviewership v0.1"
+  },
+  "action": "probe",
+  "inputs": [
+   "ms:TEST"
+  ],
+  "outputs": [
+   "p08:fnd:1..8",
+   "p08:chk:1..5"
+  ],
+  "respondsTo": "ev:2",
+  "rationale": "Run 08 Part 1: 8 findings asserted, 5 checks written, none run.",
+  "contentHash": "3bc6b4391197a3817b9750b8cce52cdfa25be9b6ebd4faf428da11a93957b347",
+  "prevHash": "0a56df8772f5937ce252bdf577885d8af3561d6f29f64ebdc444e5b4aaf22294",
+  "hash": "afe726dd5dcb1fee84a64273ee2574eea5a48b6b8bdb674535531e9b39f81b99"
+ },
+ {
+  "@id": "ev:17",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:32:59Z",
+  "timestampKind": "actual",
+  "actor": {
+   "kind": "harness",
+   "name": "check harness (sandboxed Python)"
+  },
+  "action": "check",
+  "inputs": [
+   "p08:chk:1..5"
+  ],
+  "outputs": [
+   "p08:res:1..5"
+  ],
+  "rationale": "Run 08 checks executed; all exit 0. Verdict lines in runs/08_checks/.",
+  "contentHash": "a76d3d1548a2ee093ef2cda5092ad9e14264a45d36878cfc470a9acee3813ad5",
+  "prevHash": "afe726dd5dcb1fee84a64273ee2574eea5a48b6b8bdb674535531e9b39f81b99",
+  "hash": "d32af7187953d5c0c774e5cb4e32d15c098258862462dd1e9314c7bb8d68f1f7"
+ },
+ {
+  "@id": "ev:18",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:32:59Z",
+  "timestampKind": "actual",
+  "actor": {
+   "kind": "harness",
+   "name": "check harness (sandboxed Python)"
+  },
+  "action": "check",
+  "inputs": [
+   "r-tce:chk",
+   "r-inst:chk",
+   "r-beh:chk",
+   "r-did:chk"
+  ],
+  "outputs": [
+   "res:03..06"
+  ],
+  "rationale": "Checks written by the four simulated reviewers also executed for the record (their role has no Part 2); outputs in runs/03_checks to runs/06_checks.",
+  "prevHash": "d32af7187953d5c0c774e5cb4e32d15c098258862462dd1e9314c7bb8d68f1f7",
+  "hash": "efd6d8e14a485fbcd1e2f72b8e6a391ba895626047cc1b660ecbf2be48d52b40"
+ },
+ {
+  "@id": "ev:19",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:31:00Z",
+  "timestampKind": "reconstructed",
+  "actor": {
+   "kind": "stand-in",
+   "name": "Claude, standing in for the focal reviewer",
+   "model": "Claude (Anthropic)"
+  },
+  "action": "elicit",
+  "inputs": [
+   "bs:S3"
+  ],
+  "outputs": [
+   "bs:S3-answers"
+  ],
+  "respondsTo": "ev:11",
+  "rationale": "Run 01, turn 8: reviewer sharpens standards and ranks tensions. Logged late; time from file save time.",
+  "contentHash": "200aec92029c9f66a483b8d438a4c47ebba93eac51fa17b4df422cb45aec2817",
+  "prevHash": "efd6d8e14a485fbcd1e2f72b8e6a391ba895626047cc1b660ecbf2be48d52b40",
+  "hash": "17ee49ee2ba787d8cfad11288a41ca817691c18141f95235fad1d6964f96c7cf"
+ },
+ {
+  "@id": "ev:20",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:32:00Z",
+  "timestampKind": "reconstructed",
+  "actor": {
+   "kind": "agent",
+   "name": "Adversarial Probe (P-INF, P-MEAS, P-LIT), Part 1",
+   "model": "Claude (Anthropic)",
+   "instructionSetVersion": "Reviewership v0.1"
+  },
+  "action": "probe",
+  "inputs": [
+   "ms:TEST"
+  ],
+  "outputs": [
+   "p10:scoreboard",
+   "p10:fnd:1..21",
+   "p10:chk:1..4"
+  ],
+  "respondsTo": "ev:2",
+  "rationale": "Run 10 Part 1: argument map, scoreboard, 21 findings asserted, 4 checks written.",
+  "contentHash": "80452b7e858ee902373b1210a8337f72ddcad63c12575c328752342f69aeac9c",
+  "prevHash": "17ee49ee2ba787d8cfad11288a41ca817691c18141f95235fad1d6964f96c7cf",
+  "hash": "3db6963340509381d927ca5440bf56218b94d3010db82300b233b207a3ccf588"
+ },
+ {
+  "@id": "ev:21",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:34:32Z",
+  "timestampKind": "actual",
+  "actor": {
+   "kind": "harness",
+   "name": "check harness (sandboxed Python)"
+  },
+  "action": "check",
+  "inputs": [
+   "p10:chk:1..4"
+  ],
+  "outputs": [
+   "p10:res:1..4"
+  ],
+  "rationale": "Run 10 checks executed.",
+  "contentHash": "29e27ff42b8303a9b8998d79493f687a2759b948599e3d15f40fdf661669f8a2",
+  "prevHash": "3db6963340509381d927ca5440bf56218b94d3010db82300b233b207a3ccf588",
+  "hash": "0fac158bd30b9bd7d692f970806c570d4ea8d2e6f57e1a516725921e2ca3bae8"
+ },
+ {
+  "@id": "ev:22",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:35:28Z",
+  "timestampKind": "actual",
+  "actor": {
+   "kind": "agent",
+   "name": "Adversarial Probe (P-DER), Part 2",
+   "model": "Claude (Anthropic)",
+   "instructionSetVersion": "Reviewership v0.1"
+  },
+  "action": "probe",
+  "inputs": [
+   "p08:res:1..5"
+  ],
+  "outputs": [
+   "p08:fnd:1..8"
+  ],
+  "respondsTo": "ev:17",
+  "rationale": "Run 08 Part 2: 8 findings disposed after harness (all demonstrated; evidential half of fnd:5 inconclusive).",
+  "contentHash": "27a4acfc3ae1a669f59852312d964a12eed06ad93ea4f5994bb350c4b3a5cd97",
+  "prevHash": "0fac158bd30b9bd7d692f970806c570d4ea8d2e6f57e1a516725921e2ca3bae8",
+  "hash": "a2b96feb3e3b97ec0cf4e38dda792bbcf8561bab3a583ab128e04cfe4302663a"
+ },
+ {
+  "@id": "ev:23",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:37:20Z",
+  "timestampKind": "actual",
+  "actor": {
+   "kind": "agent",
+   "name": "Adversarial Probe (P-INF, P-MEAS, P-LIT), Part 2",
+   "model": "Claude (Anthropic)",
+   "instructionSetVersion": "Reviewership v0.1"
+  },
+  "action": "probe",
+  "inputs": [
+   "p10:res:1..4"
+  ],
+  "outputs": [
+   "p10:fnd:1..21"
+  ],
+  "respondsTo": "ev:21",
+  "rationale": "Run 10 Part 2: of 8 bound findings, 7 demonstrated, 1 inconclusive; fnd:10 raised to damaging.",
+  "contentHash": "e32f7d882e80d975e77396fb16c13e811a244f991c2c85a2b7a38520044daf3f",
+  "prevHash": "a2b96feb3e3b97ec0cf4e38dda792bbcf8561bab3a583ab128e04cfe4302663a",
+  "hash": "4a991fd52d608e1d8142b1e2f489a50cbd52961cc9ebee7928ba8cce86e71d2e"
+ },
+ {
+  "@id": "ev:24",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:37:00Z",
+  "timestampKind": "reconstructed",
+  "actor": {
+   "kind": "agent",
+   "name": "Blind pilot scorer",
+   "model": "Claude (Anthropic)"
+  },
+  "action": "score",
+  "inputs": [
+   "pilot:A..F",
+   "key:SEALED"
+  ],
+  "outputs": [
+   "pilot:scoring"
+  ],
+  "respondsTo": "ev:10",
+  "rationale": "Scoring completed (time from file save time).",
+  "contentHash": "573b330a17e63b181c0c9b690cd9ac7663550646e675458a3fdaf82365d5872a",
+  "prevHash": "4a991fd52d608e1d8142b1e2f489a50cbd52961cc9ebee7928ba8cce86e71d2e",
+  "hash": "1b41153e40582dc37c5073852e3d01e7deb669268c0b5dfd0bfb32aa7ce0943f"
+ },
+ {
+  "@id": "ev:25",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:37:53Z",
+  "timestampKind": "actual",
+  "actor": {
+   "kind": "orchestrator",
+   "name": "orchestrating session (Claude)"
+  },
+  "action": "annotate",
+  "inputs": [
+   "pilot:scoring"
+  ],
+  "outputs": [
+   "pilot:unblinded"
+  ],
+  "rationale": "Mapping unblinded after scoring; its hash matches the one recorded at ev:9 (b5ad0406...).",
+  "contentHash": "b5ad0406379fdcbaff3af01760d10d54cbc05be95dc1c1ec4c9fb4ff5763ef2b",
+  "prevHash": "1b41153e40582dc37c5073852e3d01e7deb669268c0b5dfd0bfb32aa7ce0943f",
+  "hash": "2e0737d81de82bf40ae0a0552559222e9ef126fecd29aeae8d083577a240de10"
+ },
+ {
+  "@id": "ev:26",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:41:43Z",
+  "timestampKind": "reconstructed",
+  "actor": {
+   "kind": "agent",
+   "name": "Adversarial Probe (P-ID, P-NUM), Part 1",
+   "model": "Claude (Anthropic)",
+   "instructionSetVersion": "Reviewership v0.1"
+  },
+  "action": "probe",
+  "inputs": [
+   "ms:TEST"
+  ],
+  "outputs": [
+   "p09:scoreboard",
+   "p09:fnd:1..11",
+   "p09:chk:1..9"
+  ],
+  "rationale": "Run 09 Part 1 written (time from file save time).",
+  "contentHash": "91a4682a45f0389d0e2497be10abd5d062f941eced62d27203a9004671c25f99",
+  "prevHash": "2e0737d81de82bf40ae0a0552559222e9ef126fecd29aeae8d083577a240de10",
+  "hash": "d31a676d1e31cf03f8e1dc48cfc832fa8e2dac833699d51cca9c5b90f40c80ed"
+ },
+ {
+  "@id": "ev:27",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:42:41Z",
+  "timestampKind": "actual",
+  "actor": {
+   "kind": "harness",
+   "name": "check harness (sandboxed Python)"
+  },
+  "action": "check",
+  "inputs": [
+   "p09:chk:1..9"
+  ],
+  "outputs": [
+   "p09:res:1..9"
+  ],
+  "rationale": "Run 09 checks executed.",
+  "contentHash": "2be75db17d40807c5087e7279fb0062f59e7c844b4767f247e1affd5f84ef2c6",
+  "prevHash": "d31a676d1e31cf03f8e1dc48cfc832fa8e2dac833699d51cca9c5b90f40c80ed",
+  "hash": "938da4f04c8d2ccaf4bc7f4cae89baaf936ec06a81ed3422ba738733e7518e51"
+ },
+ {
+  "@id": "ev:28",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:39:38Z",
+  "timestampKind": "reconstructed",
+  "actor": {
+   "kind": "agent",
+   "name": "Best-Self Elicitor (Mode S, specification)",
+   "model": "Claude (Anthropic)",
+   "instructionSetVersion": "Reviewership v0.1"
+  },
+  "action": "specify",
+  "inputs": [
+   "bs:S3-answers",
+   "bs:EB"
+  ],
+  "outputs": [
+   "bs:SPEC"
+  ],
+  "respondsTo": "ev:19",
+  "rationale": "Standards specification delivered (16 standards, 7 tensions; bs:T7 left open); time from file save time.",
+  "contentHash": "148f7c33a4dfef6267c9bbc84920a075204b1e41f28d77bae0e87bf880f4b4e7",
+  "prevHash": "938da4f04c8d2ccaf4bc7f4cae89baaf936ec06a81ed3422ba738733e7518e51",
+  "hash": "eb7d5e35659ef2c255a6a3e036c2c3ce5a256ab57132435e6143b3c265c13934"
+ },
+ {
+  "@id": "ev:29",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:40:34Z",
+  "timestampKind": "reconstructed",
+  "actor": {
+   "kind": "orchestrator",
+   "name": "orchestrating session (Claude)"
+  },
+  "action": "annotate",
+  "inputs": [
+   "bs:SPEC"
+  ],
+  "outputs": [
+   "persp:FOCAL"
+  ],
+  "rationale": "Elicitor's perspective block did not follow the schema (type/id keys, nested values); normalized by the orchestrator into a schema-valid ReviewingPerspective without changing any setting; time from file save time.",
+  "contentHash": "1850e78c07088e3e8d07187ccf60dcb4221c4f7c5e0667b68589ffb5e2a6d8f4",
+  "prevHash": "eb7d5e35659ef2c255a6a3e036c2c3ce5a256ab57132435e6143b3c265c13934",
+  "hash": "b502567da16b13c5f67e166558afbe3d5a6bff36e97c0d548f84ad39055874c2"
+ },
+ {
+  "@id": "ev:30",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:47:55Z",
+  "timestampKind": "actual",
+  "actor": {
+   "kind": "agent",
+   "name": "Adversarial Probe (P-ID, P-NUM), Part 2",
+   "model": "Claude (Anthropic)",
+   "instructionSetVersion": "Reviewership v0.1"
+  },
+  "action": "probe",
+  "inputs": [
+   "p09:res:1..9"
+  ],
+  "outputs": [
+   "p09:fnd:1..12"
+  ],
+  "respondsTo": "ev:27",
+  "rationale": "Run 09 Part 2: 9 findings demonstrated, fnd:4 refuted-by-check, fnd:6 and fnd:7 inconclusive (chk:6 too weak); new asserted fnd:12 from chk:9.",
+  "contentHash": "9005de186aa98af790528b61480e35571bca9a6781ab810e573e9f62b30faadb",
+  "prevHash": "b502567da16b13c5f67e166558afbe3d5a6bff36e97c0d548f84ad39055874c2",
+  "hash": "bef27ff330d5c98a3f114a38aa7337932158954f1f3ba97f3c91deb5aa55ef27"
+ },
+ {
+  "@id": "ev:31",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T20:52:17Z",
+  "timestampKind": "reconstructed",
+  "actor": {
+   "kind": "stand-in",
+   "name": "Claude, standing in for the focal reviewer",
+   "model": "Claude (Anthropic)"
+  },
+  "action": "draft",
+  "inputs": [
+   "ms:TEST",
+   "bs:SPEC"
+  ],
+  "outputs": [
+   "rv:draft"
+  ],
+  "respondsTo": "ev:28",
+  "rationale": "Unassisted draft written from the manuscript and the specification only; bs:T7 settled first ('must means must'); time from file save time.",
+  "contentHash": "4702005efea83b50a065381684c9fe56d38f26b2f4b759f328006067ed97ba53",
+  "prevHash": "bef27ff330d5c98a3f114a38aa7337932158954f1f3ba97f3c91deb5aa55ef27",
+  "hash": "69bfc1957203443624707c2a9563be0c3787b7f38496b2bf3b5cc8ae073e1fd3"
+ },
+ {
+  "@id": "ev:32",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T21:02:20Z",
+  "timestampKind": "reconstructed",
+  "actor": {
+   "kind": "agent",
+   "name": "Best-Self Elicitor (Mode C)",
+   "model": "Claude (Anthropic)",
+   "instructionSetVersion": "Reviewership v0.1"
+  },
+  "action": "consistency-check",
+  "inputs": [
+   "bs:SPEC",
+   "rv:draft"
+  ],
+  "outputs": [
+   "bs:C"
+  ],
+  "respondsTo": "ev:31",
+  "rationale": "Consistency report: 12 standards applied, 4 in part; seven must parts silently skipped; one internal inconsistency (bs:CI1); undeclared standards flagged; time from file save time.",
+  "contentHash": "da09b5cc496b6d21d7c2016b34bccc383cfa84b33c0e53eb16124bf54d790b5e",
+  "prevHash": "69bfc1957203443624707c2a9563be0c3787b7f38496b2bf3b5cc8ae073e1fd3",
+  "hash": "76564a9bb584e6ae9cd3cb2e814a2831891b1a2136a97a59bc92d0cc04de780a"
+ },
+ {
+  "@id": "ev:33",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T21:18:13Z",
+  "timestampKind": "reconstructed",
+  "actor": {
+   "kind": "agent",
+   "name": "Panel Synthesizer",
+   "model": "Claude (Anthropic)",
+   "instructionSetVersion": "Reviewership v0.1"
+  },
+  "action": "synthesize",
+  "inputs": [
+   "sr:R-TCE",
+   "sr:R-INST",
+   "sr:R-BEH",
+   "sr:R-DID",
+   "rv:draft"
+  ],
+  "outputs": [
+   "pnl:synthesis"
+  ],
+  "rationale": "Run 07: survival table, agreement, disagreement map, recommendation spread, what the focal reviewer faces",
+  "contentHash": "451aaadb1e0c908694b761eb1abf34daa59bedee2333e77525693190b1404f4c",
+  "prevHash": "76564a9bb584e6ae9cd3cb2e814a2831891b1a2136a97a59bc92d0cc04de780a",
+  "hash": "7dd574d202a6bce075b8bf8e96657c7e3315b323a39d86916b9984b96cc0d9bf"
+ },
+ {
+  "@id": "ev:34",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T21:20:55Z",
+  "timestampKind": "actual",
+  "actor": {
+   "kind": "harness",
+   "name": "check harness (sandboxed Python)"
+  },
+  "action": "check",
+  "inputs": [
+   "pnl:chk:1"
+  ],
+  "outputs": [
+   "pnl:chk:1.out"
+  ],
+  "rationale": "Run 07 recompute check: survival scores and verdict divergence against perspective distance",
+  "contentHash": "728e37c203a7942f9a586c7c18aca15a3e838a9ee8199da717edb3ce7fce03e7",
+  "prevHash": "7dd574d202a6bce075b8bf8e96657c7e3315b323a39d86916b9984b96cc0d9bf",
+  "hash": "945125be4233109e8002fdc0d6649b576085f734da05b902ed2943bd6f251b86"
+ },
+ {
+  "@id": "ev:35",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T21:21:43Z",
+  "timestampKind": "actual",
+  "actor": {
+   "kind": "orchestrator",
+   "name": "orchestrating session (Claude)"
+  },
+  "action": "annotate",
+  "inputs": [
+   "ev:31"
+  ],
+  "outputs": [],
+  "rationale": "Correction before publication: ev:31's actor kind was logged as 'standin', which the schema does not allow; corrected to 'stand-in', and the hashes of ev:31 to ev:34 recomputed. The earlier file is not published.",
+  "prevHash": "945125be4233109e8002fdc0d6649b576085f734da05b902ed2943bd6f251b86",
+  "hash": "a86254576f464d704f18294bd19edd07a1b630cb10238f94f55068a2d0a07d23"
+ },
+ {
+  "@id": "ev:36",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T21:42:27Z",
+  "timestampKind": "reconstructed",
+  "actor": {
+   "kind": "stand-in",
+   "name": "Claude, standing in for the focal reviewer"
+  },
+  "action": "accept",
+  "inputs": [
+   "pnl:synthesis",
+   "prb:08",
+   "prb:09",
+   "prb:10",
+   "bs:CR",
+   "sr:R-TCE",
+   "sr:R-INST",
+   "sr:R-BEH",
+   "sr:R-DID"
+  ],
+  "outputs": [
+   "rv:12.dispositions"
+  ],
+  "rationale": "Run 12: 74 accept decisions, each with a reason and the place it lands in the signed review (Dispositions block of runs/12_reviewer_dispositions_final_review.md)",
+  "contentHash": "f58e6bf143becaad6d0d05ed71a89c54c19cbdbf652c70eb586871d582c63881",
+  "prevHash": "a86254576f464d704f18294bd19edd07a1b630cb10238f94f55068a2d0a07d23",
+  "hash": "a688ef815eb9cca324d5986586c427bde898a9c0d5d9d07d8af105ac61f3a633"
+ },
+ {
+  "@id": "ev:37",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T21:42:27Z",
+  "timestampKind": "reconstructed",
+  "actor": {
+   "kind": "stand-in",
+   "name": "Claude, standing in for the focal reviewer"
+  },
+  "action": "modify",
+  "inputs": [
+   "pnl:synthesis",
+   "prb:08",
+   "prb:09",
+   "prb:10",
+   "bs:CR",
+   "sr:R-TCE",
+   "sr:R-INST",
+   "sr:R-BEH",
+   "sr:R-DID"
+  ],
+  "outputs": [
+   "rv:12.dispositions"
+  ],
+  "rationale": "Run 12: 35 modify decisions (same file)",
+  "contentHash": "f58e6bf143becaad6d0d05ed71a89c54c19cbdbf652c70eb586871d582c63881",
+  "prevHash": "a688ef815eb9cca324d5986586c427bde898a9c0d5d9d07d8af105ac61f3a633",
+  "hash": "d6f75aa0c9420ecf6c966f7ea56d7a8a5a2f133335d54433b68468abbcc59bc0"
+ },
+ {
+  "@id": "ev:38",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T21:42:27Z",
+  "timestampKind": "reconstructed",
+  "actor": {
+   "kind": "stand-in",
+   "name": "Claude, standing in for the focal reviewer"
+  },
+  "action": "reject",
+  "inputs": [
+   "pnl:synthesis",
+   "prb:08",
+   "prb:09",
+   "prb:10",
+   "bs:CR",
+   "sr:R-TCE",
+   "sr:R-INST",
+   "sr:R-BEH",
+   "sr:R-DID"
+  ],
+  "outputs": [
+   "rv:12.dispositions"
+  ],
+  "rationale": "Run 12: 8 reject decisions (same file); rejected findings land nowhere in the review",
+  "contentHash": "f58e6bf143becaad6d0d05ed71a89c54c19cbdbf652c70eb586871d582c63881",
+  "prevHash": "d6f75aa0c9420ecf6c966f7ea56d7a8a5a2f133335d54433b68468abbcc59bc0",
+  "hash": "f54edf74f812408f371367830a6c040feaf8853c8c851c0ab3604e021fec7789"
+ },
+ {
+  "@id": "ev:39",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T21:42:27Z",
+  "timestampKind": "reconstructed",
+  "actor": {
+   "kind": "stand-in",
+   "name": "Claude, standing in for the focal reviewer"
+  },
+  "action": "sign",
+  "inputs": [
+   "rv:draft",
+   "rv:12.dispositions"
+  ],
+  "outputs": [
+   "rv:signed"
+  ],
+  "rationale": "Run 12: revised review signed 'Reviewer 2 (stand-in)', with an attestation; stand-in's out-of-role note in runs/12_reviewer_standin_note.md",
+  "contentHash": "f58e6bf143becaad6d0d05ed71a89c54c19cbdbf652c70eb586871d582c63881",
+  "prevHash": "f54edf74f812408f371367830a6c040feaf8853c8c851c0ab3604e021fec7789",
+  "hash": "86be37b8fc6e5f76613be7b94b4bac8b896345613227f52cd89af727711e9acb"
+ },
+ {
+  "@id": "ev:40",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T21:13:01Z",
+  "timestampKind": "reconstructed",
+  "actor": {
+   "kind": "agent",
+   "name": "Recovery scorer",
+   "model": "Claude (Anthropic)"
+  },
+  "action": "score",
+  "inputs": [
+   "case:key",
+   "rv:draft",
+   "sr:R-TCE",
+   "sr:R-INST",
+   "sr:R-BEH",
+   "sr:R-DID",
+   "prb:08",
+   "prb:09",
+   "prb:10"
+  ],
+  "outputs": [
+   "score:recovery"
+  ],
+  "rationale": "Section 4.10: seeded-defect recovery and unseeded categories, scored against the sealed key (scorer knew each output's run)",
+  "contentHash": "552f66207f12aecfe79ce8017d69da1f8693120d23d4a775f590d9bb185d9018",
+  "prevHash": "86be37b8fc6e5f76613be7b94b4bac8b896345613227f52cd89af727711e9acb",
+  "hash": "e0ea4d837c0adca3116e495ab3db611063862ed6a2f1c26b78fce51f695db94c"
+ },
+ {
+  "@id": "ev:41",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T21:45:10Z",
+  "timestampKind": "actual",
+  "actor": {
+   "kind": "orchestrator",
+   "name": "orchestrating session (Claude)"
+  },
+  "action": "annotate",
+  "inputs": [
+   "rv:signed",
+   "rv:draft"
+  ],
+  "outputs": [
+   "view:editor",
+   "view:author"
+  ],
+  "rationale": "Run 14: machine-origin analysis (tools/machine_origin.py, threshold 0.6) and editor and author views (tools/editor_view.py) generated from the trace and the dispositions",
+  "contentHash": "91fd60740d69ecc6aa40db5cb5fae445b0620fa4b4c9728bb4ea0149d8385ec7",
+  "prevHash": "e0ea4d837c0adca3116e495ab3db611063862ed6a2f1c26b78fce51f695db94c",
+  "hash": "a48ac07e548b3603bb7d459f30cf84ea74fbbcddfb94f6cc04c915da9a5bd747"
+ },
+ {
+  "@id": "ev:42",
+  "@type": "ProvenanceEvent",
+  "timestamp": "2026-10-23T21:49:17Z",
+  "timestampKind": "reconstructed",
+  "actor": {
+   "kind": "agent",
+   "name": "Recovery scorer",
+   "model": "Claude (Anthropic)"
+  },
+  "action": "score",
+  "inputs": [
+   "case:key",
+   "rv:signed",
+   "rv:draft"
+  ],
+  "outputs": [
+   "score:recovery.R12"
+  ],
+  "rationale": "Section 4.10: the signed review scored against the sealed key by the same rules",
+  "contentHash": "8f6629ae737b82d111d0f1ec60260711e621f24176219b569ca6eaf6e7afa05f",
+  "prevHash": "a48ac07e548b3603bb7d459f30cf84ea74fbbcddfb94f6cc04c915da9a5bd747",
+  "hash": "6ce7ad555e943077f9e9a572d50a824e971827bac565af665c72fa1f5fa9e9b0"
+ }
+]
