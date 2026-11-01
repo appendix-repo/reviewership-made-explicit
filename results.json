@@ -1,0 +1,93 @@
+[
+ {
+  "check": "p09:chk:1",
+  "file": "p09_chk_1.py",
+  "ranAt": "2026-10-23T20:42:09Z",
+  "exit": 0,
+  "verdicts": [
+   "VERDICT: DEMONSTRATED - 4,712 is not a multiple of 412, so it cannot be a balanced 412-hospital panel; expected 4532 (all years) or at most 4120 for models with Peer(t-1)."
+  ],
+  "codeSha256": "f7896a4b8d0ffd2566adf27984626ae710d87dd060b89c83716476c1402b722a"
+ },
+ {
+  "check": "p09:chk:2",
+  "file": "p09_chk_2.py",
+  "ranAt": "2026-10-23T20:42:09Z",
+  "exit": 0,
+  "verdicts": [
+   "VERDICT: DEMONSTRATED - stars inconsistent with coefficient/SE (robust to rounding) in: Environmental uncertainty M3: 0.084 (0.051) printed ***, |t|=1.65, p=0.1003"
+  ],
+  "codeSha256": "2d9e5526ac64a658d946ceaaa661112dc40a77cfb05faa18012e53c54bf4051b"
+ },
+ {
+  "check": "p09:chk:3",
+  "file": "p09_chk_3.py",
+  "ranAt": "2026-10-23T20:42:09Z",
+  "exit": 0,
+  "verdicts": [
+   "VERDICT: DEMONSTRATED - the Model 2 peer estimate is not shown equivalent to zero (TOST p=0.243 at margin 0.069); its 95% CI reaches 0.117. Non-significance does not license 'rule out'."
+  ],
+  "codeSha256": "8e5f639da7bee53e2f680aa3a712ca339246df4bfc05fc49f892b35b0809f23d"
+ },
+ {
+  "check": "p09:chk:4",
+  "file": "p09_chk_4.py",
+  "ranAt": "2026-10-23T20:42:10Z",
+  "exit": 0,
+  "verdicts": [
+   "VERDICT: REFUTED-BY-CHECK - the reported magnitudes (2.7 pp, about one-sixth SD, fall > two-thirds) are arithmetically correct."
+  ],
+  "codeSha256": "55f63a629cc073f32a73e7d056455e70caf3a6d5a86d054962eefe4460af5b16"
+ },
+ {
+  "check": "p09:chk:5",
+  "file": "p09_chk_5.py",
+  "ranAt": "2026-10-23T20:42:10Z",
+  "exit": 0,
+  "verdicts": [
+   "VERDICT: DEMONSTRATED - under the manuscript's own relations, a modularity coefficient with no causal content survives the staffing control (positive, p<.05) in 100% of replications; survival cannot rule out capability confounding. The control also biases a true effect by -18%."
+  ],
+  "codeSha256": "6ded55b98c0532480137a7feb6ed9935ce07a6581c8e4368fe1fdf41680259cc"
+ },
+ {
+  "check": "p09:chk:6",
+  "file": "p09_chk_6.py",
+  "ranAt": "2026-10-23T20:42:12Z",
+  "exit": 0,
+  "verdicts": [
+   "VERDICT: INCONCLUSIVE - the economizing-only DGP reproduces the Table 2 pattern in only 0.28 of replications with these parameters, so the comparison is not informative (p09:fnd:6, p09:fnd:7)."
+  ],
+  "codeSha256": "8b802b4a3417ab3f982483488aea575289c70ca546207113e348bccaa8ad5398"
+ },
+ {
+  "check": "p09:chk:7",
+  "file": "p09_chk_7.py",
+  "ranAt": "2026-10-23T20:42:15Z",
+  "exit": 0,
+  "verdicts": [
+   "VERDICT: DEMONSTRATED - with no effect of modularity and same-year feedback from outsourcing to reported modularity, the within-hospital FE estimate is positive and significant in 100% of replications (mean 0.107); lagging m still gives 100%; 2SLS on state requirements gives mean 0.002 (a valid repair only if requirements satisfy exclusion, which ms does not argue)."
+  ],
+  "codeSha256": "fc8516b79dc6d19fb25ac861fba4dc1b8f0b1d3979ce4eb4e4ea8cc685d83d70"
+ },
+ {
+  "check": "p09:chk:8",
+  "file": "p09_chk_8.py",
+  "ranAt": "2026-10-23T20:42:17Z",
+  "exit": 0,
+  "verdicts": [
+   "VERDICT: DEMONSTRATED - part (a) of p09:fnd:9: with zero pre-trends and cohort-heterogeneous dynamic effects, TWFE event-study coefficients do not recover the true effects (or show non-zero leads): saturated rel -7: mean 0.0240 vs truth 0.0000; saturated rel -6: mean 0.0217 vs truth 0.0000; saturated rel -5: mean 0.0186 vs truth 0.0000; saturated rel -4: mean 0.0141 vs truth 0.0000; saturated rel -3: mean 0.0080 vs truth 0.0000; saturated rel 0: mean 0.0088 vs truth 0.0108; saturated rel 1: mean 0.0188 vs truth 0.0216; binned rel <=-5: mean 0.0249 vs truth 0.0000; binned rel -4: mean 0.0175 vs truth 0.0000; binned rel -3: mean 0.0113 vs truth 0.0000; binned rel -2: mean 0.0043 vs truth 0.0000; binned rel 0: mean 0.0081 vs truth 0.0108; binned rel 1: mean 0.0173 vs truth 0.0216; binned rel 2: mean 0.0280 vs truth 0.0324; binned rel >=5: mean 0.0947 vs truth 0.1065"
+  ],
+  "codeSha256": "cf63a163e9b50a98b5dd05fc5dfd3dfbbd7d7209bb5fb0a06361ac0d2a3a727a"
+ },
+ {
+  "check": "p09:chk:9",
+  "file": "p09_chk_9.py",
+  "ranAt": "2026-10-23T20:42:19Z",
+  "exit": 0,
+  "verdicts": [
+   "VERDICT: DEMONSTRATED - p09:fnd:10: hospital-clustered SEs reject a true null for Peer at 56.0% (nominal 5%; state-clustered 31.7%).",
+   "VERDICT: DEMONSTRATED - p09:fnd:11: with persistent state shocks and no imitation, lagged Peer predicts own outsourcing (mean b = 0.270; significant in 100% with state clustering)."
+  ],
+  "codeSha256": "280fbf5afe481350e6570ffc307dac2403563ebb039d288fb0212e90d9a295e3"
+ }
+]
