@@ -1,0 +1,60 @@
+[
+ {
+  "check": "p08:chk:1",
+  "file": "p08_chk_1.py",
+  "ranAt": "2026-10-23T20:31:57Z",
+  "exit": 0,
+  "verdicts": [
+   "VERDICT: p08:S1 threshold derivation CONFIRMED",
+   "VERDICT: p08:S2 Proposition 1 (expression and sign) CONFIRMED",
+   "VERDICT: p08:fnd:8 DEMONSTRATED: with u measured as a z-score, H(u) <= 0 is possible (u <= -h0/h1) and the buy rule reverses; k* undefined at m = 1"
+  ],
+  "codeSha256": "c9729c9510572db938dad32d346b6baa0e1d508eb9f39480537896511787d350"
+ },
+ {
+  "check": "p08:chk:2",
+  "file": "p08_chk_2.py",
+  "ranAt": "2026-10-23T20:31:58Z",
+  "exit": 0,
+  "verdicts": [
+   "VERDICT: p08:fnd:1 DEMONSTRATED: Appendix omits -(s+G)h1/(H^2(1-m)^2); true cross-partial = (g1*h0 - h1*(s+g0))/(H^2(1-m)^2); A3 <=> numerator < 0, so Prop. 2 is false at every admissible (m,u) under A3",
+   "VERDICT: p08:inc:2 DEMONSTRATED: Prop. 2 holds iff A3 fails iff dk*/du > 0 (uncertainty favours the market)",
+   "VERDICT: p08:fnd:2 DEMONSTRATED (k* scale): the correctly derived model under A3 predicts a NEGATIVE m x u interaction (same sign as ms:T2.M3, -0.061) and dk*/du < 0",
+   "VERDICT: p08:fnd:3 DEMONSTRATED: modularity's per-function cost saving rises with u (h1*k > 0), but its threshold effect is k*/(1-m), which falls with u under A3"
+  ],
+  "codeSha256": "7422a03eebd7e7d86237ab2b268d8b1419546f5b5a8075a7ec51ba07df813c01"
+ },
+ {
+  "check": "p08:chk:3",
+  "file": "p08_chk_3.py",
+  "ranAt": "2026-10-23T20:31:59Z",
+  "exit": 0,
+  "verdicts": [
+   "VERDICT: p08:fnd:4 DEMONSTRATED: under A3 the k*-scale interaction is negative, but the Phi-scale interaction has sign sign(Delta)*sign(f + k f'), positive for beta(1,5) at k* = 0.4; the step from Prop. 2 to H2 needs an assumption on F",
+   "VERDICT: p08:S2 (H1 part) CONFIRMED: dPhi/dm = f(k*) k*/(1-m) >= 0 for every spending-weighted F; H1 follows from Prop. 1 without further assumption"
+  ],
+  "codeSha256": "5458dd2435f60fe48f74a15a1a3509955d1af80689f22336d4ab661483c5a4d0"
+ },
+ {
+  "check": "p08:chk:4",
+  "file": "p08_chk_4.py",
+  "ranAt": "2026-10-23T20:32:00Z",
+  "exit": 0,
+  "verdicts": [
+   "VERDICT: p08:fnd:6 DEMONSTRATED: stars inconsistent with coefficient/SE for T2.M3.uncertainty",
+   "VERDICT: p08:fnd:7 DEMONSTRATED: N = 4,712 is incompatible with a balanced panel of 412 hospitals over 2009-2019 (4,532; 4,120 with lag)",
+   "VERDICT: p08:S3 CONFIRMED: 2.7 pp, ~1/6 SD, >2/3 drop correct; all other stars consistent"
+  ],
+  "codeSha256": "e3748b4808e655dbb6969340fb7c5bc21d0ef53841f8e3ecfcdabc9b45093607"
+ },
+ {
+  "check": "p08:chk:5",
+  "file": "p08_chk_5.py",
+  "ranAt": "2026-10-23T20:32:01Z",
+  "exit": 0,
+  "verdicts": [
+   "VERDICT: p08:fnd:5 DEMONSTRATED (tension, not refutation): under A3 the model implies dPhi/du <= 0 at every m; Table 2 point estimates of dPhi/du are positive for all m in [0,1] (M3, M4); none is significant at 5% under any cov(b2,b3) (max |z| = 1.65); the manuscript neither states nor tests the implication"
+  ],
+  "codeSha256": "fcd408352bd5097f1ea28a8a437895a1bfeee90ace2d720efcae1f64c36ea8a5"
+ }
+]
