@@ -1,0 +1,26 @@
+[
+ {
+  "check": "r-inst:chk:1",
+  "file": "r-inst_chk_1.py",
+  "ranAt": "2026-10-23T20:32:16Z",
+  "exit": 0,
+  "verdicts": [],
+  "codeSha256": "05f0ea58f13d2f1294667901b472e9b3da825faaafdd8d40e58a9d001a11dfae"
+ },
+ {
+  "check": "r-inst:chk:2",
+  "file": "r-inst_chk_2.py",
+  "ranAt": "2026-10-23T20:32:17Z",
+  "exit": 0,
+  "verdicts": [],
+  "codeSha256": "4054e0a6743b2c89e8d4a2cac4f98b16d2ace2811b2a5b8033361069a782a36b"
+ },
+ {
+  "check": "r-inst:chk:3",
+  "file": "r-inst_chk_3.py",
+  "ranAt": "2026-10-23T20:32:17Z",
+  "exit": 0,
+  "verdicts": [],
+  "codeSha256": "3ac9755c864dbe620d354f3dca6670c59c52f0344cc66d78b059bee66420f539"
+ }
+]
