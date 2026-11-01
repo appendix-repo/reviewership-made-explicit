@@ -1,0 +1,6 @@
+runs/13_pilot/blind/review_A.md {'words': 3586, 'hedges_per_1000': 2.8, 'nominalizations_per_100': 7.3, 'flesch': 42.6}
+runs/13_pilot/blind/review_B.md {'words': 2359, 'hedges_per_1000': 3.4, 'nominalizations_per_100': 7.2, 'flesch': 43.6}
+runs/13_pilot/blind/review_C.md {'words': 2831, 'hedges_per_1000': 3.5, 'nominalizations_per_100': 7.3, 'flesch': 47.2}
+runs/13_pilot/blind/review_D.md {'words': 2067, 'hedges_per_1000': 3.4, 'nominalizations_per_100': 4.7, 'flesch': 56.7}
+runs/13_pilot/blind/review_E.md {'words': 4493, 'hedges_per_1000': 3.6, 'nominalizations_per_100': 7.2, 'flesch': 33.9}
+runs/13_pilot/blind/review_F.md {'words': 4927, 'hedges_per_1000': 3.5, 'nominalizations_per_100': 7.2, 'flesch': 40.8}
