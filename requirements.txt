@@ -1,0 +1,9 @@
+# Verified with Python 3.13 and exactly these versions (replication/REPLICATION_REPORT.md records the environment).
+# The check scripts in runs/*_checks/ need only numpy, scipy, sympy, statsmodels and pandas; jsonschema is used to
+# validate the provenance trace against schema/review-objects.v0.schema.json.
+numpy==2.5.4
+scipy==1.18.1
+sympy==1.14.0
+statsmodels==0.15.0
+pandas==3.1.0
+jsonschema==4.26.0

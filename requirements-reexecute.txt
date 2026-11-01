@@ -1,0 +1,3 @@
+# Only needed to re-execute the agent session with fresh model calls (reexecute/run_session.py without --dry-run).
+-r requirements.txt
+anthropic==2.3.0
