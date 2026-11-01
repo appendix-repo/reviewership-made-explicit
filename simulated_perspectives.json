@@ -1,0 +1,425 @@
+[
+ {
+  "@id": "persp:R-TCE",
+  "@type": "ReviewingPerspective",
+  "label": "Transaction-cost economist (strategy)",
+  "owner": {
+   "kind": "simulated",
+   "name": "Transaction-cost economist (strategy)"
+  },
+  "relationToFocal": "resembling",
+  "dimensions": {
+   "ONT": {
+    "weight": 0.6,
+    "parameters": {
+     "ONT.1": [
+      "boundedly rational actors",
+      "technologies and artifacts"
+     ],
+     "ONT.2": "cross-level with explicit bridging",
+     "ONT.3": "individual-mechanistic",
+     "ONT.4": "strict",
+     "ONT.5": {
+      "choice-theoretic": "preferred",
+      "causal": "admissible",
+      "selection": "admissible",
+      "functional": "suspect",
+      "constitutive": "suspect"
+     }
+    }
+   },
+   "EPI": {
+    "weight": 0.9,
+    "parameters": {
+     "EPI.1": "positivism",
+     "EPI.2": "sophisticated falsificationism",
+     "EPI.3": [
+      "model-based",
+      "design-based"
+     ],
+     "EPI.4": "high",
+     "EPI.5": [
+      "effect sizes",
+      "robustness"
+     ],
+     "EPI.6": "single-informant acceptable"
+    }
+   },
+   "INF": {
+    "weight": 0.9,
+    "parameters": {
+     "INF.1": "deductive for propositions; abductive moves must be labelled",
+     "INF.3": "proof",
+     "INF.4": "low",
+     "INF.5": "depth",
+     "INF.6": {
+      "reductive": "accepted",
+      "eliminative": "suspect",
+      "assimilative": "accepted"
+     },
+     "INF.7": "preferred"
+    }
+   },
+   "TEC": {
+    "weight": 0.7,
+    "parameters": {
+     "TEC.1": "preferred",
+     "TEC.2": [
+      "re-derive",
+      "re-run"
+     ],
+     "TEC.3": "high",
+     "TEC.4": "sometimes",
+     "TEC.5": "closed form required"
+    }
+   },
+   "PRA": {
+    "weight": 0.4,
+    "parameters": {
+     "PRA.1": "strategy and organizational economics; generalist organization-science readership",
+     "PRA.2": "gap-spotting",
+     "PRA.3": "sometimes",
+     "PRA.4": "low",
+     "PRA.5": "separate fatal from fixable"
+    }
+   }
+  },
+  "materialInferences": {
+   "endorsed": [
+    "MI1",
+    "MI6",
+    "MI8",
+    "MI9"
+   ],
+   "rejected": [
+    "MI3",
+    "MI7",
+    "MI10"
+   ]
+  },
+  "corpus": [
+   "Williamson 1975",
+   "Williamson 1985",
+   "Williamson 1991",
+   "Klein, Crawford & Alchian 1978",
+   "Monteverde & Teece 1982",
+   "Masten 1984",
+   "Baldwin & Clark 2000",
+   "Langlois 2002"
+  ]
+ },
+ {
+  "@id": "persp:R-INST",
+  "@type": "ReviewingPerspective",
+  "label": "Institutional theorist (organizational sociology)",
+  "owner": {
+   "kind": "simulated",
+   "name": "Institutional theorist (organizational sociology)"
+  },
+  "relationToFocal": "differing",
+  "dimensions": {
+   "ONT": {
+    "weight": 0.9,
+    "parameters": {
+     "ONT.1": [
+      "fields, logics and legitimacy",
+      "networks and structures",
+      "embedded actors"
+     ],
+     "ONT.2": "same level required",
+     "ONT.3": "constitutive",
+     "ONT.4": "moderate",
+     "ONT.5": {
+      "constitutive": "preferred",
+      "functional": "admissible",
+      "causal": "admissible",
+      "selection": "admissible",
+      "choice-theoretic": "suspect"
+     }
+    }
+   },
+   "EPI": {
+    "weight": 0.6,
+    "parameters": {
+     "EPI.1": "constructivism",
+     "EPI.2": "inductivism",
+     "EPI.3": [
+      "comparative-historical",
+      "process-tracing",
+      "design-based"
+     ],
+     "EPI.4": "medium",
+     "EPI.5": [
+      "robustness"
+     ],
+     "EPI.6": "multi-informant preferred"
+    }
+   },
+   "INF": {
+    "weight": 0.7,
+    "parameters": {
+     "INF.1": "abductive accepted for interpretation",
+     "INF.3": "verbal",
+     "INF.4": "medium",
+     "INF.5": "coverage",
+     "INF.6": {
+      "reductive": "suspect",
+      "eliminative": "suspect",
+      "assimilative": "suspect"
+     },
+     "INF.7": "required"
+    }
+   },
+   "TEC": {
+    "weight": 0.3,
+    "parameters": {
+     "TEC.1": "preferred",
+     "TEC.2": [
+      "spot-check"
+     ],
+     "TEC.3": "moderate",
+     "TEC.4": "sometimes",
+     "TEC.5": "simulation acceptable with verification"
+    }
+   },
+   "PRA": {
+    "weight": 0.8,
+    "parameters": {
+     "PRA.1": "organizational sociology; generalist organization-science readership",
+     "PRA.2": "problematization",
+     "PRA.3": "always",
+     "PRA.4": "medium",
+     "PRA.5": "separate fatal from fixable"
+    }
+   }
+  },
+  "materialInferences": {
+   "endorsed": [
+    "MI3",
+    "MI4",
+    "MI10"
+   ],
+   "rejected": [
+    "MI2",
+    "MI7",
+    "MI9"
+   ]
+  },
+  "corpus": [
+   "Meyer & Rowan 1977",
+   "DiMaggio & Powell 1983",
+   "Tolbert & Zucker 1983",
+   "Haveman 1993",
+   "Westphal, Gulati & Shortell 1997",
+   "Strang & Soule 1998",
+   "Thornton, Ocasio & Lounsbury 2012"
+  ]
+ },
+ {
+  "@id": "persp:R-BEH",
+  "@type": "ReviewingPerspective",
+  "label": "Behavioral theorist (Carnegie tradition)",
+  "owner": {
+   "kind": "simulated",
+   "name": "Behavioral theorist (Carnegie tradition)"
+  },
+  "relationToFocal": "differing",
+  "dimensions": {
+   "ONT": {
+    "weight": 0.7,
+    "parameters": {
+     "ONT.1": [
+      "boundedly rational actors",
+      "routines and capabilities",
+      "coalitions"
+     ],
+     "ONT.2": "cross-level with explicit bridging",
+     "ONT.3": "individual-mechanistic",
+     "ONT.4": "moderate",
+     "ONT.5": {
+      "causal": "preferred",
+      "selection": "admissible",
+      "functional": "suspect",
+      "constitutive": "admissible",
+      "choice-theoretic": "suspect"
+     }
+    }
+   },
+   "EPI": {
+    "weight": 0.7,
+    "parameters": {
+     "EPI.1": "realism",
+     "EPI.2": "inductivism",
+     "EPI.3": [
+      "process-tracing",
+      "design-based"
+     ],
+     "EPI.4": "medium",
+     "EPI.5": [
+      "effect sizes",
+      "robustness"
+     ],
+     "EPI.6": "multi-informant preferred"
+    }
+   },
+   "INF": {
+    "weight": 0.7,
+    "parameters": {
+     "INF.1": "process explanation; abductive moves labelled",
+     "INF.3": "sketch",
+     "INF.4": "medium",
+     "INF.5": "depth",
+     "INF.6": {
+      "reductive": "suspect",
+      "eliminative": "suspect",
+      "assimilative": "accepted"
+     },
+     "INF.7": "preferred"
+    }
+   },
+   "TEC": {
+    "weight": 0.4,
+    "parameters": {
+     "TEC.1": "preferred",
+     "TEC.2": [
+      "re-run",
+      "re-simulate"
+     ],
+     "TEC.3": "moderate",
+     "TEC.4": "sometimes",
+     "TEC.5": "simulation acceptable with verification"
+    }
+   },
+   "PRA": {
+    "weight": 0.6,
+    "parameters": {
+     "PRA.1": "organization theory; generalist organization-science readership",
+     "PRA.2": "interesting",
+     "PRA.3": "sometimes",
+     "PRA.4": "medium",
+     "PRA.5": "separate fatal from fixable"
+    }
+   }
+  },
+  "materialInferences": {
+   "endorsed": [
+    "MI5",
+    "MI4"
+   ],
+   "rejected": [
+    "MI2",
+    "MI9",
+    "MI7"
+   ]
+  },
+  "corpus": [
+   "Simon 1955",
+   "March & Simon 1958",
+   "Cyert & March 1963",
+   "Nelson & Winter 1982",
+   "Argyres 1996",
+   "Greve 2003"
+  ]
+ },
+ {
+  "@id": "persp:R-DID",
+  "@type": "ReviewingPerspective",
+  "label": "Design-based empirical economist",
+  "owner": {
+   "kind": "simulated",
+   "name": "Design-based empirical economist"
+  },
+  "relationToFocal": "differing",
+  "dimensions": {
+   "ONT": {
+    "weight": 0.3,
+    "parameters": {
+     "ONT.1": [
+      "boundedly rational actors",
+      "technologies and artifacts"
+     ],
+     "ONT.2": "indifferent",
+     "ONT.3": "individual-mechanistic",
+     "ONT.4": "loose",
+     "ONT.5": {
+      "causal": "preferred",
+      "choice-theoretic": "admissible",
+      "selection": "admissible",
+      "functional": "suspect",
+      "constitutive": "suspect"
+     }
+    }
+   },
+   "EPI": {
+    "weight": 1.0,
+    "parameters": {
+     "EPI.1": "positivism",
+     "EPI.2": "inductivism",
+     "EPI.3": [
+      "design-based"
+     ],
+     "EPI.4": "low",
+     "EPI.5": [
+      "effect sizes",
+      "intervals and equivalence tests",
+      "robustness",
+      "pre-registration"
+     ],
+     "EPI.6": "single-informant acceptable"
+    }
+   },
+   "INF": {
+    "weight": 0.6,
+    "parameters": {
+     "INF.1": "deductive and statistical; no causal language without design",
+     "INF.3": "proof",
+     "INF.4": "low",
+     "INF.5": "depth",
+     "INF.6": {
+      "reductive": "accepted",
+      "eliminative": "suspect",
+      "assimilative": "suspect"
+     },
+     "INF.7": "preferred"
+    }
+   },
+   "TEC": {
+    "weight": 1.0,
+    "parameters": {
+     "TEC.1": "required",
+     "TEC.2": [
+      "re-run",
+      "re-simulate"
+     ],
+     "TEC.3": "very high",
+     "TEC.4": "always",
+     "TEC.5": "simulation acceptable with verification"
+    }
+   },
+   "PRA": {
+    "weight": 0.3,
+    "parameters": {
+     "PRA.1": "applied economics and quantitative management",
+     "PRA.2": "gap-spotting",
+     "PRA.3": "sometimes",
+     "PRA.4": "low",
+     "PRA.5": "separate fatal from fixable"
+    }
+   }
+  },
+  "materialInferences": {
+   "endorsed": [],
+   "rejected": [
+    "MI6",
+    "MI7"
+   ]
+  },
+  "corpus": [
+   "Angrist & Pischke 2009",
+   "Goodman-Bacon 2021",
+   "Callaway & Sant'Anna 2021",
+   "de Chaisemartin & D'Haultfoeuille 2020",
+   "Cinelli, Forney & Pearl 2024"
+  ]
+ }
+]

@@ -1,0 +1,103 @@
+{
+ "@id": "persp:FOCAL",
+ "@type": "ReviewingPerspective",
+ "label": "Focal reviewer (elicited in Run 01; Claude stand-in)",
+ "owner": {
+  "kind": "stand-in",
+  "name": "Claude, standing in for the focal reviewer"
+ },
+ "relationToFocal": "focal",
+ "dimensions": {
+  "ONT": {
+   "weight": 0.6,
+   "parameters": {
+    "ONT.1": [
+     "boundedly rational actors",
+     "fields, logics and legitimacy"
+    ],
+    "ONT.2": "cross-level with explicit bridging",
+    "ONT.3": [
+     "individual-mechanistic",
+     "selection"
+    ],
+    "ONT.4": "strict",
+    "ONT.5": {
+     "causal": "admissible",
+     "choice-theoretic": "admissible",
+     "functional": "suspect",
+     "selection": "admissible",
+     "constitutive": "admissible"
+    }
+   }
+  },
+  "EPI": {
+   "weight": 0.9,
+   "parameters": {
+    "EPI.1": "realism",
+    "EPI.2": "sophisticated falsificationism",
+    "EPI.3": [
+     "design-based",
+     "model-based"
+    ],
+    "EPI.4": "high",
+    "EPI.5": [
+     "effect sizes",
+     "intervals and equivalence tests",
+     "robustness"
+    ],
+    "EPI.6": "multi-informant preferred"
+   }
+  },
+  "INF": {
+   "weight": 0.9,
+   "parameters": {
+    "INF.1": "deductive, inductive; abductive admitted but must be labelled",
+    "INF.3": "sketch",
+    "INF.4": "low",
+    "INF.5": "depth",
+    "INF.6": {
+     "reductive": "accepted",
+     "eliminative": "accepted",
+     "assimilative": "suspect"
+    },
+    "INF.7": "required"
+   }
+  },
+  "TEC": {
+   "weight": 0.7,
+   "parameters": {
+    "TEC.1": "preferred",
+    "TEC.2": [
+     "re-derive",
+     "spot-check"
+    ],
+    "TEC.3": "very high",
+    "TEC.4": "always",
+    "TEC.5": "simulation acceptable with verification"
+   }
+  },
+  "PRA": {
+   "weight": 0.4,
+   "parameters": {
+    "PRA.1": "generalist organization-science readership: economists and sociologists of organizations",
+    "PRA.2": [
+     "problematization",
+     "gap-spotting"
+    ],
+    "PRA.3": "sometimes",
+    "PRA.4": "low",
+    "PRA.5": "separate fatal from fixable; be specific; be constructive"
+   }
+  }
+ },
+ "materialInferences": {
+  "endorsed": [
+   "MI1",
+   "MI6"
+  ],
+  "rejected": [
+   "MI7"
+  ]
+ },
+ "note": "Normalized by the orchestrating session from the elicitor's StandardsSpecification (runs/01_dialogue/turn_09_elicitor_SPEC.md) to the schema's admissible values, for the distance computation only. Conditional settings were mapped to their unconditional value; 'argue_each_time' to neutral; ONT.4 per-construct settings to 'strict' (four of five); PRA.2's 'extension' entry dropped (not an admissible value); PRA.4 'none' to 'low'; TEC.3 to 'very high'."
+}
